@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+  li{
+    list-style:none;
+  }
 
   body {
     --niceBlue: #2766A9;
