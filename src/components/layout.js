@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     --niceBlue: #2766A9;
     --niceBrown:#500709;
     --tablet: 768px;
+    font-family: sans-serif;
   }
 `
 

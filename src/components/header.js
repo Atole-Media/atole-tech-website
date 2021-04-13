@@ -10,8 +10,13 @@ const HeaderWrapper = styled.header`
   align-items: center;
   height: 15vh;
   font-family: sans-serif;
+  /* background-color: #000103;*/
+  color: white;
+  z-index: 100;
 
+  position: fixed;
   h1 {
+    color: white;
   }
 `
 const Navbar = styled.nav`
