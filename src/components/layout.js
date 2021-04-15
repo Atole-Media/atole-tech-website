@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
-import { Header } from "./index"
+import { Navbar } from "./index"
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle theme="prple" />
 
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
 
       <Main>{children}</Main>
       {/* <footer>

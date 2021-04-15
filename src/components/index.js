@@ -1,6 +1,6 @@
-import { Hero } from "../components/indexComps/hero"
 import { WhatIs } from "../components/indexComps/whatIs"
 import { LinkButton } from "../components/indexComps/linkButton"
-import { Header } from "../components/header/header"
+import { MainHeader } from "./indexComps/mainHeader"
+import { Navbar } from "./navbar/navbar"
 
-export { Hero, WhatIs, Header, LinkButton }
+export { MainHeader, WhatIs, LinkButton, Navbar }

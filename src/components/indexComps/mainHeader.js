@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   }
 `
 
-export const Hero = () => (
+export const MainHeader = () => (
   <Wrapper className="HeroImage">
     <StaticImage
       src="../../images/hero.jpg"
