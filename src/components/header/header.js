@@ -32,7 +32,7 @@ const Navbar = styled.nav`
   }
 `
 
-const Header = () => (
+export const Header = () => (
   <HeaderWrapper>
     <h1>Atole Tech</h1>
     <Navbar>
@@ -65,4 +65,3 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
