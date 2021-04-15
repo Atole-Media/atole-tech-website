@@ -3,8 +3,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  position: relative;
+  position: fixed;
   height: 100vh;
+  width: 100vw;
+  z-index:1;
   h2 {
     color: white;
     position: absolute;
@@ -40,4 +42,3 @@ export const Hero = () => (
     </h2>
   </Wrapper>
 )
-

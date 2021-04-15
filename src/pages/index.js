@@ -3,13 +3,13 @@ import * as React from "react"
 import { Hero, WhatIs } from "../components/index"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <Hero />
     <WhatIs />
-    <SEO title="Home" />
+    <Seo title="Home" />
   </Layout>
 )
 

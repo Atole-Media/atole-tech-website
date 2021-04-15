@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-
+import styled from "styled-components"
 import { Header } from "./index"
 
 const GlobalStyle = createGlobalStyle`
@@ -14,14 +14,23 @@ const GlobalStyle = createGlobalStyle`
   li{
     list-style:none;
   }
-
+  a{
+    text-decoration:none;
+  }
   body {
     --niceBlue: #2766A9;
-    --niceBrown:#500709;
+    --purple: #1A042B;
+    --pink: #BE68AB;
+    --olive: #92941A;
+    --textColor: #E2E3ED;
     --tablet: 768px;
+
+    --maxContent:1080px;
     font-family: sans-serif;
   }
 `
+
+const Main = styled.main``
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,15 +46,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle theme="prple" />
+
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <>
-        <main>{children}</main>
-        {/* <footer>
+
+      <Main>{children}</Main>
+      {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer> */}
-      </>
     </>
   )
 }
