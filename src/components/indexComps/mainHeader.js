@@ -2,11 +2,14 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index:1;
+  /* overflow: hidden; */
+  top: 0;
+  z-index:-1;
+
   h2 {
     color: white;
     position: absolute;

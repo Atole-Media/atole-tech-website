@@ -5,10 +5,11 @@ import { LinkButton } from "../index"
 const Section = styled.section`
   width: 100%;
   height: 100vh;
-  position: relative;
-  top: 100vh;
+  /* position: relative;
+  top: 100vh; */
   margin: 0 auto;
   z-index: 10;
+  margin-top: 100vh;
   background-color: var(--purple);
   h1 {
     text-transform: uppercase;

@@ -1,6 +1,5 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
 import { Navbar } from "./index"
@@ -20,10 +19,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     --niceBlue: #2766A9;
     --purple: #1A042B;
+    --lightPurple:#8E40A1;
     --pink: #BE68AB;
     --olive: #92941A;
     --textColor: #E2E3ED;
     --tablet: 768px;
+    --yellow: #E8CB51;
 
     --maxContent:1080px;
     font-family: sans-serif;
@@ -33,21 +34,11 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.main``
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <GlobalStyle theme="prple" />
 
-      <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Navbar />
 
       <Main>{children}</Main>
       {/* <footer>

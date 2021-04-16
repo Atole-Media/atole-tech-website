@@ -3,21 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-// const HeaderWrapper = styled.header`
-//   display: flex;
-//   width: 100vw;
-//   justify-content: space-evenly;
-//   align-items: center;
-//   height: 15vh;
-//   font-family: sans-serif;
-//   /* background-color: #000103;*/
-//   color: white;
-//   z-index: 100;
-//   position: fixed;
-//   h1 {
-//     color: white;
-//   }
-// `
 const Nav = styled.nav`
   display: flex;
   width: 100vw;
@@ -27,12 +12,15 @@ const Nav = styled.nav`
   font-family: sans-serif;
   /* background-color: #000103;*/
   color: white;
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
+  overflow: visible;
+  top: 0;
   h1 {
     color: white;
     width: 50%;
     text-align: center;
+    font-size: 2rem;
   }
   ul {
     width: 50%;
