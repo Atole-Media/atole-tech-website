@@ -11,12 +11,11 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 70%;
+  min-height: 60%;
   h2 {
     color: var(--yellow);
     text-transform: uppercase;
     min-height: 10%;
-    flex-grow: 1;
   }
   ul {
     color: white;
@@ -25,7 +24,7 @@ const ContentWrapper = styled.div`
     justify-content: space-evenly;
     align-items: flex-start;
     margin: 0 auto;
-    flex-grow: 4;
+    flex-grow: 1;
     li {
       text-align: left;
     }
@@ -34,16 +33,14 @@ const ContentWrapper = styled.div`
 const Links = styled(Link)`
   color: var(--yellow);
   font-size: 1.5rem;
-  flex-grow: 1;
 `
-export const Card = ({ title, children, content, to }) => {
+export const Card = ({ title, image, content, to }) => {
   const features = content.map((item, key) => {
     return <li key={key}>{item}</li>
   })
-
   return (
     <CardWrapper className="card">
-      {children}
+      {image}
       <ContentWrapper>
         <h2>{title}</h2>
         <ul>{features}</ul>

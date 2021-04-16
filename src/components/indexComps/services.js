@@ -11,6 +11,8 @@ const Section = styled.section`
   text-align: center;
   background-color: var(--purple);
   padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
   h1 {
     padding: 2rem 0;
     margin: 0 auto;
@@ -29,7 +31,7 @@ const Section = styled.section`
 const Cards = styled.div`
   display: flex;
   justify-content: space-evenly;
-  
+  flex-grow:1;
 `
 
 export const Services = () => {
@@ -40,6 +42,13 @@ export const Services = () => {
       <Cards>
         <Card
           title="Brand Design"
+          image={
+            <StaticImage
+              src="../../images/brand.png"
+              alt="brand-image"
+              height={200}
+            />
+          }
           content={[
             "Identity+Positioning",
             " Brand Innovation",
@@ -48,13 +57,8 @@ export const Services = () => {
             "VisualLanguage & Art",
             "Direction",
           ]}
-        >
-          <StaticImage
-            src="../../images/brand.png"
-            alt="brand-image"
-            height={200}
-          />
-        </Card>
+        />
+
         <Card
           title="Digital Design"
           content={[
@@ -64,13 +68,15 @@ export const Services = () => {
             " Digital Product Services",
             "Prototyping & Optimization",
           ]}
-        >
-          <StaticImage
-            src="../../images/digital.png"
-            alt="design-image"
-            height={200}
-          />
-        </Card>
+          image={
+            <StaticImage
+              src="../../images/digital.png"
+              alt="design-image"
+              height={200}
+            />
+          }
+        />
+
         <Card
           title="Technology"
           content={[
@@ -81,13 +87,14 @@ export const Services = () => {
             "Design Implemention",
             "Quality Assurance",
           ]}
-        >
-          <StaticImage
-            src="../../images/code.png"
-            alt="brand-image"
-            height={200}
-          />
-        </Card>
+          image={
+            <StaticImage
+              src="../../images/code.png"
+              alt="brand-image"
+              height={200}
+            />
+          }
+        />
       </Cards>
     </Section>
   )
