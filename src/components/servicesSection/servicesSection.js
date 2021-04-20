@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Card } from "../index"
+import { Card } from "../card"
 
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -31,10 +31,10 @@ const Section = styled.section`
 const Cards = styled.div`
   display: flex;
   justify-content: space-evenly;
-  flex-grow:1;
+  flex-grow: 1;
 `
 
-export const Services = () => {
+export const ServicesSection = () => {
   return (
     <Section className="services-section">
       <h1>Our services</h1>
@@ -57,6 +57,7 @@ export const Services = () => {
             "VisualLanguage & Art",
             "Direction",
           ]}
+          linkColor="var(--yellow)"
         />
 
         <Card
@@ -75,6 +76,7 @@ export const Services = () => {
               height={200}
             />
           }
+          linkColor="var(--yellow)"
         />
 
         <Card
@@ -94,6 +96,7 @@ export const Services = () => {
               height={200}
             />
           }
+          linkColor="var(--yellow)"
         />
       </Cards>
     </Section>

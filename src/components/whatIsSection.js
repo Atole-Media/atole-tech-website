@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { LinkButton } from "../index"
+import { LinkButton } from "./index"
 
 const Section = styled.section`
   width: 100%;
@@ -34,7 +34,7 @@ const Buttons = styled.div`
   margin: 5rem auto 0 auto;
   width: 80%;
 `
-export const WhatIs = () => (
+export const WhatIsSection = () => (
   <Section className="whatIs-section">
     <h1>
       What is
@@ -49,10 +49,10 @@ export const WhatIs = () => (
       dream of, then you are in the right place.
     </p>
     <Buttons>
-      <LinkButton to="/404" color="var(--purple)" border="var(--olive)">
+      <LinkButton to="/404" border="var(--olive)">
         Learn More
       </LinkButton>
-      <LinkButton to="/404" color="var(--olive)">
+      <LinkButton to="/404" background="var(--olive)">
         Contact Us
       </LinkButton>
     </Buttons>

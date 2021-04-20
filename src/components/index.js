@@ -1,19 +1,21 @@
-import { WhatIs } from "../components/indexComps/whatIs"
-import { LinkButton } from "../components/indexComps/linkButton"
-import { MainHeader } from "./indexComps/mainHeader"
+import { WhatIsSection } from "../components/whatIsSection"
+import { LinkButton } from "../components/linkButton"
+import { MainHeader } from "./mainHeader"
 import { Navbar } from "./navbar/navbar"
-import { Card } from "./indexComps/card"
-import { Services } from "./indexComps/services"
-import { ServiceGrid } from "./indexComps/serviceGrid"
-import { ServiceCard } from "./indexComps/serviceCard"
+import { Card } from "./card"
+import { ServicesSection } from "./servicesSection/servicesSection"
+import { ServiceGrid } from "./servicesSection/serviceGrid"
+import { ServiceCard } from "./servicesSection/serviceCard"
+import { GetStartedSection } from "./getStartedSection"
 
 export {
   MainHeader,
-  WhatIs,
+  WhatIsSection,
   LinkButton,
   Navbar,
   Card,
-  Services,
+  ServicesSection,
   ServiceGrid,
   ServiceCard,
+  GetStartedSection,
 }

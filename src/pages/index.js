@@ -3,10 +3,11 @@ import * as React from "react"
 // import { Link } from "gatsby"
 import {
   MainHeader,
-  WhatIs,
-  Services,
+  WhatIsSection,
+  ServicesSection,
   ServiceGrid,
   ServiceCard,
+  GetStartedSection,
 } from "../components/index"
 
 import Layout from "../components/layout"
@@ -15,8 +16,8 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <MainHeader />
-    <WhatIs />
-    <Services />
+    <WhatIsSection />
+    <ServicesSection />
     <ServiceGrid>
       <ServiceCard title="Brand Design">
         <p>
@@ -79,6 +80,7 @@ const IndexPage = () => (
         <StaticImage src="../images/code2.png" alt="document" width={250} />
       </ServiceCard>
     </ServiceGrid>
+    <GetStartedSection />
     <Seo title="Home" />
   </Layout>
 )

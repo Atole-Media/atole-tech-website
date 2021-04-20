@@ -8,7 +8,7 @@ const Wrapper = styled.header`
   width: 100vw;
   /* overflow: hidden; */
   top: 0;
-  z-index:-1;
+  z-index: -1;
 
   h2 {
     color: white;
