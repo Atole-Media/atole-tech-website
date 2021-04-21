@@ -12,6 +12,8 @@ const Button = styled(Link)`
   text-transform: uppercase;
   background-color: ${({ background }) => background};
   color: ${({ color }) => color};
+  display: block;
+  margin: 0 auto;
 `
 
 export const LinkButton = ({

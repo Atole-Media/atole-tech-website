@@ -6,7 +6,7 @@ import { Card } from "./card"
 import { ServicesSection } from "./servicesSection/servicesSection"
 import { ServiceGrid } from "./servicesSection/serviceGrid"
 import { ServiceCard } from "./servicesSection/serviceCard"
-import { GetStartedSection } from "./getStartedSection"
+import { Sections } from "./Sections"
 
 export {
   MainHeader,
@@ -17,5 +17,5 @@ export {
   ServicesSection,
   ServiceGrid,
   ServiceCard,
-  GetStartedSection,
+  Sections,
 }

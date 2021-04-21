@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { LinkButton } from "./index"
 
 const CardWrapper = styled.div`
-  width: 20%;
+  width: ${({ size }) => (size === "wide" ? "45%" : "20%")};
 `
 const ContentWrapper = styled.div`
   background-color: ${({ background }) =>
@@ -14,6 +14,7 @@ const ContentWrapper = styled.div`
   justify-content: space-between;
   min-height: 60%;
   color: white;
+  text-align: center;
 
   h2 {
     color: var(--yellow);
@@ -31,6 +32,11 @@ const ContentWrapper = styled.div`
       text-align: left;
     }
   }
+  p {
+    text-align: left;
+    width: 80%;
+    margin: 2rem auto;
+  }
 `
 
 export const Card = ({
@@ -41,6 +47,8 @@ export const Card = ({
   to,
   linkColor,
   linkBackground,
+  size,
+  link,
 }) => {
   const features = content => {
     if (typeof content === "object") {
@@ -56,12 +64,14 @@ export const Card = ({
     }
   }
   return (
-    <CardWrapper className="card" background={background}>
+    <CardWrapper className="card" size={size}>
       {image}
-      <ContentWrapper>
+      <ContentWrapper background={background}>
         <h2>{title}</h2>
         {features(content)}
-        <LinkButton color={linkColor} linkBackground={linkBackground} />
+        <LinkButton color={linkColor} background={linkBackground} to={to}>
+          {link}
+        </LinkButton>
       </ContentWrapper>
     </CardWrapper>
   )
