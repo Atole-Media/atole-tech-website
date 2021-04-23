@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import { GetStartedSection } from "../components/getStartedSection"
 // import { Link } from "gatsby"
 import {
   MainHeader,
@@ -7,8 +8,6 @@ import {
   ServicesSection,
   ServiceGrid,
   ServiceCard,
-  Sections,
-  Card,
 } from "../components/index"
 
 import Layout from "../components/layout"
@@ -77,35 +76,9 @@ const IndexPage = () => (
           dolorum ipsum rem.
         </p>
       </ServiceCard>
-      <ServiceCard image={true}>
-        <StaticImage src="../images/code2.png" alt="document" width={250} />
-      </ServiceCard>
+      <StaticImage src="../images/code2.png" alt="document" width={250} />
     </ServiceGrid>
-    <Sections>
-      <StaticImage src="../images/lines.png" alt="lines" />
-    </Sections>
-    <Sections>
-      <Card
-        title="Get Started"
-        background="black"
-        size="wide"
-        link="take Quiz Now"
-        linkBackground="var(--olive)"
-        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed reprehenderit libero. Esse labore tempora reprehenderit temporibus aut alias harum aperiam in eveniet, voluptates amet cum vero, minima atque doloribus. Molestiae quae doloremque exercitationem cum at vel dolorum ipsum rem."
-      />
-      <Card
-        title="More Questions?"
-        background="black"
-        size="wide"
-        link="Ask Away!"
-        linkBackground="var(--olive)"
-        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed reprehenderit libero. Esse labore tempora reprehenderit temporibus aut alias harum aperiam in eveniet, voluptates amet cum vero, minima atque doloribus. Molestiae quae doloremque exercitationem cum at vel dolorum ipsum rem."
-      />
-    </Sections>
-    <Sections>
-      <StaticImage src="../images/lines.png" alt="lines" />
-    </Sections>
-
+    <GetStartedSection />
     <Seo title="Home" />
   </Layout>
 )

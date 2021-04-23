@@ -4,6 +4,12 @@ import { LinkButton } from "./index"
 
 const CardWrapper = styled.div`
   width: ${({ size }) => (size === "wide" ? "45%" : "20%")};
+  @media (max-width: 1024px) {
+    width: ${({ size }) => (size === "wide" ? "45%" : "30%")};
+  }
+  @media (max-width: 512px) {
+    width: 90%;
+  }
 `
 const ContentWrapper = styled.div`
   background-color: ${({ background }) =>

@@ -5,11 +5,7 @@ import { LinkButton } from "./index"
 const Section = styled.section`
   width: 100%;
   height: 100vh;
-  /* position: relative;
-  top: 100vh; */
-  margin: 0 auto;
-  z-index: 10;
-  margin-top: 100vh;
+  margin: 1rem auto;
   background-color: var(--purple);
   h1 {
     text-transform: uppercase;
@@ -23,9 +19,24 @@ const Section = styled.section`
   }
   p {
     color: var(--textColor);
-    margin: 0 auto;
-    width: var(--maxContent);
+    margin: 0 2rem;
     font-size: 2.25rem;
+  }
+  @media (max-width: 1024px) {
+    h1 {
+      margin: 0 7rem;
+      padding: 0;
+    }
+  }
+  @media (max-width: 512px) {
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    p {
+      margin: 0;
+      font-size: 1rem;
+    }
   }
 `
 const Buttons = styled.div`

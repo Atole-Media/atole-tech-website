@@ -13,25 +13,34 @@ const Section = styled.section`
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
+
   h1 {
-    padding: 2rem 0;
     margin: 0 auto;
     font-size: 2.5rem;
     text-transform: uppercase;
     width: 40%;
   }
   hr {
-    margin: 0 auto;
+    margin: 2rem auto;
     height: 5px;
     background-color: var(--yellow);
     border: none;
     width: 15rem;
+  }
+  @media (max-width: 1024px) {
+    h1 {
+      width: 60%;
+    }
   }
 `
 const Cards = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-grow: 1;
+  @media (max-width: 512px) {
+    width: 90%;
+    flex-wrap: wrap;
+  }
 `
 
 export const ServicesSection = () => {

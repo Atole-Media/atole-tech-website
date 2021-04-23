@@ -25,13 +25,15 @@ const GlobalStyle = createGlobalStyle`
     --textColor: #E2E3ED;
     --tablet: 768px;
     --yellow: #E8CB51;
-
     --maxContent:1080px;
     font-family: sans-serif;
+    background-color: #1A042B;
   }
 `
 
-const Main = styled.main``
+const Main = styled.main`
+  
+`
 
 const Layout = ({ children }) => {
   return (

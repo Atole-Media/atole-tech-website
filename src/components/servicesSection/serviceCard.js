@@ -20,6 +20,12 @@ const Wrapper = styled.div`
     width: 60%;
     line-height: 1.5rem;
   }
+  @media (max-width: 1024px) {
+    p {
+      width: 90%;
+    }
+  }
+
 `
 
 export const ServiceCard = ({ children, title, image }) => (

@@ -14,6 +14,9 @@ const Button = styled(Link)`
   color: ${({ color }) => color};
   display: block;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const LinkButton = ({

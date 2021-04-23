@@ -9,6 +9,7 @@ const Grid = styled.div`
   gap: 2rem;
   align-items: stretch;
   justify-items: center;
+  background-color: var(--purple);
 `
 
 export const ServiceGrid = ({ children }) => (
