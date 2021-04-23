@@ -33,7 +33,7 @@ const StyledBurger = styled.button`
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: .4rem;
+    transform-origin: .3rem;
     
   }
   #one {
