@@ -17,10 +17,8 @@ const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (!open ? "translateX(100vw)" : "translateX(0)")};
 
-  /* @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 100%;
-  } */
-  @media (max-width: 430px) {
+ 
+  @media (max-width: 512px) {
     padding: 0 3rem;
   }
 `

@@ -3,10 +3,9 @@ import styled from "styled-components"
 import { Card } from "../card"
 
 import { StaticImage } from "gatsby-plugin-image"
+import { Sections } from "../Sections"
 
-const Section = styled.section`
-  height: 100vh;
-  width: 100%;
+const Section = styled(Sections)`
   color: white;
   text-align: center;
   background-color: var(--purple);
@@ -38,8 +37,8 @@ const Cards = styled.div`
   justify-content: space-evenly;
   flex-grow: 1;
   @media (max-width: 512px) {
-    width: 90%;
     flex-wrap: wrap;
+    
   }
 `
 

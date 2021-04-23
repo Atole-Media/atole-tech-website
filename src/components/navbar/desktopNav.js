@@ -10,7 +10,7 @@ const Wrapper = styled.ul`
   #work {
     display: none;
   }
-  @media (max-width: 430px) {
+  @media (max-width: 512px) {
     display: none;
   }
 `

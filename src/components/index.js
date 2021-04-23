@@ -4,7 +4,6 @@ import { MainHeader } from "./mainHeader"
 import { Navbar } from "./navbar/navbar"
 import { Card } from "./card"
 import { ServicesSection } from "./servicesSection/servicesSection"
-import { ServiceGrid } from "./servicesSection/serviceGrid"
 import { ServiceCard } from "./servicesSection/serviceCard"
 import { Sections } from "./Sections"
 
@@ -15,7 +14,6 @@ export {
   Navbar,
   Card,
   ServicesSection,
-  ServiceGrid,
   ServiceCard,
   Sections,
 }

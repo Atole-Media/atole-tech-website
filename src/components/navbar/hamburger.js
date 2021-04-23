@@ -13,10 +13,8 @@ const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   z-index: 10;
-  @media (max-width: 430px) {
+  @media (max-width: 512px) {
     display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
   }
   /* @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 2.5rem;
@@ -29,17 +27,14 @@ const StyledBurger = styled.button`
   }
 
   div {
-    width: 4rem;
+    width: 3rem;
     height: 0.3rem;
     background: yellow;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
-    @media (max-width: 430px) {
-      width: 2.5rem;
-      height: 0.25rem;
-    }
+    transform-origin: .4rem;
+    
   }
   #one {
     transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

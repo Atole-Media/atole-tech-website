@@ -1,12 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { LinkButton } from "./index"
-
-const Section = styled.section`
-  width: 100%;
-  height: 100vh;
+import { Sections } from "./Sections"
+const Section = styled(Sections)`
   margin: 1rem auto;
   background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   h1 {
     text-transform: uppercase;
     color: white;

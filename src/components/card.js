@@ -8,7 +8,8 @@ const CardWrapper = styled.div`
     width: ${({ size }) => (size === "wide" ? "45%" : "30%")};
   }
   @media (max-width: 512px) {
-    width: 90%;
+    width: 80%;
+    margin: 2rem 0;
   }
 `
 const ContentWrapper = styled.div`
@@ -42,6 +43,12 @@ const ContentWrapper = styled.div`
     text-align: left;
     width: 80%;
     margin: 2rem auto;
+  }
+  @media (max-width: 512px) {
+    padding: 1.5rem 0;
+    p {
+      width: 100%;
+    }
   }
 `
 

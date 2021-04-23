@@ -14,8 +14,12 @@ const Button = styled(Link)`
   color: ${({ color }) => color};
   display: block;
   margin: 0 auto;
+  text-align: center;
   @media (max-width: 768px) {
     font-size: 1.5rem;
+  }
+  @media (max-width: 512px) {
+    font-size: 1rem;
   }
 `
 
