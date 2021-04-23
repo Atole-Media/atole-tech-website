@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import { LinkButton } from "./index"
-import { Sections } from "./Sections"
+
+import { LinkButton } from "../linkButton"
+import { Sections } from "../sections"
+
 const Section = styled(Sections)`
   margin: 1rem auto;
   background-color: var(--purple);

@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { Card } from "../card"
-
 import { StaticImage } from "gatsby-plugin-image"
-import { Sections } from "../Sections"
+
+import { Card } from "../../card"
+import { Sections } from "../../sections"
+
 
 const Section = styled(Sections)`
   color: white;

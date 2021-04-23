@@ -1,18 +1,15 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { GetStartedSection } from "../components/getStartedSection"
-// import { Link } from "gatsby"
-import {
-  MainHeader,
-  WhatIsSection,
-  ServicesSection,
-  ServiceCard,
-  Sections,
-} from "../components/index"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { TwoColumnGrid } from "../components/servicesSection/twoColumnGrid"
+
+import { GetStartedSection } from "../components/indexPage/getStartedSection"
+import { MainHeader } from "../components/indexPage/mainHeader"
+import { WhatIsSection } from "../components/indexPage/whatIsSection"
+import { ServicesSection } from "../components/indexPage/serviceGrid/servicesSection"
+import { Sections } from "../components/sections"
+import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
+import { TwoColumnGrid } from "../components/twoColumnGrid"
 
 const IndexPage = () => (
   <Layout>

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { LinkButton } from "./index"
+import { LinkButton } from "./linkButton"
 
 const CardWrapper = styled.div`
   width: ${({ size }) => (size === "wide" ? "45%" : "20%")};

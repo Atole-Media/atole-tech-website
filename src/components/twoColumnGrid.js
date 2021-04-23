@@ -6,8 +6,6 @@ export const TwoColumnGrid = styled.div`
   background-color: black;
   margin: 0 auto;
   gap: 2rem;
-  /* align-items: stretch; */
-  /* justify-items: center; */
   background-color: var(--purple);
   @media (max-width: 512px) {
     grid-template-columns: 1fr;

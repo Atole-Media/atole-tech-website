@@ -2,7 +2,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
-import { Navbar } from "./index"
+
+import { Navbar } from "./navbar/navbar"
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -31,9 +32,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Main = styled.main`
-  
-`
+const Main = styled.main``
 
 const Layout = ({ children }) => {
   return (

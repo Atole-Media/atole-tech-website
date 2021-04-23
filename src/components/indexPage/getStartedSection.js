@@ -1,7 +1,9 @@
 import React from "react"
-import { Sections, Card } from "../components/index"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+
+import { Sections } from "../sections"
+import { Card } from "../card"
 
 const StyledSection = styled(Sections)`
   display: flex;
