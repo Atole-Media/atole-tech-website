@@ -1,12 +1,11 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
-const Wrapper = styled.header`
+const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
-  overflow: visible;
-  
+  /* overflow: visible; */
+
   h2 {
     color: white;
     position: absolute;
@@ -14,6 +13,7 @@ const Wrapper = styled.header`
     font-size: 5rem;
     left: 10vw;
     display: block;
+    text-transform: uppercase;
   }
   @media (max-width: 1024px) {
     h2 {
@@ -41,20 +41,10 @@ const Wrapper = styled.header`
   }
 `
 
-export const MainHeader = () => (
-  <Wrapper className="HeroImage">
-    <StaticImage
-      src="../../images/hero.jpg"
-      alt="Hero splash!"
-      loading="eager"
-      layout="fullWidth"
-      style={{
-        height: "100vh",
-      }}
-    />
+export const Header = ({ image, title, className }) => (
+  <Wrapper className={className}>
+    {image}
 
-    <h2>
-      Take a sip of creativity <br /> and let's do magic!
-    </h2>
+    {title}
   </Wrapper>
 )

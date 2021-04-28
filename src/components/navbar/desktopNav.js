@@ -18,7 +18,7 @@ const Wrapper = styled.ul`
 export const DesktopNav = () => (
   <Wrapper className="desktop-nav">
     <li>
-      <Link>About</Link>
+      <Link to="/aboutPage">About</Link>
     </li>
     <li>
       <Link>Services</Link>

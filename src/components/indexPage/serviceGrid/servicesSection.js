@@ -67,6 +67,7 @@ export const ServicesSection = () => {
             "Direction",
           ]}
           linkColor="var(--yellow)"
+          background="var(--lightPurple)"
         />
 
         <Card
@@ -86,6 +87,7 @@ export const ServicesSection = () => {
             />
           }
           linkColor="var(--yellow)"
+          background="var(--lightPurple)"
         />
 
         <Card
@@ -106,6 +108,7 @@ export const ServicesSection = () => {
             />
           }
           linkColor="var(--yellow)"
+          background="var(--lightPurple)"
         />
       </Cards>
     </Section>

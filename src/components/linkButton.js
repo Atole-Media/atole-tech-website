@@ -12,9 +12,9 @@ const Button = styled(Link)`
   text-transform: uppercase;
   background-color: ${({ background }) => background};
   color: ${({ color }) => color};
-  display: block;
   margin: 0 auto;
   text-align: center;
+  display: ${({ display }) => (display === "none" ? "none" : "inline-block")};
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
@@ -29,8 +29,15 @@ export const LinkButton = ({
   color = "var(--textColor)",
   border,
   background,
+  display,
 }) => (
-  <Button to={to} color={color} border={border} background={background}>
+  <Button
+    to={to}
+    color={color}
+    border={border}
+    background={background}
+    display={display}
+  >
     {children}
   </Button>
 )

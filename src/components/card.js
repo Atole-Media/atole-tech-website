@@ -3,6 +3,9 @@ import styled from "styled-components"
 import { LinkButton } from "./linkButton"
 
 const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: ${({ size }) => (size === "wide" ? "45%" : "20%")};
   @media (max-width: 1024px) {
     width: ${({ size }) => (size === "wide" ? "45%" : "30%")};
@@ -14,7 +17,7 @@ const CardWrapper = styled.div`
 `
 const ContentWrapper = styled.div`
   background-color: ${({ background }) =>
-    background ? background : "var(--lightPurple)"};
+    background ? background : "var(--purple)"};
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -62,6 +65,7 @@ export const Card = ({
   linkBackground,
   size,
   link,
+  displayLink,
 }) => {
   const features = content => {
     if (typeof content === "object") {
@@ -73,7 +77,7 @@ export const Card = ({
         </ul>
       )
     } else {
-      return <p>{content}</p>
+      return content.split("/n").map((item, i) => <p key={i}>{item}</p>)
     }
   }
   return (
@@ -81,8 +85,13 @@ export const Card = ({
       {image}
       <ContentWrapper background={background}>
         <h2>{title}</h2>
-        {features(content)}
-        <LinkButton color={linkColor} background={linkBackground} to={to}>
+        <div>{features(content)}</div>
+        <LinkButton
+          color={linkColor}
+          background={linkBackground}
+          display={displayLink}
+          to={to}
+        >
           {link}
         </LinkButton>
       </ContentWrapper>

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import { GetStartedSection } from "../components/indexPage/getStartedSection"
-import { MainHeader } from "../components/indexPage/mainHeader"
+import { Header } from "../components/header"
 import { WhatIsSection } from "../components/indexPage/whatIsSection"
 import { ServicesSection } from "../components/indexPage/serviceGrid/servicesSection"
 import { Sections } from "../components/sections"
@@ -13,7 +13,24 @@ import { TwoColumnGrid } from "../components/twoColumnGrid"
 
 const IndexPage = () => (
   <Layout>
-    <MainHeader />
+    <Header
+      image={
+        <StaticImage
+          src="../../images/hero.jpg"
+          alt="Hero splash!"
+          loading="eager"
+          layout="fullWidth"
+          style={{
+            height: "100vh",
+          }}
+        />
+      }
+      title={
+        <h2>
+          Take a sip of creativity <br /> and let's do magic!
+        </h2>
+      }
+    />
     <WhatIsSection />
     <ServicesSection />
     <Sections>
