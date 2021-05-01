@@ -10,6 +10,7 @@ import { Card } from "../components/card"
 import { TitleLink } from "../components/aboutPage/titleLink"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
 import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
+import { Story } from "../components/story"
 
 const AboutHeader = styled(Header)`
   h2 {
@@ -19,19 +20,7 @@ const AboutHeader = styled(Header)`
     right: 0;
   }
 `
-const Story = styled(Sections)`
-  h2 {
-    text-align: center;
-    color: var(--orange);
-  }
-  p {
-    color: var(--red);
-    padding: 0 5rem;
-  }
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-`
+
 const Creators = styled(Sections)`
   h2 {
     color: var(--red);

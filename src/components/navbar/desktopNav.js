@@ -24,7 +24,7 @@ export const DesktopNav = () => (
       <Link>Services</Link>
     </li>
     <li>
-      <Link>FAQ</Link>
+      <Link to="/questionsPage">FAQ</Link>
     </li>
     <li>
       <Link>Contact</Link>
