@@ -5,7 +5,7 @@ const StyledForm = styled.form`
   height: auto;
   margin: 0 auto;
   width: 33%;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   border: 3px solid var(--orange);
   border-radius: 15px;

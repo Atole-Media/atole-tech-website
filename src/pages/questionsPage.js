@@ -164,12 +164,7 @@ const FrequentlyAskedQuestions = () => {
         <StaticImage
           src="../images/contact/dots.png"
           alt="dots"
-          style={{
-            height: "50vh",
-            display: "flex",
-            flexDirection: "column",
-            // justifyContent: "center"
-          }}
+          
         />
         <Info>
           <h3>Atole's Location</h3>

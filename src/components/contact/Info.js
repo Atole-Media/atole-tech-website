@@ -7,6 +7,7 @@ export const Info = styled.div`
   color: var(--orange);
   text-align: center;
   justify-content: space-evenly;
+  height: 80vh;
   h3 {
     text-transform: uppercase;
   }
