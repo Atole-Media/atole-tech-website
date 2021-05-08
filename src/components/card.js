@@ -59,7 +59,7 @@ const ContentWrapper = styled.div`
     }
   }
   @media (max-width: 512px) {
-    padding: 0 ;
+    padding: 0;
     margin: 0 auto;
     p {
       padding: 0;

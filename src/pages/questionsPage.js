@@ -6,8 +6,6 @@ import styled from "styled-components"
 import { Header } from "../components/header"
 import { StaticImage } from "gatsby-plugin-image"
 import { Sections } from "../components/sections"
-import { Card } from "../components/card"
-import { TitleLink } from "../components/aboutPage/titleLink"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
 import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
 import { Story } from "../components/story"
@@ -161,11 +159,7 @@ const FrequentlyAskedQuestions = () => {
       </Story>
       <ContactSection display="flex">
         <ContactForm />
-        <StaticImage
-          src="../images/contact/dots.png"
-          alt="dots"
-          
-        />
+        <StaticImage src="../images/contact/dots.png" alt="dots" />
         <Info>
           <h3>Atole's Location</h3>
           <p>Located in the great city of New York</p>

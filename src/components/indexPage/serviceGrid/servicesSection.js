@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Card } from "../../card"
 import { Sections } from "../../sections"
 
-
 const Section = styled(Sections)`
   color: white;
   text-align: center;
@@ -37,9 +36,11 @@ const Cards = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-grow: 1;
+  width: 100%;
+  align-items: center;
+
   @media (max-width: 512px) {
     flex-wrap: wrap;
-    
   }
 `
 

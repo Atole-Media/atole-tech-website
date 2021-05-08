@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Sections } from "../components/sections"
+import { Sections } from "./sections"
 
 export const Story = styled(Sections)`
   padding: 0;
