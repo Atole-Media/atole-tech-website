@@ -25,7 +25,7 @@ const Wrapper = styled.div`
       width: 90%;
     }
   }
-
+  
 `
 
 export const ServiceCard = ({ children, title, image }) => (

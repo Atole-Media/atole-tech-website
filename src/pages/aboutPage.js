@@ -19,9 +19,17 @@ const AboutHeader = styled(Header)`
     left: 0;
     right: 0;
   }
+  @media (max-width: 512px) {
+    h2 {
+      font-size: 4rem;
+    }
+  }
 `
 
 const Creators = styled(Sections)`
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem;
   h2 {
     color: var(--red);
     text-transform: uppercase;
@@ -67,7 +75,8 @@ const AboutPage = () => {
         <StaticImage
           src="../images/about/michael-dziedzic-qDG7XKJLKbs-unsplash.svg"
           alt="globe"
-          width={2000}
+          height={1000}
+          width={3000}
         />
         <TitleLink
           title="Don't know where to start?"
@@ -81,18 +90,27 @@ const AboutPage = () => {
         <p>
           Atole Tech surged during the COVID pandemic. This  historic event 
           shifted the world  from a physical to a digital one.  The world 
-          didn’t “stop”, but evolved.  <br />
-          The world is  entering to a new technological era in which our
-          presence is being reflected in the internet. Having a virtual presence
-          is fundamental in our time. The world is full of dreamers who need to 
-          display their services in a tangible, yet technological way.   The
-          truth is that while the world is slowly recuperating,  remote jobs and
-          online services are going to stay and flourish.  Making E-commerce the
-          future!! which means you can sell anything you aspire to create!
+          didn’t “stop”, but evolved.  The world is  entering to a new
+          technological era in which our presence is being reflected in the
+          internet.{" "}
+        </p>
+        <p>
+          <br />
+          Having a virtual presence is fundamental in our time. The world is
+          full of dreamers who need to  display their services in a tangible,
+          yet technological way.    The truth is that while the world is slowly
+          recuperating,  remote jobs and online services are going to stay and
+          flourish.  Making E-commerce the future!! which means you can sell
+          anything you aspire to create!
         </p>
       </Story>
       <Sections display="flex" size="wide">
-        <StaticImage src="../images/about/ball2.svg" alt="globe2" />
+        <StaticImage
+          src="../images/about/ball2.svg"
+          alt="globe2"
+          height={1000}
+          width={3000}
+        />
         <TitleLink
           title="Have a project in mind?"
           link="Check our services"
@@ -142,7 +160,12 @@ const AboutPage = () => {
       </Creators>
 
       <Sections display="flex" size="wide">
-        <StaticImage src="../images/about/ball2.svg" alt="globe2" />
+        <StaticImage
+          src="../images/about/ball2.svg"
+          alt="globe2"
+          height={1000}
+          width={3000}
+        />
         <TitleLink
           title="TAKE A SIP OF ATOLE LETS DO MAGIC!"
           link="Contact us"

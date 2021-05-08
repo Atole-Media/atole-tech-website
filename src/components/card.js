@@ -7,8 +7,13 @@ const CardWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   width: ${({ size }) => (size === "wide" ? "45%" : "20%")};
+
   @media (max-width: 1024px) {
     width: ${({ size }) => (size === "wide" ? "45%" : "30%")};
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
   }
   @media (max-width: 512px) {
     width: 80%;
@@ -18,7 +23,6 @@ const CardWrapper = styled.div`
 const ContentWrapper = styled.div`
   background-color: ${({ background }) =>
     background ? background : "var(--purple)"};
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,6 +34,7 @@ const ContentWrapper = styled.div`
     color: var(--yellow);
     text-transform: uppercase;
     min-height: 10%;
+    font-size: 2rem;
   }
   ul {
     display: flex;
@@ -45,12 +50,19 @@ const ContentWrapper = styled.div`
   p {
     text-align: left;
     width: 80%;
-    margin: 2rem auto;
+    margin: 2rem auto 0 auto;
   }
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     padding: 1.5rem 0;
     p {
       width: 100%;
+    }
+  }
+  @media (max-width: 512px) {
+    padding: 0 ;
+    margin: 0 auto;
+    p {
+      padding: 0;
     }
   }
 `

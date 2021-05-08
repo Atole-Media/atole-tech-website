@@ -4,18 +4,29 @@ import { LinkButton } from "../linkButton"
 
 const Wrapper = styled.div`
   position: absolute;
-  ${({ position }) => (position === "right" ? "right: 10vw" : null)}
-  ${({ position }) => (position === "left" ? "left: 10%" : null)};
+  ${({ position }) => (position === "right" ? "left: 5vw" : null)}
+  ${({ position }) => (position === "left" ? "right: 5vw" : null)};
   top: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   h3 {
     color: var(--orange);
     font-size: 3rem;
-    width: 80vw;
     margin-bottom: 5rem;
     text-align: center;
+  }
+  @media (max-width: 768px) {
+    ${({ position }) => (position === "right" ? "left: 0" : null)};
+    ${({ position }) => (position === "left" ? "right: 0" : null)};
+    top: 15%;
+  }
+  @media (max-width: 512px) {
+    right: 0;
+    left: 0;
+    h3 {
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
   }
 `
 
