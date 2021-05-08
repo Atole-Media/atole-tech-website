@@ -13,12 +13,15 @@ import { ContactForm } from "../components/contact/ContactForm"
 import { Info } from "../components/contact/Info"
 
 const FaqHeader = styled(Header)`
+  h1 {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
   h2 {
-    top: 50vh;
     text-align: center;
     left: 0;
     right: 0;
-    color: var(--orange);
   }
 `
 const Questions = styled(Sections)`
@@ -40,10 +43,10 @@ const FrequentlyAskedQuestions = () => {
     <Layout>
       <FaqHeader
         title={
-          <h2>
-            atole tech <br />
-            Faq and contact
-          </h2>
+          <>
+            <h1>atole tech</h1>
+            <h2>Faq and contact</h2>
+          </>
         }
         image={
           <StaticImage

@@ -5,15 +5,24 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
   /* overflow: visible; */
+  text-transform: uppercase;
 
+  h1 {
+    color: var(--orange);
+    position: absolute;
+    top: 40%;
+    left: 10vw;
+    font-size: 5rem;
+    margin: 1rem 0;
+  }
   h2 {
     color: white;
     position: absolute;
     top: 60vh;
-    font-size: 5rem;
+    font-size: 3rem;
     left: 10vw;
     display: block;
-    text-transform: uppercase;
+    margin: 1rem 0;
   }
   @media (max-width: 1024px) {
     h2 {

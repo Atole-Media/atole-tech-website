@@ -21,7 +21,7 @@ export const DesktopNav = () => (
       <Link to="/aboutPage">About</Link>
     </li>
     <li>
-      <Link>Services</Link>
+      <Link to="/servicesPage">Services</Link>
     </li>
     <li>
       <Link to="/questionsPage">FAQ</Link>

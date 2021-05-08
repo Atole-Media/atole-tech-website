@@ -26,9 +26,10 @@ const IndexPage = () => (
         />
       }
       title={
-        <h2>
-          Take a sip of creativity <br /> and let's do magic!
-        </h2>
+        <>
+          <h1>Take a sip of creativity </h1>
+          <h2>and let's do magic!</h2>
+        </>
       }
     />
     <WhatIsSection />

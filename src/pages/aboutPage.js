@@ -13,8 +13,8 @@ import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
 import { Story } from "../components/story"
 
 const AboutHeader = styled(Header)`
+  h1,
   h2 {
-    top: 50vh;
     text-align: center;
     left: 0;
     right: 0;
@@ -42,10 +42,10 @@ const AboutPage = () => {
     <Layout>
       <AboutHeader
         title={
-          <h2>
-            atole tech <br />
-            about
-          </h2>
+          <>
+            <h1>atole tech </h1>
+            <h2>about</h2>
+          </>
         }
         image={
           <StaticImage
