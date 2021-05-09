@@ -13,7 +13,7 @@ const Button = styled(Link)`
   background-color: ${({ background }) => background};
   color: ${({ color }) => color};
   text-align: center;
-  display: ${({ display }) => (display === "none" ? "none" : "inline-block")};
+  display: ${({ display }) => (display === "none" ? "none" : "inline")};
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }

@@ -17,7 +17,7 @@ const CardWrapper = styled.div`
   justify-content: space-evenly;
   position: absolute;
   top: 30%;
-  width: 100%;
+  width: 80%;
 `
 const Card = styled(NewCard)`
   color: #29cccb;
@@ -27,6 +27,7 @@ const Card = styled(NewCard)`
   }
   ul {
     margin: 1.5rem 0;
+    width: 80%;
   }
 `
 
@@ -35,6 +36,7 @@ export const VennDiagram = () => (
     <StaticImage
       src="../../images/services/VennDiagram.png"
       alt="venn diagram"
+      height={800}
     />
     <CardWrapper>
       <Card>

@@ -29,7 +29,9 @@ const ImageCard = styled(NewCard)`
     color: var(--lightPurple);
   }
 `
-
+const Button = styled(LinkButton)`
+  width: fit-content;
+`
 export const ChoicesSection = () => (
   <SectionWrapper className="section--choices" display="flex">
     <ImageCard className="left">
@@ -46,7 +48,7 @@ export const ChoicesSection = () => (
         By hiring a proffesional you’ll get consultation and guide to make
         things happen.
       </p>
-      <LinkButton background="var(--orange)">Learn More</LinkButton>
+      <Button background="var(--orange)">Learn More</Button>
     </ImageCard>
     <ImageCard className="right">
       <p className="top-text purple">
@@ -62,7 +64,7 @@ export const ChoicesSection = () => (
         We have templates that can help you to start your business right away.
         things happen.
       </p>
-      <LinkButton background="var(--orange)">Go to store</LinkButton>
+      <Button background="var(--orange)">Go to store</Button>
     </ImageCard>
   </SectionWrapper>
 )
