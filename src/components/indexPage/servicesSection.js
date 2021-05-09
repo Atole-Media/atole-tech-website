@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
-
-import { Card } from "../../card"
-import { Sections } from "../../sections"
+import { NewCard } from "../NewCard"
+import { Sections } from "../sections"
 
 const Section = styled(Sections)`
   color: white;
@@ -14,18 +13,11 @@ const Section = styled(Sections)`
   flex-direction: column;
 
   h1 {
-    margin: 0 auto;
     font-size: 2.5rem;
     text-transform: uppercase;
     width: 40%;
   }
-  hr {
-    margin: 2rem auto;
-    height: 5px;
-    background-color: var(--yellow);
-    border: none;
-    width: 15rem;
-  }
+
   @media (max-width: 1024px) {
     h1 {
       width: 60%;
@@ -38,19 +30,56 @@ const Cards = styled.div`
   flex-grow: 1;
   width: 100%;
   align-items: center;
+  margin: 1.5rem 0;
 
   @media (max-width: 512px) {
     flex-wrap: wrap;
   }
 `
+const Card = styled(NewCard)`
+  width: 30%;
+  box-shadow: 0 1px 3px #edabf5, 0 1px 2px #edabf5;
+  transition: 0.2s all ease-out;
+  &:hover {
+    box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
+  }
+  &.small {
+    height: 30vh;
+  }
+  &.big {
+    height: 40vh;
+  }
+
+  p {
+    text-align: left;
+  }
+`
 
 export const ServicesSection = () => {
   return (
-    <Section className="services-section">
+    <Section className="services-section ">
       <h1>Our services</h1>
-      <hr />
+      <p>
+        We provide three paths that suits your business according to your
+        budget.
+      </p>
       <Cards>
-        <Card
+        <Card className="small left">
+          <h2>LEARN</h2>
+          <p>GET INSPIRED BY OUR COURSES COMING SOON</p>
+        </Card>
+        <Card className="big center">
+          <h2>HIRE</h2>
+          <p>
+            YOU DON’T HAVE TIME OR ENERGY AND YOU DON’T WANT TO WORRY ABOUT
+            ANYTHING HIRE OUR.TEAM!
+          </p>
+        </Card>
+        <Card className="small right">
+          <h2>SHOP</h2>
+          <p>BUY SOME OF OUR DIGITAL PRODUCTS TO MAKE YOUR LIFE EASIER.</p>
+        </Card>
+        {/* <Card
           title="Brand Design"
           image={
             <StaticImage
@@ -110,7 +139,7 @@ export const ServicesSection = () => {
           }
           linkColor="var(--yellow)"
           background="var(--lightPurple)"
-        />
+        /> */}
       </Cards>
     </Section>
   )

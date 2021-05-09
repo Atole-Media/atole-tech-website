@@ -7,14 +7,12 @@ import { Sections } from "../sections"
 const Section = styled(Sections)`
   margin: 1rem auto;
   background-color: var(--purple);
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   h1 {
     text-transform: uppercase;
-    color: white;
+    color: var(--lightPurple);
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
     font-size: 4rem;
     span {
       color: var(--pink);
@@ -42,18 +40,20 @@ const Section = styled(Sections)`
     }
   }
 `
-const Buttons = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+const Button = styled(LinkButton)`
+  font-size: 2.5rem;
+  border-color: var(--orange);
+  border-width: 0;
+  border-bottom-width: 5px;
+  border-radius: 0;
+  padding: 0 0 1rem 0;
+
   margin: 5rem auto 0 auto;
-  width: 80%;
 `
+
 export const WhatIsSection = () => (
-  <Section className="whatIs-section">
-    <h1>
-      What is
-      <span> Atole Tech?</span>
-    </h1>
+  <Section className="whatIs-section" display="flex">
+    <h1>Welcome to Atole</h1>
     <p>
       Atole Tech is a digital company offering e-commerce and designs for
       creative entrepreneurs to increase their digital presence and expand their
@@ -62,13 +62,8 @@ export const WhatIsSection = () => (
       elevate your business, attract high-end clients all while making what you
       dream of, then you are in the right place.
     </p>
-    <Buttons>
-      <LinkButton to="/404" border="var(--olive)">
-        Learn More
-      </LinkButton>
-      <LinkButton to="/404" background="var(--olive)">
-        Contact Us
-      </LinkButton>
-    </Buttons>
+    <Button to="/404" border="var(--orange)">
+      Learn More
+    </Button>
   </Section>
 )

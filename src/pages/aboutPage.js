@@ -8,7 +8,7 @@ import { Sections } from "../components/sections"
 import { Card } from "../components/card"
 import { TitleLink } from "../components/aboutPage/titleLink"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
-import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
+import { ServiceCard } from "../components/indexPage/serviceCard"
 import { Story } from "../components/story"
 import Seo from "../utils/seo"
 

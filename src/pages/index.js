@@ -1,37 +1,19 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import Layout from "../components/layout"
+import Seo from "../utils/seo"
 
 import { GetStartedSection } from "../components/indexPage/getStartedSection"
-import { Header } from "../components/header"
 import { WhatIsSection } from "../components/indexPage/whatIsSection"
-import { ServicesSection } from "../components/indexPage/serviceGrid/servicesSection"
+import { ServicesSection } from "../components/indexPage/servicesSection"
 import { Sections } from "../components/sections"
-import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
-import Seo from "../utils/seo"
+import { HomeHeader } from "../components/indexPage/HomeHeader"
+import { ServiceCard } from "../components/indexPage/serviceCard"
 
 const IndexPage = () => (
   <Layout>
-    <Header
-      image={
-        <StaticImage
-          src="../images/home/hero.jpg"
-          alt="Hero splash!"
-          loading="eager"
-          layout="fullWidth"
-          style={{
-            height: "100vh",
-          }}
-        />
-      }
-      title={
-        <>
-          <h1>Take a sip of creativity </h1>
-          <h2>and let's do magic!</h2>
-        </>
-      }
-    />
+    <HomeHeader />
     <WhatIsSection />
     <ServicesSection />
     <Sections>

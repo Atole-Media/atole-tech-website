@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     color: var(--orange);
     position: absolute;
     top: 40%;
-    left: 10vw;
+    left: 10%;
     font-size: 5rem;
     margin: 1rem 0;
   }
@@ -20,9 +20,14 @@ const Wrapper = styled.div`
     position: absolute;
     top: 60vh;
     font-size: 3rem;
-    left: 10vw;
+    left: 20%;
     display: block;
     margin: 1rem 0;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
   }
   @media (max-width: 1024px) {
     h2 {
@@ -50,10 +55,10 @@ const Wrapper = styled.div`
   }
 `
 
-export const Header = ({ image, title, className }) => (
+export const Header = ({ image, title, className, buttons }) => (
   <Wrapper className={className}>
     {image}
-
     {title}
+    {buttons ? <div className="buttons">{buttons}</div> : null}
   </Wrapper>
 )
