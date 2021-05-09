@@ -26,7 +26,7 @@ export const ServicesHeader = () => (
     }
     image={
       <StaticImage
-        src="../images/services/michael-dziedzic-uZr0oWxrHYs-unsplash.png"
+        src="../../images/services/michael-dziedzic-uZr0oWxrHYs-unsplash.png"
         alt="services splash image"
       />
     }

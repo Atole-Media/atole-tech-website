@@ -54,7 +54,7 @@ export const ServicesSection = () => {
           title="Brand Design"
           image={
             <StaticImage
-              src="../../images/brand.png"
+              src="../../../images/home/brand.png"
               alt="brand-image"
               height={200}
             />
@@ -82,7 +82,7 @@ export const ServicesSection = () => {
           ]}
           image={
             <StaticImage
-              src="../../images/digital.png"
+              src="../../../images/home/digital.png"
               alt="design-image"
               height={200}
             />
@@ -103,7 +103,7 @@ export const ServicesSection = () => {
           ]}
           image={
             <StaticImage
-              src="../../images/code.png"
+              src="../../../images/home/code.png"
               alt="brand-image"
               height={200}
             />

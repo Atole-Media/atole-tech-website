@@ -15,7 +15,7 @@ const StyledSection = styled(Sections)`
 `
 export const GetStartedSection = () => (
   <>
-    <StaticImage src="../images/lines.png" alt="lines" />
+    <StaticImage src="../../images/home/lines.png" alt="lines" />
 
     <StyledSection className="get-started">
       <Card
@@ -35,6 +35,6 @@ export const GetStartedSection = () => (
         content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed reprehenderit libero. Esse labore tempora reprehenderit temporibus aut alias harum aperiam in eveniet, voluptates amet cum vero, minima atque doloribus. Molestiae quae doloremque exercitationem cum at vel dolorum ipsum rem."
       />
     </StyledSection>
-    <StaticImage src="../images/lines.png" alt="lines" />
+    <StaticImage src="../../images/home/lines.png" alt="lines" />
   </>
 )

@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import { AddOns } from "../components/servicesPage/AddOns"
 import { BrandServiceGrid } from "../components/servicesPage/BrandServiceGrid"
 import { ChoicesSection } from "../components/servicesPage/ChoicesSection"
@@ -17,6 +18,7 @@ const ServicesPage = () => {
       <AddOns />
       <VennDiagram />
       <Newsletter />
+      <Seo title="Services" />
     </Layout>
   )
 }

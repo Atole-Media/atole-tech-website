@@ -188,7 +188,7 @@ const FrequentlyAskedQuestions = () => {
         </Info>
       </ContactSection>
 
-      <Seo title="FAQ" />
+      <Seo title="Contact" />
     </Layout>
   )
 }

@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Header
       image={
         <StaticImage
-          src="../../images/hero.jpg"
+          src="../images/home/hero.jpg"
           alt="Hero splash!"
           loading="eager"
           layout="fullWidth"
@@ -55,14 +55,14 @@ const IndexPage = () => (
         </ServiceCard>{" "}
         <ServiceCard image={true}>
           <StaticImage
-            src="../images/document.png"
+            src="../images/home/document.png"
             alt="document"
             width={250}
           />
         </ServiceCard>
         <ServiceCard image={true}>
           <StaticImage
-            src="../images/text-box.png"
+            src="../images/home/text-box.png"
             alt="document"
             width={250}
           />
@@ -102,7 +102,11 @@ const IndexPage = () => (
           </p>
         </ServiceCard>
         <ServiceCard image="image">
-          <StaticImage src="../images/code2.png" alt="document" width={250} />
+          <StaticImage
+            src="../images/home/code2.png"
+            alt="document"
+            width={250}
+          />
         </ServiceCard>
       </TwoColumnGrid>
     </Sections>
