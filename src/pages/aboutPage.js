@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import styled from "styled-components"
 
 import { Header } from "../components/header"
@@ -11,6 +10,7 @@ import { TitleLink } from "../components/aboutPage/titleLink"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
 import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
 import { Story } from "../components/story"
+import Seo from "../utils/seo"
 
 const AboutHeader = styled(Header)`
   h1,

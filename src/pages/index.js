@@ -1,7 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 
 import { GetStartedSection } from "../components/indexPage/getStartedSection"
 import { Header } from "../components/header"
@@ -10,6 +9,7 @@ import { ServicesSection } from "../components/indexPage/serviceGrid/servicesSec
 import { Sections } from "../components/sections"
 import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
+import Seo from "../utils/seo"
 
 const IndexPage = () => (
   <Layout>

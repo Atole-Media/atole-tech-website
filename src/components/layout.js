@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
 
 import { Navbar } from "./navbar/navbar"
+import { Footer } from "./Footer"
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -53,11 +54,7 @@ const Layout = ({ children }) => {
       <Navbar />
 
       <Main>{children}</Main>
-      {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer> */}
+      <Footer />
     </>
   )
 }

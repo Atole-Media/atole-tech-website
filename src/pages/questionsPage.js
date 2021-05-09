@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import styled from "styled-components"
 
 import { Header } from "../components/header"
@@ -11,6 +10,7 @@ import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
 import { Story } from "../components/story"
 import { ContactForm } from "../components/contact/ContactForm"
 import { Info } from "../components/contact/Info"
+import Seo from "../utils/seo"
 
 const FaqHeader = styled(Header)`
   h1 {

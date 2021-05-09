@@ -7,6 +7,7 @@ export const Sections = styled.section`
   padding: ${({ size }) => (size === "wide" ? "0" : "0 2rem")};
   display: ${({ display }) => (display === "flex" ? "flex" : "inline-block")};
   justify-content: space-evenly;
+  align-items: center;
   position: relative;
   @media (max-width: 768px) {
     flex-wrap: wrap;
