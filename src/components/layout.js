@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
     --yellow: #E8CB51;
     --orange: #FFAB03;
     --red: #D06273;
+    --neon: #29CCCB;
     font-family: sans-serif;
     background-color: #1A042B;
   }
@@ -40,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.main`
   p {
     line-height: 1.5em;
+    font-size: 16px;
   }
 `
 

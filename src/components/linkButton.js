@@ -12,7 +12,6 @@ const Button = styled(Link)`
   text-transform: uppercase;
   background-color: ${({ background }) => background};
   color: ${({ color }) => color};
-  margin: 0 auto;
   text-align: center;
   display: ${({ display }) => (display === "none" ? "none" : "inline-block")};
   @media (max-width: 768px) {
@@ -26,10 +25,11 @@ const Button = styled(Link)`
 export const LinkButton = ({
   children = "Read More",
   to,
-  color = "var(--textColor)",
+  color = "white",
   border,
   background,
   display,
+  className
 }) => (
   <Button
     to={to}
@@ -37,6 +37,7 @@ export const LinkButton = ({
     border={border}
     background={background}
     display={display}
+    className={className}
   >
     {children}
   </Button>

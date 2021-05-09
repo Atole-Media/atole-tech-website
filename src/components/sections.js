@@ -3,12 +3,10 @@ import styled from "styled-components"
 export const Sections = styled.section`
   background-color: var(--purple);
   max-width: ${({ size }) => (size === "wide" ? "100%" : "1386px")};
-  margin: 5rem auto;
+  margin: 3rem auto;
   padding: ${({ size }) => (size === "wide" ? "0" : "0 2rem")};
-  /* min-hei ght: 30vh; */
   display: ${({ display }) => (display === "flex" ? "flex" : "inline-block")};
   justify-content: space-evenly;
-  align-items: center;
   position: relative;
   @media (max-width: 768px) {
     flex-wrap: wrap;

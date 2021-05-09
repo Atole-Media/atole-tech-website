@@ -7,6 +7,7 @@ const CardWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   width: ${({ size }) => (size === "wide" ? "45%" : "20%")};
+  
 
   @media (max-width: 1024px) {
     width: ${({ size }) => (size === "wide" ? "45%" : "30%")};
