@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   top: 10vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   h3 {
     color: var(--orange);
     font-size: 3rem;

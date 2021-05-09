@@ -11,7 +11,6 @@ export const Sections = styled.section`
   position: relative;
   @media (max-width: 768px) {
     flex-wrap: wrap;
-    /* width: 100%; */
     h2 {
       font-size: 2.4rem;
     }

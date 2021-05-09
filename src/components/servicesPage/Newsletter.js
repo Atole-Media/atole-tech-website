@@ -3,11 +3,13 @@ import styled from "styled-components"
 import { LinkButton } from "../linkButton"
 
 const Wrapper = styled.div`
-  margin: 2rem auto;
+  margin: 8rem auto;
   text-align: center;
+  width: 30vw;
   h1 {
     color: var(--orange);
-    margin: 1.5rem;
+    width: 100%;
+    display: inline;
   }
 `
 const NewsBox = styled.div`
@@ -16,7 +18,7 @@ const NewsBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   height: 5rem;
   input {
     height: 2.5rem;
@@ -24,6 +26,7 @@ const NewsBox = styled.div`
     border: none;
     width: 50%;
     margin-left: 1rem;
+    font-size: 0.65rem;
   }
   input:focus {
     outline: none;
@@ -38,7 +41,7 @@ const NewsBox = styled.div`
 `
 const Button = styled(LinkButton)`
   margin: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 `
 export const Newsletter = () => (
   <Wrapper className="newsletter">

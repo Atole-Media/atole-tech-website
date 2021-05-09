@@ -7,10 +7,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Sections } from "../components/sections"
 import { TwoColumnGrid } from "../components/twoColumnGrid"
 import { ServiceCard } from "../components/indexPage/serviceGrid/serviceCard"
-import { Story } from "../components/story"
 import { ContactForm } from "../components/contact/ContactForm"
 import { Info } from "../components/contact/Info"
 import Seo from "../utils/seo"
+import { NextLevel } from "../components/contact/NextLevel"
 
 const FaqHeader = styled(Header)`
   h1 {
@@ -132,60 +132,11 @@ const FrequentlyAskedQuestions = () => {
           </ServiceCard>
         </TwoColumnGrid>
       </Questions>
-      <Story>
-        <h2>ARE YOU READY TO TAKE YOUR BRAND TO THE NEXT LEVEL?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit
-          amet et quis autem reprehenderit voluptate consequuntur nisi ipsum
-          repudiandae pariatur, dolore distinctio, laudantium deleniti, ipsam
-          tempora? Deleniti tenetur iure quidem ea tempore officia consectetur
-          ratione doloribus quae. Est illo quaerat dignissimos inventore nemo
-          modi dolorem quia saepe suscipit placeat. Facere recusandae deserunt
-          necessitatibus perspiciatis voluptatem reprehenderit, libero ex
-          temporibus, tempora, dignissimos iure distinctio. Exercitationem ipsa
-          quas eveniet pariatur sed consequatur delectus, reiciendis rem ullam,
-          ex tempora corporis impedit voluptatum deserunt nobis natus non, a sit
-          libero excepturi. Provident, voluptas placeat. Cum officiis cumque
-          optio veniam exercitationem eligendi earum aliquam dolorum ut adipisci
-          natus aperiam consequatur excepturi libero enim, qui quod pariatur!
-          Laudantium maxime ex dignissimos. Iure odit voluptatibus magnam,
-          dolorum autem esse odio similique temporibus alias dolor velit
-          provident ratione nobis accusantium illum perspiciatis corrupti ullam.
-          Veritatis laboriosam pariatur nostrum rem deserunt vero similique
-          quaerat, odit blanditiis dignissimos? Labore, quo minus nam quisquam
-          commodi in ad eveniet perferendis id ex magni, quod modi nisi magnam
-          doloremque saepe laudantium consectetur recusandae? Exercitationem,
-          omnis. Culpa quaerat nobis saepe laborum quis error a molestias vero
-          mollitia. Debitis, officia quidem. Sequi, quae officiis placeat modi
-          reiciendis, distinctio eveniet accusamus, impedit eius beatae iusto.
-        </p>
-      </Story>
+      <NextLevel />
       <ContactSection display="flex">
         <ContactForm />
         <StaticImage src="../images/contact/dots.png" alt="dots" />
-        <Info>
-          <h3>Atole's Location</h3>
-          <p>Located in the great city of New York</p>
-          <h3>ATOLE’S BUSINESS EMAIL/ DIRECT CONTACT</h3>
-          <a href="mailto:lena@atolemedia.com" target="_blank" rel="noreferrer">
-            lena@atolemedia.com
-          </a>
-          <a
-            href="mailto:Julian@atolemedia.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            julianv@atolemedia.com
-          </a>
-          <h3>HOURS OF AVAILABILITY</h3>
-          <p>We will respond within 24 hours</p>
-          <p className="text">
-            Thank you for reaching out to us through the website. We cannot wait
-            to show you everything we have to offer. A member of our team will
-            follow up soon, but please take the opportunity to learn more about
-            us here
-          </p>
-        </Info>
+        <Info />
       </ContactSection>
 
       <Seo title="Contact" />
