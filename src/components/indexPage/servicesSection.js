@@ -13,9 +13,13 @@ const Section = styled(Sections)`
   flex-direction: column;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     width: 40%;
+  }
+  h2 {
+    color: white;
+    font-size: 2rem;
   }
 
   @media (max-width: 1024px) {
@@ -40,6 +44,14 @@ const Card = styled(NewCard)`
   width: 30%;
   box-shadow: 0 1px 3px #edabf5, 0 1px 2px #edabf5;
   transition: 0.2s all ease-out;
+  h3 {
+    color: var(--lightPurple);
+    font-size: 2rem;
+  }
+  p {
+    text-align: left;
+    font-size: 1rem;
+  }
   &:hover {
     box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
   }
@@ -49,34 +61,30 @@ const Card = styled(NewCard)`
   &.big {
     height: 40vh;
   }
-
-  p {
-    text-align: left;
-  }
 `
 
 export const ServicesSection = () => {
   return (
     <Section className="services-section ">
-      <h1>Our services</h1>
+      <h3>Our services</h3>
       <p>
         We provide three paths that suits your business according to your
         budget.
       </p>
       <Cards>
         <Card className="small left">
-          <h2>LEARN</h2>
+          <h3>LEARN</h3>
           <p>GET INSPIRED BY OUR COURSES COMING SOON</p>
         </Card>
         <Card className="big center">
-          <h2>HIRE</h2>
+          <h3>HIRE</h3>
           <p>
             YOU DON’T HAVE TIME OR ENERGY AND YOU DON’T WANT TO WORRY ABOUT
             ANYTHING HIRE OUR.TEAM!
           </p>
         </Card>
         <Card className="small right">
-          <h2>SHOP</h2>
+          <h3>SHOP</h3>
           <p>BUY SOME OF OUR DIGITAL PRODUCTS TO MAKE YOUR LIFE EASIER.</p>
         </Card>
         {/* <Card

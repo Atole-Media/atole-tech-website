@@ -42,7 +42,8 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.main`
   p {
     line-height: 1.5em;
-    font-size: 16px;
+    font-size: 18px;
+    color: white;
   }
   h1,
   h2,

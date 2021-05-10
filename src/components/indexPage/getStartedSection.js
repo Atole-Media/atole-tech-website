@@ -15,8 +15,6 @@ const StyledSection = styled(Sections)`
 `
 export const GetStartedSection = () => (
   <>
-    <StaticImage src="../../images/home/lines.png" alt="lines" />
-
     <StyledSection className="get-started">
       <Card
         title="Get Started"
