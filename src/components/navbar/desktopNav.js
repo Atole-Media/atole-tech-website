@@ -7,9 +7,7 @@ const Wrapper = styled.ul`
   display: flex;
   justify-content: space-evenly;
   text-transform: uppercase;
-  #work {
-    display: none;
-  }
+
   @media (max-width: 512px) {
     display: none;
   }
@@ -18,19 +16,16 @@ const Wrapper = styled.ul`
 export const DesktopNav = () => (
   <Wrapper className="desktop-nav">
     <li>
-      <Link to="/aboutPage">About</Link>
-    </li>
-    <li>
       <Link to="/servicesPage">Services</Link>
     </li>
     <li>
-      <Link to="/questionsPage">FAQ</Link>
+      <Link>Store</Link>
     </li>
     <li>
-      <Link>Contact</Link>
+      <Link to="/aboutPage">About</Link>
     </li>
-    <li id="work">
-      <Link>Work</Link>
+    <li>
+      <Link to="/questionsPage">Contact</Link>
     </li>
   </Wrapper>
 )

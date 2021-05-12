@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 
-import { Header } from "../components/header"
 import { StaticImage } from "gatsby-plugin-image"
 import { Sections } from "../components/sections"
 import { Card } from "../components/card"
@@ -11,20 +10,7 @@ import { TwoColumnGrid } from "../components/twoColumnGrid"
 import { ServiceCard } from "../components/indexPage/serviceCard"
 import { Story } from "../components/story"
 import Seo from "../utils/seo"
-
-const AboutHeader = styled(Header)`
-  h1,
-  h2 {
-    text-align: center;
-    left: 0;
-    right: 0;
-  }
-  @media (max-width: 512px) {
-    h2 {
-      font-size: 4rem;
-    }
-  }
-`
+import { AboutHeader } from "../components/aboutPage/AboutHeader"
 
 const Creators = styled(Sections)`
   margin: 0 auto;
@@ -40,26 +26,7 @@ const Creators = styled(Sections)`
 const AboutPage = () => {
   return (
     <Layout>
-      <AboutHeader
-        title={
-          <>
-            <h1>atole tech </h1>
-            <h2>about</h2>
-          </>
-        }
-        image={
-          <StaticImage
-            src="../images/about/solen-feyissa-aiuCuOcNG4I-unsplash.png"
-            alt="About Splash Image"
-            layout="fullWidth"
-            loading="eager"
-            style={{
-              height: "100vh",
-            }}
-          />
-        }
-      />
-
+      <AboutHeader/>
       <Sections display="flex">
         <StaticImage src="../images/about/rings.png" alt="rings" />
         <Card
@@ -75,8 +42,7 @@ const AboutPage = () => {
         <StaticImage
           src="../images/about/michael-dziedzic-qDG7XKJLKbs-unsplash.svg"
           alt="globe"
-          height={1000}
-          width={3000}
+          
         />
         <TitleLink
           title="Don't know where to start?"

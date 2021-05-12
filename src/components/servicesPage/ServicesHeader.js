@@ -7,7 +7,6 @@ import { StaticImage } from "gatsby-plugin-image"
 const HeaderWrapper = styled(Header)`
   h1 {
     left: 10vw;
-
     text-align: center;
   }
   h2 {
@@ -28,6 +27,8 @@ export const ServicesHeader = () => (
       <StaticImage
         src="../../images/services/michael-dziedzic-uZr0oWxrHYs-unsplash.png"
         alt="services splash image"
+        layout="fullWidth"
+        loading="eager"
       />
     }
   />

@@ -4,7 +4,6 @@ import styled from "styled-components"
 const Wrapper = styled.div`
   min-height: 100vh;
   width: 100%;
-  /* overflow: visible; */
   text-transform: uppercase;
   position: relative;
 
