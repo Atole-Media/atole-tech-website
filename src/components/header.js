@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   /* overflow: visible; */
   text-transform: uppercase;
+  position: relative;
 
   h1 {
     color: var(--orange);

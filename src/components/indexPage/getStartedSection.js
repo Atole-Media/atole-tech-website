@@ -4,35 +4,41 @@ import styled from "styled-components"
 
 import { Sections } from "../sections"
 import { Card } from "../card"
+import { Header } from "../header"
+import { LinkButton } from "../linkButton"
 
-const StyledSection = styled(Sections)`
-  display: flex;
-  justify-content: space-evenly;
-  color: red;
-  @media (max-width: 512px) {
-    flex-wrap: wrap;
+
+const Splash = styled(Header)`
+  h1 {
+    font-size: 2.5rem;
+    top: 40%;
+    left: 60%;
+    display: inline;
+  }
+  .buttons {
+    right: 17%;
+    bottom: 40%;
   }
 `
+
+
 export const GetStartedSection = () => (
   <>
-    <StyledSection className="get-started">
-      <Card
-        title="Get Started"
-        background="var(--purple)"
-        size="wide"
-        link="take Quiz Now"
-        linkBackground="var(--olive)"
-        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed reprehenderit libero. Esse labore tempora reprehenderit temporibus aut alias harum aperiam in eveniet, voluptates amet cum vero, minima atque doloribus. Molestiae quae doloremque exercitationem cum at vel dolorum ipsum rem."
-      />
-      <Card
-        title="More Questions?"
-        background="var(--purple)"
-        size="wide"
-        link="Ask Away!"
-        linkBackground="var(--olive)"
-        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed reprehenderit libero. Esse labore tempora reprehenderit temporibus aut alias harum aperiam in eveniet, voluptates amet cum vero, minima atque doloribus. Molestiae quae doloremque exercitationem cum at vel dolorum ipsum rem."
-      />
-    </StyledSection>
-    <StaticImage src="../../images/home/lines.png" alt="lines" />
+    <Splash
+      image={
+        <StaticImage
+          src="../../images/home/neon-phone.png"
+          alt="neon phone"
+          layout="fullWidth"
+        />
+      }
+      title={
+        <>
+          <h1>Let's Work Together</h1>
+        </>
+      }
+      buttons={<LinkButton background="var(--orange)">Get Started</LinkButton>}
+    />
+    
   </>
 )

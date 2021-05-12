@@ -6,12 +6,11 @@ import Seo from "../utils/seo"
 import { GetStartedSection } from "../components/indexPage/getStartedSection"
 import { WhatIsSection } from "../components/indexPage/whatIsSection"
 import { ServicesSection } from "../components/indexPage/servicesSection"
-import { Sections } from "../components/sections"
-import { TwoColumnGrid } from "../components/twoColumnGrid"
+import { Newsletter } from "../components/servicesPage/Newsletter"
 import { HomeHeader } from "../components/indexPage/HomeHeader"
-import { ServiceCard } from "../components/indexPage/serviceCard"
 import { WhatWeHave } from "../components/indexPage/WhatWeHave"
 import { WhyAtole } from "../components/indexPage/WhyAtole"
+import { Process } from "../components/indexPage/Process"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +24,10 @@ const IndexPage = () => (
       layout="fullWidth"
     />
     <WhyAtole />
+
     <GetStartedSection />
+    <Process />
+    <Newsletter />
     <Seo title="Home" />
   </Layout>
 )

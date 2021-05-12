@@ -15,6 +15,10 @@ const Button = styled(Link)`
   display: ${({ display }) => (display === "none" ? "none" : "inline")};
   margin: 1rem;
   font-size: 1rem;
+  transition: 0.2s all ease-out;
+  &:hover {
+    box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
+  }
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
@@ -31,7 +35,7 @@ export const LinkButton = ({
   border,
   background,
   display,
-  className
+  className,
 }) => (
   <Button
     to={to}
