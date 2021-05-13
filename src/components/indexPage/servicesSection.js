@@ -21,10 +21,22 @@ const Section = styled(Sections)`
     color: white;
     font-size: 2rem;
   }
+  h3 {
+    text-transform: uppercase;
+  }
 
   @media (max-width: 1024px) {
-    h1 {
-      width: 60%;
+    h3 {
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 512px) {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      width: 80%;
+      text-align: left;
     }
   }
 `
@@ -61,6 +73,9 @@ const Card = styled(NewCard)`
   &.big {
     height: 40vh;
   }
+  @media (max-width: 512px) {
+    width: 80%;
+  }
 `
 
 export const ServicesSection = () => {
@@ -68,8 +83,8 @@ export const ServicesSection = () => {
     <Section className="services-section ">
       <h3>Our services</h3>
       <p>
-        We provide three paths that suits your business according to your
-        budget.
+        Custom and Personalized Designs: ~2 weeks from design finalization to
+        delivery. Rush delivery is available for a fee. Additional Add-ons.
       </p>
       <Cards>
         <Card className="small left">

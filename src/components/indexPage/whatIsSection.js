@@ -24,19 +24,14 @@ const Section = styled(Sections)`
     font-size: 2.25rem;
   }
   @media (max-width: 1024px) {
-    h1 {
-      margin: 0 7rem;
-      padding: 0;
+    p {
+      font-size: 1.5rem;
+      margin: 0 5rem;
     }
   }
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    p {
-      margin: 0;
-      font-size: 1rem;
+      font-size: 3rem;
     }
   }
 `
