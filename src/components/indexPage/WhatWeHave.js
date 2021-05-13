@@ -12,6 +12,9 @@ const Wrapper = styled.div`
     margin-left: 5rem;
     color: var(--neon);
   }
+  @media (max-width: 512px) {
+    margin: 0 auto;
+  }
 `
 const ImageRight = styled(TwoColFlex)`
   h2 {
@@ -21,6 +24,13 @@ const ImageRight = styled(TwoColFlex)`
     font-size: 2rem;
     text-align: left;
     margin-right: auto;
+  }
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  @media (max-width: 512px) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 `
 const ImageLeft = styled(TwoColFlex)`
@@ -32,6 +42,13 @@ const ImageLeft = styled(TwoColFlex)`
     text-align: left;
     margin-left: auto;
   }
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  @media (max-width: 512px) {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
 `
 const Card = styled(NewCard)`
   width: 40%;
@@ -41,6 +58,13 @@ const Card = styled(NewCard)`
   }
   .bottom {
     color: var(--orange);
+  }
+  @media (max-width: 768px) {
+    padding: .5rem;
+  }
+  @media (max-width: 512px) {
+    width: 100%;
+    padding: 0;
   }
 `
 
