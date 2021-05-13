@@ -4,7 +4,30 @@ import styled from "styled-components"
 import { Header } from "../header"
 import { LinkButton } from "../linkButton"
 
-const Wrapper = styled(Header)``
+const Wrapper = styled(Header)`
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 3.5rem;
+      left: 0;
+      right: 0;
+    }
+    h2 {
+      font-size: 2.5rem;
+      left: 0;
+      right: 0;
+    }
+    .buttons {
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+  }
+  @media (max-width:512px){
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+`
 
 export const HomeHeader = () => (
   <Wrapper

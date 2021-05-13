@@ -42,10 +42,10 @@ const Links = styled(Link)`
 export const MobileMenu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <Links to="/about-page">Services </Links>
+      <Links to="/servicesPage">Services </Links>
       <Links to="/work-page">Store</Links>
-      <Links to="/project-page">About </Links>
-      <Links to="/contact-page">Contact</Links>
+      <Links to="/aboutPage">About </Links>
+      <Links to="/questionsPage">Contact</Links>
     </StyledMenu>
   )
 }

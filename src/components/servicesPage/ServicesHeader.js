@@ -6,12 +6,18 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const HeaderWrapper = styled(Header)`
   h1 {
-    left: 10vw;
+    left: 10%;
     text-align: center;
   }
   h2 {
     right: 0%;
     text-align: center;
+  }
+  @media (max-width: 1024px) {
+    h1 {
+      left: 0;
+      right: 0;
+    }
   }
 `
 export const ServicesHeader = () => (
@@ -29,6 +35,9 @@ export const ServicesHeader = () => (
         alt="services splash image"
         layout="fullWidth"
         loading="eager"
+        style={{
+          height: "100vh",
+        }}
       />
     }
   />

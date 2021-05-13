@@ -32,6 +32,9 @@ export const AboutHeader = () => (
         alt="About Splash Image"
         layout="fullWidth"
         loading="eager"
+        style={{
+          height: "100vh",
+        }}
       />
     }
   />

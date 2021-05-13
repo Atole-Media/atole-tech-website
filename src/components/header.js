@@ -30,27 +30,37 @@ const Wrapper = styled.div`
     right: 30%;
   }
   @media (max-width: 1024px) {
+    h1 {
+      font-size: 3.5rem;
+      left: 0;
+      right: 0;
+    }
     h2 {
-      font-size: 5rem;
-      left: 5vw;
+      font-size: 2.5rem;
+      left: 0;
+      right: 0;
+    }
+    .buttons {
+      text-align: center;
+      left: 0;
+      right: 0;
     }
   }
   @media (max-width: 768px) {
-    h2 {
-      font-size: 4rem;
-      left: 0;
-      right: 0;
-      text-align: center;
-      top: 50vh;
-    }
   }
   @media (max-width: 512px) {
+    h1 {
+      font-size: 2.5rem;
+    }
     h2 {
-      font-size: 2rem;
+      font-size: 1.75rem;
       left: 0;
       right: 0;
       text-align: center;
-      top: 50vh;
+      
+    }
+    .buttons{
+      font-size: 1rem
     }
   }
 `
@@ -59,6 +69,6 @@ export const Header = ({ image, title, className, buttons }) => (
   <Wrapper className={className}>
     {image}
     {title}
-    {buttons ? <div className="buttons">{buttons}</div> : null}
+    {buttons ? <span className="buttons">{buttons}</span> : null}
   </Wrapper>
 )
