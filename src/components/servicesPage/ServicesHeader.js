@@ -36,7 +36,7 @@ export const ServicesHeader = () => (
         layout="fullWidth"
         loading="eager"
         style={{
-          height: "100vh",
+          minHeight: "100vh",
         }}
       />
     }

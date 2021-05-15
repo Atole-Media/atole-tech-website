@@ -24,6 +24,11 @@ const Wrapper = styled(Sections)`
     margin: 1rem 0;
     width: 70%;
   }
+  @media (max-width: 512px) {
+    p {
+      width: 100%;
+    }
+  }
 `
 const LittleGrid = styled(TwoColumnGrid)`
   width: 100%;

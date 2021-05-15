@@ -3,6 +3,7 @@ module.exports = {
     title: `Atole Tech`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: `https://atolemedia.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,5 +32,7 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-robots-txt",
   ],
 }

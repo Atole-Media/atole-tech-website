@@ -10,6 +10,12 @@ const Wrapper = styled.div`
     margin-left: 5rem;
     color: var(--neon);
   }
+  @media (max-width: 768px) {
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+  }
   @media (max-width: 512px) {
     margin: 0 auto;
   }
@@ -58,7 +64,7 @@ const Card = styled(NewCard)`
     color: var(--orange);
   }
   @media (max-width: 768px) {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   @media (max-width: 512px) {
     width: 100%;

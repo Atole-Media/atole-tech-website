@@ -30,6 +30,8 @@ const Wrapper = styled.div`
     justify-content: space-around;
   }
   @media (max-width: 1024px) {
+    text-align: center;
+
     h1 {
       font-size: 3.5rem;
     }
@@ -38,6 +40,15 @@ const Wrapper = styled.div`
     }
   }
   @media (max-width: 768px) {
+    text-align: center;
+    h1 {
+      left: 0;
+      right: 0;
+    }
+    h2 {
+      left: 0;
+      right: 0;
+    }
   }
   @media (max-width: 512px) {
     h1 {

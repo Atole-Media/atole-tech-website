@@ -7,6 +7,7 @@ import { LinkButton } from "../linkButton"
 const Wrapper = styled(Header)`
   h1 {
     right: 20vh;
+    display: block;
   }
   h2 {
     right: 20vh;
@@ -26,16 +27,11 @@ const Wrapper = styled(Header)`
       right: 0;
     }
     .buttons {
-      text-align: center;
       left: 0;
       right: 0;
     }
   }
-  @media (max-width: 512px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  }
+  
 `
 
 export const HomeHeader = () => (
