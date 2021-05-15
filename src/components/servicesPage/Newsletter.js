@@ -11,6 +11,12 @@ const Wrapper = styled.div`
     width: 100%;
     display: inline;
   }
+  @media (max-width: 1024px) {
+    width: 60vw;
+  }
+  @media (max-width: 768px) {
+    width: 80vw;
+  }
 `
 const NewsBox = styled.div`
   margin: 0 auto;
