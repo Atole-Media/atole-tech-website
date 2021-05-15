@@ -9,9 +9,21 @@ import background from "../../images/services/addon-background.png"
 const Card = styled(NewCard)`
   color: white;
   width: 33%;
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+  @media (max-width: 512px) {
+    width: 100%;
+    padding: 0;
+  }
 `
 const Section = styled(Sections)`
   background-image: url(${background});
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `
 
 export const AddOns = () => (

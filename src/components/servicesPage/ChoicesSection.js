@@ -9,12 +9,17 @@ import imageLeft from "../../images/services/daniele-levis-pelusi-Vo6A7rwmAJk-un
 import imageRight from "../../images/services/Geometric Venn Diagram (1).png"
 
 const SectionWrapper = styled(Sections)`
-  height: 80vh;
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
   .left {
     background-image: url(${imageLeft});
   }
   .right {
     background-image: url(${imageRight});
+  }
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
   }
 `
 const ImageCard = styled(NewCard)`
@@ -27,6 +32,12 @@ const ImageCard = styled(NewCard)`
   }
   .purple {
     color: var(--lightPurple);
+  }
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 `
 const Button = styled(LinkButton)`

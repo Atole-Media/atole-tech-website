@@ -14,20 +14,21 @@ const Wrapper = styled(Sections)`
 `
 const CardWrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: absolute;
-  top: 30%;
-  width: 80%;
+  top: 30vh;
+  width: 70%;
 `
 const Card = styled(NewCard)`
   color: #29cccb;
+  width: 40%;
   h1 {
     font-size: 3rem;
     margin: 0;
   }
   ul {
     margin: 1.5rem 0;
-    width: 80%;
+    width: 90%;
   }
 `
 

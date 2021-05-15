@@ -7,14 +7,14 @@ import { StaticImage } from "gatsby-plugin-image"
 const HeaderWrapper = styled(Header)`
   h1 {
     left: 10%;
-    text-align: center;
   }
   h2 {
-    right: 0%;
-    text-align: center;
+    right: 10vh;
   }
   @media (max-width: 1024px) {
-    h1 {
+    text-align: center;
+    h1,
+    h2 {
       left: 0;
       right: 0;
     }

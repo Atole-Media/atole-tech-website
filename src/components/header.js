@@ -34,22 +34,16 @@ const Wrapper = styled.div`
 
     h1 {
       font-size: 3.5rem;
+      left: 0;
+      right: 0;
     }
     h2 {
       font-size: 2.5rem;
-    }
-  }
-  @media (max-width: 768px) {
-    text-align: center;
-    h1 {
-      left: 0;
-      right: 0;
-    }
-    h2 {
       left: 0;
       right: 0;
     }
   }
+  
   @media (max-width: 512px) {
     h1 {
       font-size: 2.5rem;

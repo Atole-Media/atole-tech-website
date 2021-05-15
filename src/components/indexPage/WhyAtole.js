@@ -5,10 +5,11 @@ import { Sections } from "../sections"
 import { TwoColFlex } from "../TwoColFlex"
 import { TwoColumnGrid } from "../twoColumnGrid"
 
-import neonCube from "../../images/home/neon cube.svg"
-import purpleDiamond from "../../images/home/purple diamond.svg"
-import orangeL from "../../images/home/orange L.svg"
-import star from "../../images/home/Star.svg"
+// import neonCube from "../../images/home/neon cube.svg"
+// import purpleDiamond from "../../images/home/purple diamond.svg"
+// import orangeL from "../../images/home/orange L.svg"
+// import star from "../../images/home/Star.svg"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Wrapper = styled(Sections)`
   flex-direction: column;
@@ -41,17 +42,16 @@ const MiniFlex = styled(TwoColFlex)`
   padding: 0;
   margin: 0;
   align-items: center;
-  img {
-    padding: 1rem;
-    width: 50%;
-    height: auto;
-  }
+ 
   ul {
     color: var(--orange);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+  }
+  .cube{
+    width:30%;
   }
 `
 const Card = styled(NewCard)`
@@ -94,31 +94,49 @@ export const WhyAtole = () => (
     </Wrapper>
     <LittleGrid>
       <MiniFlex>
-        <img src={neonCube} alt="neon cube" />
+        {/* <img src={neonCube} alt="neon cube" /> */}
+        <StaticImage
+          src="../../images/home/neon cube@3x.png"
+          alt="neon cube"
+          className="cube"
+        />
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>
         </ul>
       </MiniFlex>
       <MiniFlex>
-        <img src={purpleDiamond} alt="purple diamond" />
-
+        
+        {/* <img src={purpleDiamond} alt="purple diamond" /> */}
+        <StaticImage
+          src="../../images/home/purple diamond@3x.png"
+          alt="purple diamond"
+          className="cube"
+        />
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>
         </ul>
       </MiniFlex>
       <MiniFlex>
-        <img src={orangeL} alt="orange L" />
-
+        {/* <img src={orangeL} alt="orange L" /> */}
+        <StaticImage
+          src="../../images/home/orange L@3x.png"
+          alt="orange L"
+          className="cube"
+        />
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>
         </ul>
       </MiniFlex>
       <MiniFlex>
-        <img src={star} alt="star" />
-
+        {/* <img src={star} alt="star" /> */}
+        <StaticImage
+          src="../../images/home/Star@3x.png"
+          alt="yellow star"
+          className="cube"
+        />
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>

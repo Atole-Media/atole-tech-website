@@ -7,14 +7,35 @@ import { TwoColFlex } from "../TwoColFlex"
 
 const BrandWrapper = styled(TwoColFlex)`
   background-color: #410e52;
+  .image {
+    width: 50%;
+  }
+  @media (max-width: 512px) {
+    flex-wrap: wrap-reverse;
+    .image {
+      width: 90%;
+    }
+  }
 `
 const WebWrapper = styled(TwoColFlex)`
   background-color: #051865;
+  .image {
+    width: 40%;
+  }
+  @media (max-width: 512px) {
+    flex-wrap: wrap;
+    .image {
+      width: 90%;
+    }
+  }
 `
 
 const TextCard = styled(NewCard)`
   color: var(--orange);
   width: 40%;
+  .image {
+    width: 40%;
+  }
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -23,6 +44,12 @@ const TextCard = styled(NewCard)`
   p {
     font-size: 1.25rem;
     margin: 1rem 0;
+  }
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+  @media (max-width: 512px) {
+    width: 90%;
   }
 `
 
@@ -55,7 +82,7 @@ export const BrandServiceGrid = () => (
       <StaticImage
         src="../../images/services/ball.png"
         alt="ball"
-        width={500}
+        className="image"
       />
     </BrandWrapper>
     <WebWrapper>
@@ -63,7 +90,7 @@ export const BrandServiceGrid = () => (
         src="../../images/services/pyramid.png"
         alt="pyramid"
         aspectRatio={3 / 4}
-        width={600}
+        className="image"
       />
       <TextCard>
         <h2>CUSTOM WEB DESIGN & DEVELOPMENT SERVICE</h2>
