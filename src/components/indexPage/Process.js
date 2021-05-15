@@ -19,6 +19,11 @@ const ProcessWrapper = styled(Sections)`
 `
 const Steps = styled(TwoColFlex)`
   height: 150vh;
+
+  @media (max-width: 512px) {
+    flex-wrap: wrap;
+    height: auto;
+  }
 `
 const Card = styled(NewCard)`
   width: 25%;
@@ -30,6 +35,15 @@ const Card = styled(NewCard)`
   }
   &.right {
     align-self: flex-end;
+  }
+  @media (max-width: 1024px) {
+    width: 30%;
+    padding: 0;
+  }
+  @media (max-width: 512px) {
+    width: 90%;
+    /* margin: 0 auto; */
+    padding: 0;
   }
 `
 

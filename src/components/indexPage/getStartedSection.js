@@ -17,6 +17,7 @@ const Splash = styled(Header)`
     top: 60vh;
   }
   @media (max-width: 1024px) {
+    min-height: 0;
     h1 {
       top: 30vh;
       right: 10vh;
@@ -34,7 +35,6 @@ const Splash = styled(Header)`
     }
   }
   @media (max-width: 512px) {
-    min-height: 0;
     h1 {
       top: 5vh;
       left: 0;
