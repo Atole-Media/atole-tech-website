@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { StaticImage } from "gatsby-plugin-image"
 import { NewCard } from "../NewCard"
 import { Sections } from "../sections"
 

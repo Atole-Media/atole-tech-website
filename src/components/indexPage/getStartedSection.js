@@ -2,8 +2,6 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
-import { Sections } from "../sections"
-import { Card } from "../card"
 import { Header } from "../header"
 import { LinkButton } from "../linkButton"
 

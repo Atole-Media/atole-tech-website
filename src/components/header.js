@@ -11,8 +11,7 @@ const Wrapper = styled.div`
     color: var(--orange);
     position: absolute;
     font-size: 5rem;
-    top:40vh;
-    display: block;
+    top: 35vh;
   }
   h2 {
     color: white;
@@ -33,11 +32,9 @@ const Wrapper = styled.div`
   @media (max-width: 1024px) {
     h1 {
       font-size: 3.5rem;
-   
     }
     h2 {
       font-size: 2.5rem;
-     
     }
   }
   @media (max-width: 768px) {
@@ -48,7 +45,6 @@ const Wrapper = styled.div`
     }
     h2 {
       font-size: 1.75rem;
-     
     }
     .buttons {
       font-size: 1rem;

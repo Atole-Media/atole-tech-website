@@ -50,7 +50,6 @@ const Main = styled.main`
   h3,
   h4,
   h5 {
-    text-align: center;
     color: var(--orange);
     margin: 1.25rem 0;
   }

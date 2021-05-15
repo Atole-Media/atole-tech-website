@@ -1,4 +1,3 @@
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import styled from "styled-components"
 import { NewCard } from "../NewCard"
@@ -6,7 +5,7 @@ import { Sections } from "../sections"
 import { TwoColFlex } from "../TwoColFlex"
 import { TwoColumnGrid } from "../twoColumnGrid"
 
-import neonCube from "../../images/home/neon-cube.svg"
+import neonCube from "../../images/home/neon cube.svg"
 import purpleDiamond from "../../images/home/purple diamond.svg"
 import orangeL from "../../images/home/orange L.svg"
 import star from "../../images/home/Star.svg"
