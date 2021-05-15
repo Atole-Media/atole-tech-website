@@ -5,6 +5,15 @@ import { Header } from "../header"
 import { LinkButton } from "../linkButton"
 
 const Wrapper = styled(Header)`
+  h1 {
+    right: 20vh;
+  }
+  h2 {
+    right: 20vh;
+  }
+  .buttons {
+    right: 20vh;
+  }
   @media (max-width: 1024px) {
     h1 {
       font-size: 3.5rem;
@@ -22,8 +31,8 @@ const Wrapper = styled(Header)`
       right: 0;
     }
   }
-  @media (max-width:512px){
-    h1{
+  @media (max-width: 512px) {
+    h1 {
       font-size: 2.5rem;
     }
   }

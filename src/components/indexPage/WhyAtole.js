@@ -6,6 +6,11 @@ import { Sections } from "../sections"
 import { TwoColFlex } from "../TwoColFlex"
 import { TwoColumnGrid } from "../twoColumnGrid"
 
+import neonCube from "../../images/home/neon-cube.svg"
+import purpleDiamond from "../../images/home/purple diamond.svg"
+import orangeL from "../../images/home/orange L.svg"
+import star from "../../images/home/Star.svg"
+
 const Wrapper = styled(Sections)`
   flex-direction: column;
   justify-content: space-evenly;
@@ -22,12 +27,21 @@ const Wrapper = styled(Sections)`
   }
 `
 const LittleGrid = styled(TwoColumnGrid)`
-  max-width: 1200px;
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `
 const MiniFlex = styled(TwoColFlex)`
   width: 100%;
   padding: 0;
   margin: 0;
+  align-items: center;
+  img {
+    padding: 1rem;
+    width: 50%;
+    height: auto;
+  }
   ul {
     color: var(--orange);
     display: flex;
@@ -37,12 +51,17 @@ const MiniFlex = styled(TwoColFlex)`
   }
 `
 const Card = styled(NewCard)`
-  width: 80%;
+  width: 60%;
+  margin: 0;
+  padding: 0;
   .top {
     color: white;
   }
   .bottom {
     color: turquoise;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `
 
@@ -71,44 +90,31 @@ export const WhyAtole = () => (
     </Wrapper>
     <LittleGrid>
       <MiniFlex>
-        <StaticImage
-          src="../../images/home/neon cube.png"
-          alt="neon cube"
-          width={300}
-        />
+        <img src={neonCube} alt="neon cube" />
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>
         </ul>
       </MiniFlex>
       <MiniFlex>
-        <StaticImage
-          src="../../images/home/purple diamond.png"
-          alt="diamond"
-          width={275}
-        />
+        <img src={purpleDiamond} alt="purple diamond" />
+
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>
         </ul>
       </MiniFlex>
       <MiniFlex>
-        <StaticImage
-          src="../../images/home/orange L.png"
-          alt="orange"
-          width={265}
-        />
+        <img src={orangeL} alt="orange L" />
+
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>
         </ul>
       </MiniFlex>
       <MiniFlex>
-        <StaticImage
-          src="../../images/home/Star.png"
-          alt="neon cube"
-          width={260}
-        />
+        <img src={star} alt="star" />
+
         <ul>
           <li>SECURITY</li>
           <li>INFORMATION</li>

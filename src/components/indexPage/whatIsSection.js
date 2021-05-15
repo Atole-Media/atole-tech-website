@@ -34,6 +34,14 @@ const Section = styled(Sections)`
       font-size: 3rem;
     }
   }
+  @media (max-width: 512px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
 `
 const Button = styled(LinkButton)`
   font-size: 2.5rem;
