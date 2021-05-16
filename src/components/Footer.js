@@ -28,6 +28,7 @@ const Wrapper = styled.div`
   @media (max-width: 512px) {
     h3 {
       font-size: 1rem;
+      width: 50%;
     }
   }
 `
@@ -53,8 +54,7 @@ const Social = styled.span`
   text-align: center;
 
   @media (max-width: 512px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    width: 50%;
   }
 `
 const Icon = styled(FontAwesomeIcon)`
@@ -72,7 +72,7 @@ const Grid = styled.span`
   align-items: center;
   text-align: center;
   @media (max-width: 512px) {
-    grid-template-columns: 1fr 1fr;
+    display: none;
   }
 `
 export const Footer = () => (
