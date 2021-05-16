@@ -31,7 +31,7 @@ const Card = styled(NewCard)`
 export const WhoWeAre = () => (
   <SectionWrapper className="section-who" display="flex">
     <StaticImage
-      src="../images/about/rings.png"
+      src="../../images/about/rings.png"
       alt="rings"
       className="rings"
     />
