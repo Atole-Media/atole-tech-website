@@ -36,23 +36,36 @@ export const WhoWeAre = () => (
       className="rings"
     />
     <Card>
-      <h1>Who we are</h1>
+      <h1>The story behind atole</h1>
       <p>
-        Atole Tech is a digital studio specializing in building websites from
-        simple clean sites for creative people to complex sites capable of
-        handling the demands of  startups **or corporations who would like to
-        improve their  brand image in the world wide web.{" "}
+        In the year 2021, Atole Tech  finally opened  its digital doors in New
+        York City.  Atole-tech a digital studio specializing in building
+        websites: from simple clean designs aimed at creative people, to complex
+        enterprise sites capable of handling the demands of  up and coming
+        startups.{" "}
+      </p>
+      <p>
+        Atole Tech emerged during the COVID pandemic. This historic
+        event shifted the world from a physical to a digital one.  The world
+        didn’t “stop”, but evolved. The world is entering a new technological
+        era in which our digital presence is becoming increasingly necessary. 
+        Atole knows the world is full of dreamers who need to display their
+        services in a tangible, yet technological way.  
+      </p>
+      <p>
+        {" "}
+        The truth is that while the world is slowly recuperating,  remote jobs
+        and online services are going to stay and flourish.  Making E-commerce
+        the future!! Meaning you can sell anything you aspire to create from
+        anywhere!
       </p>
       <p>
         Our mission is to elevate your business by casting a spotlight into its
         meaning and purpose. We create your brand  from scratch and build upon
-        it to attract the ideal clients for your company. 
-      </p>
-      <p>
-        {" "}
-        Atole Tech’s goal is to work you to get to the core of your business’s
-        identity and showcase it in a creative yet professional way, optimizing
-        your business and converting new clients.
+        it to attract the ideal clients for your company.  Atole Tech's goal is
+        to work you to get to the core of your business's identity and showcase
+        it in a creative yet professional way, optimizing your business and
+        converting new clients.{" "}
       </p>
     </Card>
   </SectionWrapper>

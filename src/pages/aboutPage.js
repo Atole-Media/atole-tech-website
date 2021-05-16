@@ -1,15 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-
 import { StaticImage } from "gatsby-plugin-image"
 import { Sections } from "../components/sections"
 import { TitleLink } from "../components/aboutPage/titleLink"
 import { Creators } from "../components/aboutPage/Creators"
-import { Story } from "../components/story"
+import { Story } from "../components/aboutPage/story"
 import Seo from "../utils/seo"
 import { AboutHeader } from "../components/aboutPage/AboutHeader"
 import { WhoWeAre } from "../components/aboutPage/WhoWeAre"
-
 
 
 const AboutPage = () => {

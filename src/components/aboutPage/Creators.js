@@ -64,12 +64,10 @@ export const Creators = () => (
       <Card>
         <h2>Julian, the techie</h2>
         <p>
-          A creative in the most pure sense of the word. Lena is always finding
-          the artistic side of everything. She believes that when we see a film
-          we are transported into another universe, a universe of celluloid and
-          metaphors. When she isn’t watching movies you can find her drawing,
-          taking gorgeous photos of forests, or figuring out how to befriend
-          penguins and Boston terriers.  
+          Loves watching movies, playing videogames and eating tacos. Has
+          encyclopedic knowledge of movie quotes, even movies he hasn’t seen. Is
+          constantly building or learning something new, like making kombucha,
+          or making a robot, or drawing penguins.
         </p>
       </Card>{" "}
       <StaticImage
