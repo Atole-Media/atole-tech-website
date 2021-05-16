@@ -2,8 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledForm = styled.form`
-  height: auto;
-  margin: 0 auto;
+  height: 80%;
   width: 33%;
   display: inline-flex;
   flex-direction: column;
@@ -66,8 +65,17 @@ const StyledForm = styled.form`
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    width: 95%;
+  @media (max-width: 1024px) {
+    width: 40%;
+    label {
+      width: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 512px) {
+    width: 100%;
   }
 `
 

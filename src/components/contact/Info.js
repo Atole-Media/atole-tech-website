@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import React from 'react';
+import React from "react"
 
 const InfoWrapper = styled.div`
   width: 33%;
@@ -8,12 +8,28 @@ const InfoWrapper = styled.div`
   color: var(--orange);
   text-align: center;
   justify-content: space-evenly;
-  height: 80vh;
+  height: 80%;
+  border: 3px solid var(--orange);
+  border-radius: 15px;
+  padding-bottom: 1.5rem;
   h3 {
     text-transform: uppercase;
   }
   .text {
     color: white;
+  }
+  @media (max-width: 1028px) {
+    width: 40%;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+    .text {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 512px) {
+    width: 100%;
   }
 `
 export const Info = () => (
