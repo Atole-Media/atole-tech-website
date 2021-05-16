@@ -19,7 +19,7 @@ const IndexPage = () => (
     <ServicesSection />
     <WhatWeHave />
     <StaticImage
-      src="../images/home/waves.png"
+      src="../images/home/waves@3.png"
       alt="waves"
       layout="fullWidth"
     />

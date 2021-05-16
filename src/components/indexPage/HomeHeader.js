@@ -38,7 +38,7 @@ export const HomeHeader = () => (
   <Wrapper
     image={
       <StaticImage
-        src="../../images/home/hero.jpg"
+        src="../../images/home/hero@3x.png"
         alt="Hero splash!"
         loading="eager"
         layout="fullWidth"

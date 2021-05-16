@@ -7,6 +7,12 @@ const WrapperHeader = styled(Header)`
   .header-image {
     min-height: 100vh;
   }
+  text-align: center;
+  h1,
+  h2 {
+    left: 0;
+    right: 0;
+  }
 `
 
 export const ContactHeader = () => (
@@ -19,7 +25,7 @@ export const ContactHeader = () => (
     }
     image={
       <StaticImage
-        src="../../images/faq/Heroimage.png"
+        src="../../images/contact/Hero image@3x.png"
         alt="Contact hero image"
         layout="fullWidth"
         loading="eager"

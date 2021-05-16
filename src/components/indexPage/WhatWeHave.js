@@ -10,6 +10,9 @@ const Wrapper = styled.div`
     margin-left: 5rem;
     color: var(--neon);
   }
+  .image {
+    width: 30%;
+  }
   @media (max-width: 768px) {
     h1 {
       text-align: center;
@@ -77,33 +80,46 @@ export const WhatWeHave = () => (
     <h1>WHAT YOU CAN FIND IN ATOLE TECH...</h1>
     <ImageRight>
       <Card>
-        <h2>Design</h2>
-        <p className="top">
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
-        </p>
-        <p className="bottom">
-          {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
-        </p>
-      </Card>
-      <StaticImage src="../../images/home/play-button.png" alt="play button" />
-    </ImageRight>
-    <ImageLeft>
-      <StaticImage src="../../images/home/laptop.png" alt="laptop" />
-      <Card>
         <h2>Branding</h2>
         <p className="top">
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          Take your brand to the next level with our custom packages! We will
+          create Logos, printables and graphics that match your business's style
+          perfectly. We research your business and in conjunction with the Atole
+          Flavor Quiz we create a Brand that exemplifies who you are and puts
+          your products at the forefront.
         </p>
         <p className="bottom">
           {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          We also provide pre-made logos and assets in our store if all you need
+          is something simple.
+        </p>
+      </Card>
+      <StaticImage
+        src="../../images/home/nikolai-chernichenko-YIaB-KH8oE0-unsplash@3x.png"
+        alt="play button"
+        className="image"
+      />
+    </ImageRight>
+    <ImageLeft>
+      <StaticImage
+        src="../../images/home/jesse-k-Jx-qCTHKvN4-unsplash@3x.png"
+        alt="laptop"
+        className="image"
+      />
+      <Card>
+        <h2>Design</h2>
+        <p className="top">
+          We design your site from scratch, from the wireframe, all the way to
+          the final composition. We strive to make your site stand out from all
+          the other sites on the internet. From there we can either build your
+          site in a jiffy or you can take this amazing design to your own
+          developers and have them be amazed at your new site's look!
+        </p>
+        <p className="bottom">
+          {" "}
+          We also provide pre-made templates in our store. Perfect if you want
+          some quicker or already found the perfect layout! Sometimes we read
+          minds.
         </p>
       </Card>
     </ImageLeft>
@@ -111,31 +127,45 @@ export const WhatWeHave = () => (
       <Card>
         <h2>Development</h2>
         <p className="top">
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          We provide high quality, custom websites that allow you to increase
+          your web presence. Our service provides high quality SEO, E-commerce
+          and blogging using the latest technologies for a blazing fast,
+          extremely secure and modern site.
         </p>
         <p className="bottom">
           {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          For the techies, we use Gatsby, Shopify, and Ghost as our standard
+          stack. However since the JAMStack is our forte', we can leverage and
+          backend or ecommerce solution that you are already used to and
+          integrate it to your new extremely fast Gatsby site.
         </p>
       </Card>
-      <StaticImage src="../../images/home/blue-rhombus.png" alt="rhombus" />
+      <StaticImage
+        src="../../images/home/alexander-popov-3InMDrsuYrk-unsplash@3x.png"
+        alt="rhombus"
+        className="image"
+      />
     </ImageRight>
     <ImageLeft>
-      <StaticImage src="../../images/home/whiteboard.png" alt="whiteboard" />
+      <StaticImage
+        src="../../images/home/startae-team-7tXA8xwe4W4-unsplash@3x.png"
+        alt="whiteboard"
+        className="image"
+      />
       <Card>
-        <h2>Pointing</h2>
+        <h2>Video / Photo</h2>
         <p className="top">
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          No site or brand is truly complete without actual pictures or videos
+          of your business. Stock photos can only take you so far, and to create
+          a truly unique experience that will resonate with your customers, we
+          provide Photography and videography services of your local business to
+          showcase in your blog, YouTube or site!
         </p>
         <p className="bottom">
           {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          That being said sometimes stock photos/videos are needed to get the
+          ball rolling. In those situations, we got you covered too! Visit our
+          store for more info!
         </p>
       </Card>
     </ImageLeft>

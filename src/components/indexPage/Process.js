@@ -58,15 +58,14 @@ export const Process = () => (
           alt="number 1"
           height={300}
         />
+        <h2>MEET & STRATEGY</h2>
         <p>
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
-        </p>
-        <p>
-          {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          It all starts with our first meeting  to get to know you and your
+          goals so we can find out how to get you there.   Together we will
+          review your project's scope, giving you a timeline, logistics and
+          pricing and once we are all on the same page, we proceed to the next
+          step. We will be contacting you via Zoom at your convenience to get to
+          know you and your brand.
         </p>
       </Card>{" "}
       <Card className="center">
@@ -75,15 +74,16 @@ export const Process = () => (
           alt="number 2"
           height={300}
         />
-        <p>
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
-        </p>
+        <h2>DESIGN & DEVELOPMENT</h2>
+
         <p>
           {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          This is our favorite part of the journey. We get to work and whip up
+          some initial prototypes based on our initial meeting.  These include:
+          A digital wire-frame, to help visually showcase website layout
+          concepts before designing and some logo pre-compositions.   Once
+          approved, we add the last little details and we deliver the products
+          during 1-2 weeks.  You’ll have 3 revisions.
         </p>
       </Card>{" "}
       <Card className="right">
@@ -92,15 +92,13 @@ export const Process = () => (
           alt="number 3"
           height={300}
         />
-        <p>
-          If you are  an ambitious, creative  business owner who is ready to
-          elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
-        </p>
+        <h2>LAUNCHING & TRAINING</h2>
         <p>
           {" "}
-          Elevate your business, attract high-end clients all while making what
-          you dream of,  then you are in the right place.
+          This is the final step, we make sure you keep updating your website 
+          We will  provide you a video training, explaining  how to set up a web
+          builder, hosting, and  the rest of the tech terms you may not know.
+          Don't worry, we got you.
         </p>
       </Card>{" "}
     </Steps>

@@ -29,10 +29,7 @@ const ContactSection = styled(Sections)`
 const FrequentlyAskedQuestions = () => {
   return (
     <Layout>
-      <ContactHeader />
-      <Questions />
-
-      <NextLevel />
+      <ContactHeader />{" "}
       <ContactSection display="flex">
         <ContactForm className="contact-form" />
         <StaticImage
@@ -42,7 +39,8 @@ const FrequentlyAskedQuestions = () => {
         />
         <Info />
       </ContactSection>
-
+      <NextLevel />
+      <Questions />
       <Seo title="Contact" />
     </Layout>
   )

@@ -58,7 +58,7 @@ export const WhatIsSection = () => (
   <Section className="whatIs-section" display="flex">
     <h1>Welcome to Atole</h1>
     <p>
-      Atole Tech is a digital company offering e-commerce and designs for
+      Atole Media is a one-stop digital company offering e-commerce and designs for
       creative entrepreneurs to increase their digital presence and expand their
       businesses. <br />
       <br /> If you are an ambitious, creative business owner who is ready to

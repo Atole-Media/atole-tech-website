@@ -22,6 +22,7 @@ const Section = styled(Sections)`
   }
   h3 {
     text-transform: uppercase;
+    font-size: 3rem;
   }
 
   @media (max-width: 1024px) {
@@ -88,80 +89,19 @@ export const ServicesSection = () => {
       <Cards>
         <Card className="small left">
           <h3>LEARN</h3>
-          <p>GET INSPIRED BY OUR COURSES COMING SOON</p>
+          <p>GET INSPIRED BY OUR COURSES COMING SOON.</p>
         </Card>
         <Card className="big center">
           <h3>HIRE</h3>
           <p>
-            YOU DON’T HAVE TIME OR ENERGY AND YOU DON’T WANT TO WORRY ABOUT
-            ANYTHING HIRE OUR.TEAM!
+            YOU DON’T HAVE TIME OR ENERGY AND JUST NEED TO GET TEH JOB DONE?
+            HIRE OUR TEAM!
           </p>
         </Card>
         <Card className="small right">
           <h3>SHOP</h3>
-          <p>BUY SOME OF OUR DIGITAL PRODUCTS TO MAKE YOUR LIFE EASIER.</p>
+          <p>BUY SOME OF OUR DIGITAL ASSETS TO MAKE YOUR LIFE EASIER.</p>
         </Card>
-        {/* <Card
-          title="Brand Design"
-          image={
-            <StaticImage
-              src="../../../images/home/brand.png"
-              alt="brand-image"
-              height={200}
-            />
-          }
-          content={[
-            "Identity+Positioning",
-            " Brand Innovation",
-            "Brand Messaging",
-            "Guidelines and Systems",
-            "VisualLanguage & Art",
-            "Direction",
-          ]}
-          linkColor="var(--yellow)"
-          background="var(--lightPurple)"
-        />
-
-        <Card
-          title="Digital Design"
-          content={[
-            "IA + Wires",
-            "User research and testing",
-            "eComerce and Websites",
-            " Digital Product Services",
-            "Prototyping & Optimization",
-          ]}
-          image={
-            <StaticImage
-              src="../../../images/home/digital.png"
-              alt="design-image"
-              height={200}
-            />
-          }
-          linkColor="var(--yellow)"
-          background="var(--lightPurple)"
-        />
-
-        <Card
-          title="Technology"
-          content={[
-            "SEO Optimization",
-            "Full-Stack Development",
-            "API and CMS",
-            "Faster Loading Times",
-            "Design Implemention",
-            "Quality Assurance",
-          ]}
-          image={
-            <StaticImage
-              src="../../../images/home/code.png"
-              alt="brand-image"
-              height={200}
-            />
-          }
-          linkColor="var(--yellow)"
-          background="var(--lightPurple)"
-        /> */}
       </Cards>
     </Section>
   )
