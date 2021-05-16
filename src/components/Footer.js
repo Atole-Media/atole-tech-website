@@ -13,34 +13,67 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
   align-items: center;
   color: var(--orange);
+  height: 15vh;
   h3 {
     text-align: center;
     display: inline;
-    width: 30%;
+    width: 20%;
     font-size: 2rem;
+  }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+  @media (max-width: 512px) {
+    h3 {
+      font-size: 1rem;
+    }
   }
 `
 const Links = styled(Link)`
-  margin: 1rem;
   color: var(--orange);
   text-align: center;
 
   &:visited {
     color: var(--orange);
   }
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `
 const Social = styled.span`
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
+  display: grid;
+  width: 33%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: 512px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 `
 const Icon = styled(FontAwesomeIcon)`
   font-size: 3rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `
 const Grid = styled.span`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 30%;
+  width: 33%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  @media (max-width: 512px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 export const Footer = () => (
   <Wrapper className="footer">
