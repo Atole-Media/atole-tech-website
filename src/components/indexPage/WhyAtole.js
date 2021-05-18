@@ -63,10 +63,7 @@ export const WhyAtole = () => (
     {" "}
     <Wrapper className="why-us" display="flex">
       <h1>Why us?</h1>
-      <h2>
-        What is our process?A look at our company values and what makes us
-        unique.
-      </h2>
+      <h2>A look at our company values and what makes us unique.</h2>
     </Wrapper>
     <LittleGrid>
       <MiniFlex>

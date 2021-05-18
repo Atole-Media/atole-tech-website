@@ -83,24 +83,27 @@ export const ServicesSection = () => {
     <Section className="services-section ">
       <h3>Our services</h3>
       <p>
-        Custom and Personalized Designs: ~2 weeks from design finalization to
-        delivery. Rush delivery is available for a fee. Additional Add-ons.
+        We provide three paths that suits your business according to your
+        budget.
       </p>
       <Cards>
         <Card className="small left">
           <h3>LEARN</h3>
-          <p>GET INSPIRED BY OUR COURSES COMING SOON.</p>
+          <p>UNSURE WHERE TO START? GET INSPIRED BY OUR COURSES COMING SOON!</p>
         </Card>
         <Card className="big center">
           <h3>HIRE</h3>
           <p>
-            YOU DON’T HAVE TIME OR ENERGY AND JUST NEED TO GET TEH JOB DONE?
-            HIRE OUR TEAM!
+            IF YOU HAVE A COMPLEX PROJECT IN MIND. WE ARE HERE TO HELP YOU! WE
+            HAVE UNIQUE SERVICES TO DECOR YOUR SOPHISTICATED SITE.
           </p>
         </Card>
         <Card className="small right">
           <h3>SHOP</h3>
-          <p>BUY SOME OF OUR DIGITAL ASSETS TO MAKE YOUR LIFE EASIER.</p>
+          <p>
+            YOU NEED YOUR BRANDING, BUT DON’T HAVE THE TIME AND BUDGET TO HIRE?
+            BUY SOME OF OUR DIGITAL PRODUCTS TO MAKE YOUR LIFE EASIER.
+          </p>
         </Card>
       </Cards>
     </Section>

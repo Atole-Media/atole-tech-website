@@ -24,9 +24,10 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     --niceBlue: #2766A9;
+    --lightBlue:#BEB8F0;
     --purple: #1A042B;
     --lightPurple:#8E40A1;
-    --pink: #BE68AB;
+    --pink: #F4A4BA;
     --olive: #92941A;
     --textColor: #E2E3ED;
     --tablet: 768px;

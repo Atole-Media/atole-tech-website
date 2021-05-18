@@ -16,7 +16,8 @@ const ServicesPage = () => {
       <ChoicesSection />
       <BrandServiceGrid />
       <AddOns />
-      <VennDiagram />
+      {/* Might input the venn diagram component later but not now */}
+      {/* <VennDiagram /> */}
       <Newsletter />
       <Seo title="Services" />
     </Layout>

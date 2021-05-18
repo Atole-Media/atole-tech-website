@@ -5,10 +5,14 @@ import { NewCard } from "../NewCard"
 import { Sections } from "../sections"
 
 import background from "../../images/services/addon-background.png"
+import { LinkButton } from "../linkButton"
 
 const Card = styled(NewCard)`
   color: white;
   width: 33%;
+  text-align: left;
+  height: 90%;
+  justify-content: space-between;
   @media (max-width: 768px) {
     width: 50%;
   }
@@ -18,87 +22,54 @@ const Card = styled(NewCard)`
   }
 `
 const Section = styled(Sections)`
-  background-image: url(${background});
-  background-position: center;
-  background-size: cover;
+  h1 {
+    color: var(--red);
+  }
+  background: none;
+  height: 70vh;
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
 `
+const Wrapper = styled.div`
+  background-image: url(${background});
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+`
 
 export const AddOns = () => (
-  <Section className="section--addons" display="flex">
-    <Card>
-      <h2>Learn More</h2>
-      <p>
-        This is for someone who’s is to have beautiful designs that will help
-        them establish credibility and give them a strong digital presence of
-        their business.  We do this after a comprehensive brand strategy &
-        development approach.
-      </p>
-      <p>
-        {" "}
-        Our services include all things needed to define your business’s
-        branding and will help those just starting out as entrepreneurs or for
-        those in need of a brand reset. Let us help you take your dream brand
-        and throw it into action.{" "}
-      </p>
-      <p>
-        Choose between the powerful easy to use CMS of Webflow. Which gives you
-        the power of making revisions, edits and updates on your site on demand
-        or choose Gatsby, a Fast Static site using the latest technologies.
-        Perfect for businesses who are rapidly growing and need a site that will
-        scale with them. More secure, faster, better SEO, and more importantly
-        highly customizable to meet all your needs.
-      </p>
-    </Card>
-    <Card>
-      <h2>Learn More</h2>
-      <p>
-        This is for someone who’s is to have beautiful designs that will help
-        them establish credibility and give them a strong digital presence of
-        their business.  We do this after a comprehensive brand strategy &
-        development approach.
-      </p>
-      <p>
-        {" "}
-        Our services include all things needed to define your business’s
-        branding and will help those just starting out as entrepreneurs or for
-        those in need of a brand reset. Let us help you take your dream brand
-        and throw it into action.{" "}
-      </p>
-      <p>
-        Choose between the powerful easy to use CMS of Webflow. Which gives you
-        the power of making revisions, edits and updates on your site on demand
-        or choose Gatsby, a Fast Static site using the latest technologies.
-        Perfect for businesses who are rapidly growing and need a site that will
-        scale with them. More secure, faster, better SEO, and more importantly
-        highly customizable to meet all your needs.
-      </p>
-    </Card>
-    <Card>
-      <h2>Learn More</h2>
-      <p>
-        This is for someone who’s is to have beautiful designs that will help
-        them establish credibility and give them a strong digital presence of
-        their business.  We do this after a comprehensive brand strategy &
-        development approach.
-      </p>
-      <p>
-        {" "}
-        Our services include all things needed to define your business’s
-        branding and will help those just starting out as entrepreneurs or for
-        those in need of a brand reset. Let us help you take your dream brand
-        and throw it into action.{" "}
-      </p>
-      <p>
-        Choose between the powerful easy to use CMS of Webflow. Which gives you
-        the power of making revisions, edits and updates on your site on demand
-        or choose Gatsby, a Fast Static site using the latest technologies.
-        Perfect for businesses who are rapidly growing and need a site that will
-        scale with them. More secure, faster, better SEO, and more importantly
-        highly customizable to meet all your needs.
-      </p>
-    </Card>
-  </Section>
+  <Wrapper className="section--addons">
+    <h1>PACKAGE ADD-ONS</h1>
+    <Section display="flex">
+      <Card>
+        <h2>RUSH</h2>
+        <p>You need your designs and website as soon as possible.</p>
+        <p> We can accelerate the process with a fee. </p>
+        <LinkButton color="var(--pink)">ADD 30% TO TOTAL PRICE</LinkButton>
+      </Card>
+      <Card>
+        <h2>MORE PAGES</h2>
+        <p>
+          Our  web development package includes  the 5 essential pages every
+          website needs. 
+        </p>
+        <p>However if you would like to add another page. We got you!</p>
+        <LinkButton color="var(--pink)">ADD $300 PER PAGE</LinkButton>
+      </Card>
+      <Card>
+        <h2>Learn More</h2>
+        <p>
+          You have more important stuff to do like getting the products,
+          providers, distributors and so on, not code and maintain a site!
+        </p>
+        <p>Like, what the hell is an HTML anyway right?</p>
+        <p>
+          Well, we have the option to maintain your digital business throughout
+          the year.
+        </p>
+        <LinkButton color="var(--pink)">ADD $500 A MONTH</LinkButton>
+      </Card>
+    </Section>
+  </Wrapper>
 )

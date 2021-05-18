@@ -23,15 +23,24 @@ const SectionWrapper = styled(Sections)`
   }
 `
 const ImageCard = styled(NewCard)`
-  color: white;
   width: 45%;
   background-size: contain;
-
+  align-items: flex-start;
+  ul {
+    color: white;
+  }
   .top-text {
     font-weight: 800;
   }
-  .purple {
-    color: var(--lightPurple);
+  &.left {
+    p {
+      color: var(--lightBlue);
+    }
+  }
+  &.right {
+    p {
+      color: var(--pink);
+    }
   }
   @media (max-width: 1024px) {
     width: 50%;
@@ -42,39 +51,46 @@ const ImageCard = styled(NewCard)`
 `
 const Button = styled(LinkButton)`
   width: fit-content;
+  align-self: center;
 `
 export const ChoicesSection = () => (
   <SectionWrapper className="section--choices" display="flex">
     <ImageCard className="left">
       <p className="top-text">
-        Atole Tech has the mission to help all the entrepreneurs to have their
-        freedom by offering different options that will help them to get. We
-        provide two paths that suits your business according to your budget.{" "}
+        This service is completely customized to your business's needs.
       </p>
-      <p className="bottom-text">
+      <p className="top-text">
         In this competitive business the best option is to tailor your business
         according to your clients’ needs.
       </p>
-      <p className="bottom-text">
-        By hiring a proffesional you’ll get consultation and guide to make
-        things happen.
-      </p>
+      <p>By hiring us you’ll get consultation and guide to make it happen.</p>
+      <ul className="bottom-text">
+        <li>- This is ideal for advanced businesses</li>
+        <li> - Launch in as little as 4 weeks</li>
+        <li> - Pricing starts at  $2000</li>
+      </ul>
       <Button background="var(--orange)">Learn More</Button>
     </ImageCard>
     <ImageCard className="right">
-      <p className="top-text purple">
-        Atole Tech has the mission to help all the entrepreneurs to have their
-        freedom by offering different options that will help them to get. We
-        provide two paths that suits your business according to your budget.
+      <p className="top-text ">
+        Atole Tech’ s mission is to help all entrepreneurs have creative freedom
+        by offering different options that will help them get there, by having
+        us bring your vision to life.
       </p>
-      <p className="bottom-text purple">
-        If you don’t know where to start and don’t have time and energy to
-        create your dream job.
+      <p className="bottom-text ">
+        We have an affordable path to suit any budget. Atole’s store has DIY 
+        web templates to make possible to start your business in less than a
+        day.
       </p>
-      <p className="bottom-text purple">
-        We have templates that can help you to start your business right away.
-        things happen.
+      <p className="bottom-text ">
+        This is ideal for new businesses that have some technical knowledge and
+        wan to get started by themselves, with little supervision.
       </p>
+      <ul>
+        <li> - This is ideal for new businesses</li>
+        <li> - Launch in as little as 1 day</li>
+        <li> - Pricing starts at $20</li>
+      </ul>
       <Button background="var(--orange)">Go to store</Button>
     </ImageCard>
   </SectionWrapper>

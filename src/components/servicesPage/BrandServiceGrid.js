@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import styled from "styled-components"
+import { LinkButton } from "../linkButton"
 
 import { NewCard } from "../NewCard"
 import { TwoColFlex } from "../TwoColFlex"
@@ -40,6 +41,7 @@ const TextCard = styled(NewCard)`
     font-size: 2rem;
     text-align: center;
     margin: 1.5rem 0;
+    color: var(--red);
   }
   p {
     font-size: 1.25rem;
@@ -59,25 +61,15 @@ export const BrandServiceGrid = () => (
       <TextCard>
         <h2>CUSTOM LOGO & BRANDING SERVICE</h2>
         <p>
-          This is for someone who’s is to have beautiful designs that will help
+          This is for someone who wants to have beautiful designs that will help
           them establish credibility and give them a strong digital presence of
-          their business.  We do this after a comprehensive brand strategy &
-          development approach.
+          their business.
         </p>
         <p>
-          Our services include all things needed to define your business’s
-          branding and will help those just starting out as entrepreneurs or for
-          those in need of a brand reset. Let us help you take your dream brand
-          and throw it into action.
+          We do this after a comprehensive brand strategy & development
+          approach.
         </p>
-        <p>
-          Choose between the powerful easy to use CMS of Webflow. Which gives
-          you the power of making revisions, edits and updates on your site on
-          demand or choose Gatsby, a Fast Static site using the latest
-          technologies. Perfect for businesses who are rapidly growing and need
-          a site that will scale with them. More secure, faster, better SEO, and
-          more importantly highly customizable to meet all your needs.
-        </p>
+        <LinkButton color="var(--pink)">BUY $ 550</LinkButton>
       </TextCard>
       <StaticImage
         src="../../images/services/ball.png"
@@ -95,25 +87,11 @@ export const BrandServiceGrid = () => (
       <TextCard>
         <h2>CUSTOM WEB DESIGN & DEVELOPMENT SERVICE</h2>
         <p>
-          This is for someone who’s is to have beautiful designs that will help
-          them establish credibility and give them a strong digital presence of
-          their business.  We do this after a comprehensive brand strategy &
-          development approach.
+          Perfect for businesses who are rapidly growing and need a site that
+          will scale with them. More secure, faster, better SEO, and more
+          importantly highly customizable to meet all your needs.
         </p>
-        <p>
-          Our services include all things needed to define your business’s
-          branding and will help those just starting out as entrepreneurs or for
-          those in need of a brand reset. Let us help you take your dream brand
-          and throw it into action.
-        </p>
-        <p>
-          Choose between the powerful easy to use CMS of Webflow. Which gives
-          you the power of making revisions, edits and updates on your site on
-          demand or choose Gatsby, a Fast Static site using the latest
-          technologies. Perfect for businesses who are rapidly growing and need
-          a site that will scale with them. More secure, faster, better SEO, and
-          more importantly highly customizable to meet all your needs.
-        </p>
+        <LinkButton color="var(--pink)">BUY $ 2000</LinkButton>
       </TextCard>
     </WebWrapper>
   </>
