@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   h1 {
     text-align: left;
     margin-left: 5rem;
-    color: var(--neon);
+    color: var(--red);
   }
   .image {
     width: 30%;
@@ -66,6 +66,9 @@ const Card = styled(NewCard)`
   .bottom {
     color: var(--orange);
   }
+  .price {
+    color: var(--neon);
+  }
   @media (max-width: 768px) {
     padding: 0.5rem;
   }
@@ -93,6 +96,7 @@ export const WhatWeHave = () => (
           We also provide pre-made logos and assets in our store if all you need
           is something simple.
         </p>
+        <div className="price">STARTING $300</div>
       </Card>
       <StaticImage
         src="../../images/home/nikolai-chernichenko-YIaB-KH8oE0-unsplash@3x.png"
@@ -120,7 +124,8 @@ export const WhatWeHave = () => (
           We also provide pre-made templates in our store. Perfect if you want
           some quicker or already found the perfect layout! Sometimes we read
           minds.
-        </p>
+        </p>{" "}
+        <div className="price">STARTING $300</div>
       </Card>
     </ImageLeft>
     <ImageRight>
@@ -138,7 +143,8 @@ export const WhatWeHave = () => (
           stack. However since the JAMStack is our forte', we can leverage and
           backend or ecommerce solution that you are already used to and
           integrate it to your new extremely fast Gatsby site.
-        </p>
+        </p>{" "}
+        <div className="price">STARTING $300</div>
       </Card>
       <StaticImage
         src="../../images/home/alexander-popov-3InMDrsuYrk-unsplash@3x.png"
@@ -166,7 +172,8 @@ export const WhatWeHave = () => (
           That being said sometimes stock photos/videos are needed to get the
           ball rolling. In those situations, we got you covered too! Visit our
           store for more info!
-        </p>
+        </p>{" "}
+        <div className="price">STARTING $300</div>
       </Card>
     </ImageLeft>
   </Wrapper>

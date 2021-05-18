@@ -52,6 +52,9 @@ const Card = styled(NewCard)`
   }
   .bottom {
     color: turquoise;
+    width: 80%;
+    font-size:1.5rem;
+    margin: 0;
   }
   @media (max-width: 768px) {
     width: 100%;

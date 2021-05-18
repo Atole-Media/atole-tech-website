@@ -22,6 +22,7 @@ const Section = styled(Sections)`
     color: var(--textColor);
     margin: 0 2rem;
     font-size: 2.25rem;
+    width: 70%;
   }
   @media (max-width: 1024px) {
     p {
@@ -58,7 +59,9 @@ export const WhatIsSection = () => (
   <Section className="whatIs-section" display="flex">
     <h1>Welcome to Atole</h1>
     <p>
-     Atole Media is a digital company offering e-commerce and designs for creative entrepreneurs to increase their digital presence and expand their businesses.
+      Atole Media is a digital company offering e-commerce and designs for
+      creative entrepreneurs to increase their digital presence and expand their
+      businesses.
     </p>
     <Button to="/404" border="var(--orange)">
       Learn More
