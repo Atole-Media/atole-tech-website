@@ -12,6 +12,8 @@ const Button = styled(Link)`
   background-color: ${({ background }) => background};
   color: ${({ color }) => color};
   text-align: center;
+  font-weight: 600;
+
   display: ${({ display }) => (display === "none" ? "none" : "inline")};
   margin: 1rem;
   font-size: 1rem;
@@ -24,7 +26,7 @@ const Button = styled(Link)`
     font-size: 1.5rem;
   }
   @media (max-width: 512px) {
-    font-size: .75rem;
+    font-size: 0.75rem;
     padding: 0.25rem 1rem;
   }
 `
@@ -32,7 +34,7 @@ const Button = styled(Link)`
 export const LinkButton = ({
   children = "Read More",
   to,
-  color = "white",
+  color,
   border,
   background,
   display,

@@ -45,13 +45,11 @@ const Section = styled(Sections)`
   }
 `
 const Button = styled(LinkButton)`
-  font-size: 2.5rem;
-  border-color: var(--orange);
+  font-size: 2rem;
   border-width: 0;
   border-bottom-width: 5px;
   border-radius: 0;
   padding: 0 0 1rem 0;
-
   margin: 5rem auto 0 auto;
 `
 
@@ -63,7 +61,7 @@ export const WhatIsSection = () => (
       creative entrepreneurs to increase their digital presence and expand their
       businesses.
     </p>
-    <Button to="/404" border="var(--orange)">
+    <Button to="/404" border="var(--orange)" color="red">
       Learn More
     </Button>
   </Section>

@@ -13,12 +13,15 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
   align-items: center;
   color: var(--orange);
-  height: 15vh;
+  height: 10vh;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
   h3 {
     text-align: center;
     display: inline;
-    width: 20%;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 15%;
   }
   @media (max-width: 768px) {
     h3 {
@@ -35,6 +38,8 @@ const Wrapper = styled.div`
 const Links = styled(Link)`
   color: var(--orange);
   text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
 
   &:visited {
     color: var(--orange);
@@ -45,7 +50,7 @@ const Links = styled(Link)`
 `
 const Social = styled.span`
   display: grid;
-  width: 33%;
+  width: 15%;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
@@ -58,7 +63,7 @@ const Social = styled.span`
   }
 `
 const Icon = styled(FontAwesomeIcon)`
-  font-size: 3rem;
+  font-size: 2rem;
   @media (max-width: 768px) {
     font-size: 2rem;
   }
@@ -66,7 +71,6 @@ const Icon = styled(FontAwesomeIcon)`
 const Grid = styled.span`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 33%;
   height: 100%;
   justify-items: center;
   align-items: center;

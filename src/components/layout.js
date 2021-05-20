@@ -14,14 +14,19 @@ const GlobalStyle = createGlobalStyle`
   }
   li{
     list-style:none;
+    font-family: "freight-big-pro", serif;
   }
   a{
     text-decoration:none;
     color: white;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
   }
   a:visited{
     color: white;
-  }
+  } 
   body {
     --niceBlue: #2766A9;
     --lightBlue:#BEB8F0;
@@ -43,16 +48,33 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.main`
   p {
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 24px;
     color: white;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
-  h1,
-  h2,
+  h1 {
+    color: var(--orange);
+    margin: 1.25rem 0;
+    font-family: "itc-benguiat", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  h2 {
+    font-family: "itc-benguiat", monospace;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
   h3,
   h4,
   h5 {
     color: var(--orange);
     margin: 1.25rem 0;
+    font-family: "itc-benguiat", monospace;
+    font-weight: 400;
+    font-style: normal;
   }
 `
 

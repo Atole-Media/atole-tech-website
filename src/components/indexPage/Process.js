@@ -18,7 +18,7 @@ const ProcessWrapper = styled(Sections)`
   }
 `
 const Steps = styled(TwoColFlex)`
-  height: 150vh;
+  height: 170vh;
 
   @media (max-width: 512px) {
     flex-wrap: wrap;
@@ -26,7 +26,7 @@ const Steps = styled(TwoColFlex)`
   }
 `
 const Card = styled(NewCard)`
-  width: 25%;
+  width: 30%;
   &.left {
     align-self: flex-start;
   }

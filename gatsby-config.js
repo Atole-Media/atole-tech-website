@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Atole Tech`,
@@ -29,10 +33,19 @@ module.exports = {
         icon: `src/images/services/ball.png`, // This path is relative to the root of the site.
       },
     },
+
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-robots-txt",
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
+    },
   ],
 }

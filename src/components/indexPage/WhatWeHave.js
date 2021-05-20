@@ -61,7 +61,6 @@ const Card = styled(NewCard)`
   width: 40%;
   .top {
     color: white;
-    font-weight: 800;
   }
   .bottom {
     color: var(--orange);

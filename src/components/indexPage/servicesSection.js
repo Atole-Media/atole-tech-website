@@ -17,13 +17,9 @@ const Section = styled(Sections)`
     width: 40%;
     color: var(--lightPurple);
   }
-  h2 {
+  p {
     color: white;
     font-size: 2rem;
-  }
-  h3 {
-    text-transform: uppercase;
-    color: white;
   }
 
   @media (max-width: 1024px) {
@@ -57,22 +53,21 @@ const Card = styled(NewCard)`
   width: 30%;
   box-shadow: 0 1px 3px #edabf5, 0 1px 2px #edabf5;
   transition: 0.2s all ease-out;
-  h3 {
+  h2 {
     color: var(--neon);
-    font-size: 2rem;
   }
   p {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   &:hover {
     box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
   }
   &.small {
-    height: 30vh;
+    height: 40vh;
   }
   &.big {
-    height: 40vh;
+    height: 50vh;
   }
   @media (max-width: 512px) {
     width: 80%;
@@ -83,27 +78,28 @@ export const ServicesSection = () => {
   return (
     <Section className="services-section ">
       <h1>Our services</h1>
-      <h3>
+      <p>
         We provide three paths that suits your business according to your
         budget.
-      </h3>
+      </p>
       <Cards>
         <Card className="small left">
-          <h3>LEARN</h3>
-          <p>UNSURE WHERE TO START? GET INSPIRED BY OUR COURSES COMING SOON!</p>
+          <h2>LEARN</h2>
+          <p>Unsure where to start? Get inspired by our courses coming soon!</p>
         </Card>
         <Card className="big center">
-          <h3>HIRE</h3>
+          <h2>SHOP</h2>
           <p>
-            IF YOU HAVE A COMPLEX PROJECT IN MIND, WE ARE HERE TO HELP YOU! WE
-            HAVE UNIQUE SERVICES TO DEVELOP YOUR SITE.
+            You need your branding but don't have the time and budget to hire
+            someone? Then buy some of our digital products to make your life
+            easier!
           </p>
         </Card>
         <Card className="small right">
-          <h3>SHOP</h3>
+          <h2>HIRE</h2>
           <p>
-            YOU NEED YOUR BRANDING, BUT DON’T HAVE THE TIME AND BUDGET TO HIRE?
-            BUY SOME OF OUR DIGITAL PRODUCTS TO MAKE YOUR LIFE EASIER.
+            If you have a complex project in mind, we are here to help! We
+            provide unique services to develop your site!
           </p>
         </Card>
       </Cards>

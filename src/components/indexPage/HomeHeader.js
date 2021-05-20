@@ -6,11 +6,11 @@ import { LinkButton } from "../linkButton"
 
 const Wrapper = styled(Header)`
   h1 {
-    right: 20vh;
+    left: 20vh;
     display: block;
   }
   h2 {
-    right: 20vh;
+    left: 25vh;
   }
   .buttons {
     right: 20vh;

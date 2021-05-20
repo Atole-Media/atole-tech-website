@@ -11,8 +11,13 @@ const Card = styled(NewCard)`
   color: white;
   width: 33%;
   text-align: left;
-  height: 90%;
+  height: 70vh;
   justify-content: space-between;
+  padding: 0 2rem;
+  h2 {
+    text-transform: uppercase;
+  }
+
   @media (max-width: 768px) {
     width: 50%;
   }
@@ -26,7 +31,8 @@ const Section = styled(Sections)`
     color: var(--red);
   }
   background: none;
-  height: 70vh;
+  min-height: 70vh;
+  align-items: stretch;
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
@@ -58,7 +64,7 @@ export const AddOns = () => (
         <LinkButton color="var(--pink)">ADD $300 PER PAGE</LinkButton>
       </Card>
       <Card>
-        <h2>Learn More</h2>
+        <h2>Convenience</h2>
         <p>
           You have more important stuff to do like getting the products,
           providers, distributors and so on, not code and maintain a site!

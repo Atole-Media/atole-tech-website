@@ -6,12 +6,12 @@ import { LinkButton } from "../linkButton"
 
 const Splash = styled(Header)`
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     right: 15vh;
   }
   .buttons {
     right: 15vh;
-    top: 60vh;
+    top: 45%;
   }
   @media (max-width: 1024px) {
     min-height: 0;

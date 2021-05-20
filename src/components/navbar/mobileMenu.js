@@ -26,7 +26,6 @@ const StyledMenu = styled.nav`
 const Links = styled(Link)`
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: bold;
   height: 7rem;
   letter-spacing: 0.5rem;
   color: var(--yellow);

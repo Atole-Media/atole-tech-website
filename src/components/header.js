@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Wrapper = styled.div`
   min-height: 100vh;
   width: 100%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   position: relative;
 
   h1 {
