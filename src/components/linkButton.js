@@ -19,7 +19,8 @@ const Button = styled(Link)`
   font-size: 1rem;
   transition: 0.2s all ease-out;
   &:hover {
-    box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
+    ${({ hover }) =>
+      hover ? `box-shadow: 0 14px 28px ${hover}, 0 10px 10px ${hover};` : null}
   }
 
   @media (max-width: 768px) {
@@ -34,11 +35,12 @@ const Button = styled(Link)`
 export const LinkButton = ({
   children = "Read More",
   to,
-  color,
+  color = "white",
   border,
   background,
   display,
   className,
+  hover,
 }) => (
   <Button
     to={to}
@@ -47,6 +49,7 @@ export const LinkButton = ({
     background={background}
     display={display}
     className={className}
+    hover={hover}
   >
     {children}
   </Button>

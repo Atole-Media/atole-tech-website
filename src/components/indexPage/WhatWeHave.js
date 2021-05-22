@@ -5,35 +5,39 @@ import { NewCard } from "../NewCard"
 import { TwoColFlex } from "../TwoColFlex"
 
 const Wrapper = styled.div`
-  h1 {
-    text-align: left;
-    margin-left: 5rem;
+  h2 {
+    text-align: center;
     color: var(--red);
   }
   .image {
     width: 30%;
   }
   @media (max-width: 768px) {
-    h1 {
+    h2 {
       text-align: center;
       margin: 0;
     }
   }
   @media (max-width: 512px) {
     margin: 0 auto;
+    padding: 2rem;
+    .image {
+      width: 100%;
+    }
   }
 `
 const ImageRight = styled(TwoColFlex)`
-  h2 {
+  h3 {
     border-bottom: 7px solid var(--orange);
     padding-bottom: 2rem;
     text-transform: uppercase;
-    font-size: 2rem;
     text-align: left;
     margin-right: auto;
   }
+  p {
+    text-align: left;
+  }
   @media (max-width: 768px) {
-    padding: 1rem;
   }
   @media (max-width: 512px) {
     flex-wrap: wrap;
@@ -41,24 +45,22 @@ const ImageRight = styled(TwoColFlex)`
   }
 `
 const ImageLeft = styled(TwoColFlex)`
-  h2 {
+  h3 {
     border-bottom: 7px solid var(--orange);
     padding-bottom: 2rem;
     text-transform: uppercase;
-    font-size: 2rem;
     text-align: left;
     margin-left: auto;
   }
   @media (max-width: 768px) {
-    padding: 1rem;
   }
   @media (max-width: 512px) {
     flex-wrap: wrap;
-    padding: 2rem;
   }
 `
 const Card = styled(NewCard)`
   width: 40%;
+  text-align: right;
   .top {
     color: white;
   }
@@ -67,9 +69,9 @@ const Card = styled(NewCard)`
   }
   .price {
     color: var(--neon);
+    font-size: 2rem;
   }
   @media (max-width: 768px) {
-    padding: 0.5rem;
   }
   @media (max-width: 512px) {
     width: 100%;
@@ -79,10 +81,10 @@ const Card = styled(NewCard)`
 
 export const WhatWeHave = () => (
   <Wrapper size="wide">
-    <h1>WHAT YOU CAN FIND IN ATOLE TECH...</h1>
+    <h2>WHAT YOU CAN FIND IN ATOLE TECH...</h2>
     <ImageRight>
       <Card>
-        <h2>Branding</h2>
+        <h3>Branding</h3>
         <p className="top">
           Take your brand to the next level with our custom packages! We will
           create Logos, printables and graphics that match your business's style
@@ -110,7 +112,7 @@ export const WhatWeHave = () => (
         className="image"
       />
       <Card>
-        <h2>Design</h2>
+        <h3>Design</h3>
         <p className="top">
           We design your site from scratch, from the wireframe, all the way to
           the final composition. We strive to make your site stand out from all
@@ -129,7 +131,7 @@ export const WhatWeHave = () => (
     </ImageLeft>
     <ImageRight>
       <Card>
-        <h2>Development</h2>
+        <h3>Development</h3>
         <p className="top">
           We provide high quality, custom websites that allow you to increase
           your web presence. Our service provides high quality SEO, E-commerce
@@ -158,7 +160,7 @@ export const WhatWeHave = () => (
         className="image"
       />
       <Card>
-        <h2>Video / Photo</h2>
+        <h3>Video / Photo</h3>
         <p className="top">
           No site or brand is truly complete without actual pictures or videos
           of your business. Stock photos can only take you so far, and to create

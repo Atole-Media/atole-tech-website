@@ -4,8 +4,7 @@ export const NewCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items:center;
-  padding: 2rem;
+  align-items: center;
   h1,
   h2 {
     text-align: center;
@@ -18,9 +17,9 @@ export const NewCard = styled.div`
     width: 45%;
   }
   @media (max-width: 768px) {
+    margin: 2rem 0;
   }
   @media (max-width: 512px) {
     width: 90%;
-    margin: 2rem 0;
   }
 `

@@ -6,16 +6,12 @@ import { Sections } from "../sections"
 import { TwoColFlex } from "../TwoColFlex"
 
 const ProcessWrapper = styled(Sections)`
-  h1,
-  h2 {
+  h2,
+  h3,
+  p {
     text-align: center;
   }
-  h2 {
-    color: var(--lightPurple);
-  }
-  h1 {
-    font-size: 2rem;
-  }
+
 `
 const Steps = styled(TwoColFlex)`
   height: 170vh;
@@ -23,10 +19,15 @@ const Steps = styled(TwoColFlex)`
   @media (max-width: 512px) {
     flex-wrap: wrap;
     height: auto;
+    width: 100%;
+    padding: 0;
   }
 `
 const Card = styled(NewCard)`
   width: 30%;
+  p {
+    text-align: left;
+  }
   &.left {
     align-self: flex-start;
   }
@@ -41,16 +42,17 @@ const Card = styled(NewCard)`
     padding: 0;
   }
   @media (max-width: 512px) {
-    width: 90%;
-    /* margin: 0 auto; */
-    padding: 0;
+    width: 100%;
+    p {
+      text-align: justify;
+    }
   }
 `
 
 export const Process = () => (
   <ProcessWrapper>
     <h2>What is our Process?</h2>
-    <h1>How does it work?</h1>
+    <p>How does it work?</p>
     <Steps>
       <Card className="left">
         <StaticImage
@@ -58,7 +60,7 @@ export const Process = () => (
           alt="number 1"
           height={300}
         />
-        <h2>MEET & STRATEGY</h2>
+        <h3>Meet & Strategy</h3>
         <p>
           It all starts with our first meeting  to get to know you and your
           goals so we can find out how to get you there.   Together we will
@@ -74,7 +76,7 @@ export const Process = () => (
           alt="number 2"
           height={300}
         />
-        <h2>DESIGN & DEVELOPMENT</h2>
+        <h3>Design & Development</h3>
 
         <p>
           {" "}
@@ -92,7 +94,7 @@ export const Process = () => (
           alt="number 3"
           height={300}
         />
-        <h2>LAUNCHING & TRAINING</h2>
+        <h3>Launching & Training</h3>
         <p>
           {" "}
           This is the final step, we make sure you keep updating your website 

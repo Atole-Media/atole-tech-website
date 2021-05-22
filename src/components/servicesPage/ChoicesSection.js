@@ -10,6 +10,7 @@ import imageRight from "../../images/services/Geometric Venn Diagram (1).png"
 
 const SectionWrapper = styled(Sections)`
   min-height: 80vh;
+  align-items: stretch;
   background-position: center;
   background-size: cover;
   .left {
@@ -26,11 +27,20 @@ const ImageCard = styled(NewCard)`
   width: 45%;
   background-size: contain;
   align-items: flex-start;
+  justify-content: space-between;
   ul {
     color: white;
+    font-size: 1.5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
   }
   .top-text {
-    font-weight: 800;
   }
   &.left {
     p {
@@ -65,9 +75,9 @@ export const ChoicesSection = () => (
       </p>
       <p>By hiring us you’ll get consultation and guide to make it happen.</p>
       <ul className="bottom-text">
-        <li>- This is ideal for advanced businesses</li>
-        <li> - Launch in as little as 4 weeks</li>
-        <li> - Pricing starts at  $2000</li>
+        <li>This is ideal for advanced businesses</li>
+        <li>Launch in as little as 4 weeks</li>
+        <li>Pricing starts at  $2000</li>
       </ul>
       <Button background="var(--orange)">Learn More</Button>
     </ImageCard>
@@ -87,11 +97,11 @@ export const ChoicesSection = () => (
         wan to get started by themselves, with little supervision.
       </p>
       <ul>
-        <li> - This is ideal for new businesses</li>
-        <li> - Launch in as little as 1 day</li>
-        <li> - Pricing starts at $20</li>
+        <li>This is ideal for new businesses</li>
+        <li>Launch in as little as 1 day</li>
+        <li>Pricing starts at $20</li>
       </ul>
-      <Button background="var(--orange)">Go to store</Button>
+      <Button background="var(--lightPurple)">Go to store</Button>
     </ImageCard>
   </SectionWrapper>
 )

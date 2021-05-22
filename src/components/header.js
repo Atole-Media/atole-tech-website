@@ -10,47 +10,27 @@ const Wrapper = styled.div`
   h1 {
     color: var(--orange);
     position: absolute;
-    font-size: 5rem;
     top: 35vh;
   }
   h2 {
     color: white;
     position: absolute;
-    top: 60vh;
-    font-size: 3rem;
+    top: 55vh;
     display: block;
   }
   .buttons {
     position: absolute;
     min-width: 30%;
-    top: 80vh;
-    /* margin: 0 auto; */
+    top: 70vh;
 
     display: flex;
     justify-content: space-around;
   }
   @media (max-width: 1024px) {
     text-align: center;
-
-    h1 {
-      font-size: 3.5rem;
-      left: 0;
-      right: 0;
-    }
-    h2 {
-      font-size: 2.5rem;
-      left: 0;
-      right: 0;
-    }
   }
-  
+
   @media (max-width: 512px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-    h2 {
-      font-size: 1.75rem;
-    }
     .buttons {
       font-size: 1rem;
     }

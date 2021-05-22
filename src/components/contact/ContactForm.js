@@ -5,6 +5,7 @@ const StyledForm = styled.form`
   height: 80%;
   width: 33%;
   display: inline-flex;
+  justify-content: space-evenly;
   flex-direction: column;
   border: 3px solid var(--orange);
   border-radius: 15px;
@@ -16,18 +17,21 @@ const StyledForm = styled.form`
   button:focus {
     outline: none;
   }
-  h1 {
+
+  h2 {
     color: var(--orange);
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    margin: 1rem auto;
+    margin: 0 auto;
   }
   label {
-    margin: 0.5rem auto;
+    margin: 0 auto;
     width: 70%;
     text-align: left;
     color: var(--yellow);
     border: none;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
   }
   label input {
     width: 100%;
@@ -38,19 +42,23 @@ const StyledForm = styled.form`
     border: 2px solid var(--orange);
     font-size: 2rem;
     padding: 1rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
   }
   label textarea {
     width: 100%;
     background-color: var(--purple);
     color: var(--yellow);
     height: 10rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem;
     border-radius: 15px;
     border: 2px solid var(--orange);
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
   }
   button {
-    margin: 3rem auto;
+    margin: 0 auto;
     padding: 1rem 0;
     background-color: var(--orange);
     border-radius: 10px;
@@ -86,20 +94,22 @@ export const ContactForm = () => (
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
-    <h1>CONTACT US</h1>
+    <h2>CONTACT US</h2>
     <input type="hidden" name="form-name" value="contact" />
 
     <label>
-      Name
-      <input type="text" name="name" required="required" />
+      <input type="text" name="name" required="required" placeholder="Name" />
     </label>
     <label>
-      E-mail
-      <input type="email" name="email" required="required" />
+      <input
+        type="email"
+        name="email"
+        required="required"
+        placeholder="Email"
+      />
     </label>
     <label>
-      Message
-      <textarea name="message" required="required" />
+      <textarea name="message" required="required" placeholder="Message" />
     </label>
     <button type="submit">Send!</button>
   </StyledForm>

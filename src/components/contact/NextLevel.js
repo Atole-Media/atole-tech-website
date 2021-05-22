@@ -5,30 +5,32 @@ import { Header } from "../header"
 
 const SectionWrapper = styled(Header)`
   min-height: 0;
-  h1 {
+  h2 {
     color: var(--orange);
     font-size: 2.5rem;
-    top: 10%;
+    top: 25%;
     left: 0;
     right: 0;
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
   }
   p {
     color: white;
     position: absolute;
-    top: 40%;
+    bottom: 30%;
     left: 0;
     right: 0;
-    text-align: left;
-    width: 90%;
+    text-align: justify;
+    width: 70%;
     margin: 0 auto;
     text-transform: initial;
   }
-  /* .image {
-    height: 80vh;
-  } */
+  .image {
+    height: 90vh;
+  }
   @media (max-width: 512px) {
-    h1 {
+    h2 {
       font-size: 1.75rem;
       top: 5%;
     }
@@ -48,12 +50,11 @@ export const NextLevel = () => (
         alt="phone"
         className="image"
         layout="fullWidth"
-        aspectRatio={16 / 3}
       />
     }
     title={
       <>
-        <h1>ARE YOU READY TO TAKE YOUR BRAND TO THE NEXT LEVEL?</h1>
+        <h2>ARE YOU READY TO TAKE YOUR BRAND TO THE NEXT LEVEL?</h2>
         <p>
           We are excited to hear all about your juicy business ideas and help
           you take them to the next level by making them profitable. Contact us

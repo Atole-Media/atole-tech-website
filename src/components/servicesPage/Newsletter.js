@@ -5,17 +5,28 @@ import { LinkButton } from "../linkButton"
 const Wrapper = styled.div`
   margin: 8rem auto;
   text-align: center;
-  width: 30vw;
-  h1 {
+  width: 50vw;
+  padding: 3rem;
+  background-color: var(--lightPurple);
+  border-radius: 30px;
+  height: auto;
+
+  h2 {
     color: var(--orange);
     width: 100%;
-    display: inline;
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 2rem;
   }
   @media (max-width: 1024px) {
     width: 60vw;
   }
   @media (max-width: 768px) {
     width: 80vw;
+  }
+  @media (max-width: 512px) {
+    height: 60vh;
   }
 `
 const NewsBox = styled.div`
@@ -24,42 +35,61 @@ const NewsBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 5rem;
+  width: 70%;
+  height: 4rem;
+  border-radius: 15px;
+  border: none;
+
   input {
     height: 2.5rem;
     color: var(--purple);
     border: none;
+    border-radius: 15px;
     width: 50%;
     margin-left: 1rem;
-    font-size: 0.65rem;
+    font-size: 1.5 rem;
   }
   input:focus {
     outline: none;
-    text-decoration: underline;
-    text-decoration-color: var(--neon);
   }
   input::placeholder {
     /* Chrome/Opera/Safari */
-    color: var(--neon);
+    color: var(--orange);
     text-transform: uppercase;
+    text-align: center;
+  }
+  @media (max-width: 512px) {
+    width: 100%;
+    flex-wrap: wrap;
+    height: 3rem;
+    input {
+      width: 100%;
+      margin: 0;
+    }
   }
 `
 const Button = styled(LinkButton)`
   margin: 1rem;
   font-size: 1rem;
+  &.mobile {
+    display: none;
+  }
+  @media (max-width: 512px) {
+    margin: 2rem auto;
+  }
 `
 export const Newsletter = () => (
   <Wrapper className="newsletter">
-    <h1>Subscribe to our Newsletter!</h1>
+    <h2>Subscribe to our Newsletter!</h2>
+    <p>Stay up to date with our latest products!</p>
     <NewsBox>
-      <input
-        type="email"
-        name="email"
-        id="newsletter"
-        placeholder="Your Email Address Goes Here"
-      />
-      <Button background="var(--orange)">Subscribe</Button>
+      <input type="email" name="email" id="newsletter" placeholder="Your Email Here" />
+      <Button background="var(--orange)" className="desktop">
+        Subscribe
+      </Button>
     </NewsBox>
+    {/* <Button background="var(--orange)" className="mobile">
+      Subscribe
+    </Button> */}
   </Wrapper>
 )

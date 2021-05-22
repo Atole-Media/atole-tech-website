@@ -9,11 +9,15 @@ const InfoWrapper = styled.div`
   text-align: center;
   justify-content: space-evenly;
   height: 80%;
-  border: 3px solid var(--orange);
-  border-radius: 15px;
   padding-bottom: 1.5rem;
-  h3 {
+  h2 {
     text-transform: uppercase;
+    color: var(--orange);
+    font-size: 2rem;
+  }
+  a {
+    color: white;
+    font-size: 1.5rem;
   }
   .text {
     color: white;
@@ -34,16 +38,13 @@ const InfoWrapper = styled.div`
 `
 export const Info = () => (
   <InfoWrapper>
-    <h3>Atole's Location</h3>
+    <h2>Atole's Location</h2>
     <p>Located in the great city of New York</p>
-    <h3>ATOLE’S BUSINESS EMAIL/ DIRECT CONTACT</h3>
-    <a href="mailto:lena@atolemedia.com" target="_blank" rel="noreferrer">
-      lena@atolemedia.com
+    <h2>DIRECT CONTACT</h2>
+    <a href="mailto:info@atolemedia.com" target="_blank" rel="noreferrer">
+      info@atolemedia.com
     </a>
-    <a href="mailto:Julian@atolemedia.com" target="_blank" rel="noreferrer">
-      julianv@atolemedia.com
-    </a>
-    <h3>HOURS OF AVAILABILITY</h3>
+    <h2>HOURS OF AVAILABILITY</h2>
     <p>We will respond within 24 hours</p>
     <p className="text">
       Thank you for reaching out to us through the website. We cannot wait to

@@ -6,15 +6,16 @@ const Wrapper = styled.div`
   position: absolute;
   ${({ position }) => (position === "right" ? "left: 5vw" : null)}
   ${({ position }) => (position === "left" ? "right: 5vw" : null)};
-  top: 10vh;
+  top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
   h3 {
     color: var(--orange);
     font-size: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
+    font-weight: 500;
   }
   @media (max-width: 1024px) {
     top: 0;
@@ -44,8 +45,8 @@ const Button = styled(LinkButton)`
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-  @media (max-width: 512px){
-font-size: .5rem;
+  @media (max-width: 512px) {
+    font-size: 0.5rem;
   }
 `
 

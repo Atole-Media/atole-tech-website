@@ -11,14 +11,22 @@ const Wrapper = styled(Sections)`
   h1 {
     text-align: center;
     font-size: 3rem;
+    margin-top: 10rem;
   }
   h2 {
     color: var(--orange);
   }
 `
-const Grid = styled(TwoColumnGrid)``
+const Grid = styled(TwoColumnGrid)`
+  gap: 0;
+`
 const ServiceCard = styled(NewCard)`
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-top: 0;
+  padding-bottom: 0;
+  p {
+    margin: 0 auto;
+  }
   @media (max-width: 1024px) {
     width: 100%;
     padding: 0;
@@ -82,29 +90,6 @@ export const Questions = () => (
         </p>
       </ServiceCard>
       <ServiceCard>
-        <h2>Project Process</h2>
-        <p>
-          To get started, we will meet via Zoom to get a better idea of what
-          you’re looking for and discuss the logistics of our services. After
-          that we  will ask  you to complete our  Atole Design & Branding 
-          Questionnaires, ( this step gives us a sense of what is your brand
-          personality, values and mission.  The more info you provide the
-          better!)
-        </p>
-        <p>
-          {" "}
-          We’ll share your responses with a designer on our team who will take
-          the initial step of creating a design according to the direction
-          you’ve provided. After you approve our designs, we proceed to the
-          development of your website. This stage will take approximately 2
-          weeks to deliver. Our last step is delivering all the goodies directly
-          to you. We will have our final Zoom meeting to explain the maintenance
-          of your website,  answer all your questions and celebrate a sweet,
-          delicious atole with you to celebrate  your new journey as an official
-          entrepreneur!
-        </p>
-      </ServiceCard>
-      <ServiceCard>
         <h2>Payment process</h2>
         <p>
           Please note that we are on a 50/50 payment plan means that all
@@ -116,6 +101,21 @@ export const Questions = () => (
         <p>
           Payment transactions will be through online card payments or bank
           transfers.
+        </p>
+      </ServiceCard>{" "}
+      <ServiceCard>
+        <h2>What is our stack?</h2>
+        <p>
+          Our stack  is very dense. Atole uses multiple layers of technology to
+          make any project attainable. When you hire someone for an specific
+          project. for complete site build from the ground up. React.JS, Gatsby,
+          Ghost and Shopify, and much more are some of the tools Atole Tech uses
+          for larger enterprise sites needing a larger and faster site.
+        </p>
+        <p>
+          If you are more interested in DIY websites, Atole Tech has  Webflow &
+          SquareSpace templates in our  store , in which you can use and start
+          launching your business right away.
         </p>
       </ServiceCard>
       <ServiceCard>
@@ -138,18 +138,26 @@ export const Questions = () => (
         </p>
       </ServiceCard>
       <ServiceCard>
-        <h2>What is our stack?</h2>
+        <h2>Project Process</h2>
         <p>
-          Our stack  is very dense. Atole uses multiple layers of technology to
-          make any project attainable. When you hire someone for an specific
-          project. for complete site build from the ground up. React.JS, Gatsby,
-          Ghost and Shopify, and much more are some of the tools Atole Tech uses
-          for larger enterprise sites needing a larger and faster site.
+          To get started, we will meet via Zoom to get a better idea of what
+          you’re looking for and discuss the logistics of our services. After
+          that we  will ask  you to complete our  Atole Design & Branding 
+          Questionnaires, ( this step gives us a sense of what is your brand
+          personality, values and mission.  The more info you provide the
+          better!)
         </p>
         <p>
-          If you are more interested in DIY websites, Atole Tech has  Webflow &
-          SquareSpace templates in our  store , in which you can use and start
-          launching your business right away.
+          {" "}
+          We’ll share your responses with a designer on our team who will take
+          the initial step of creating a design according to the direction
+          you’ve provided. After you approve our designs, we proceed to the
+          development of your website. This stage will take approximately 2
+          weeks to deliver. Our last step is delivering all the goodies directly
+          to you. We will have our final Zoom meeting to explain the maintenance
+          of your website,  answer all your questions and celebrate a sweet,
+          delicious atole with you to celebrate  your new journey as an official
+          entrepreneur!
         </p>
       </ServiceCard>
     </Grid>

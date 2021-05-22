@@ -5,6 +5,7 @@ import { Header } from "../header"
 import { LinkButton } from "../linkButton"
 
 const Wrapper = styled(Header)`
+  padding-bottom: 5rem;
   h1 {
     left: 20vh;
     display: block;
@@ -15,23 +16,36 @@ const Wrapper = styled(Header)`
   .buttons {
     right: 20vh;
   }
+  margin-bottom: 3rem;
   @media (max-width: 1024px) {
     h1 {
-      font-size: 3.5rem;
       left: 0;
       right: 0;
     }
     h2 {
-      font-size: 2.5rem;
       left: 0;
       right: 0;
+      top: 65%;
     }
     .buttons {
       left: 0;
       right: 0;
+      top: 80%;
     }
   }
-  
+  @media (max-width: 512px) {
+    h1 {
+      top: 35%;
+    }
+    h2 {
+      top: 55%;
+    }
+    .buttons {
+      top: 70%;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 `
 
 export const HomeHeader = () => (
@@ -50,7 +64,7 @@ export const HomeHeader = () => (
     title={
       <>
         <h1>Take a sip of creativity </h1>
-        <h2>and let's do magic!</h2>
+        <h2> let's do magic!</h2>
       </>
     }
     buttons={

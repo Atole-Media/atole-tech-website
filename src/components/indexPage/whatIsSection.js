@@ -5,7 +5,7 @@ import { LinkButton } from "../linkButton"
 import { Sections } from "../sections"
 
 const Section = styled(Sections)`
-  margin: 1rem auto;
+  margin: 3rem auto;
   background-color: var(--purple);
   flex-direction: column;
   h1 {
@@ -21,12 +21,10 @@ const Section = styled(Sections)`
   p {
     color: var(--textColor);
     margin: 0 2rem;
-    font-size: 2.25rem;
     width: 70%;
   }
   @media (max-width: 1024px) {
     p {
-      font-size: 1.5rem;
       margin: 0 5rem;
     }
   }
@@ -41,6 +39,8 @@ const Section = styled(Sections)`
     }
     p {
       margin: 0;
+      width: 100%;
+      text-align: justify;
     }
   }
 `
@@ -55,13 +55,13 @@ const Button = styled(LinkButton)`
 
 export const WhatIsSection = () => (
   <Section className="whatIs-section" display="flex">
-    <h1>Welcome to Atole</h1>
+    <h2>Welcome to Atole</h2>
     <p>
       Atole Media is a digital company offering e-commerce and designs for
       creative entrepreneurs to increase their digital presence and expand their
       businesses.
     </p>
-    <Button to="/404" border="var(--orange)" color="red">
+    <Button to="/404" border="var(--orange)" color="var(--yellow)">
       Learn More
     </Button>
   </Section>

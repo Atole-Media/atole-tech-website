@@ -4,7 +4,10 @@ import { Sections } from "../sections"
 
 const StoryWrapper = styled(Sections)`
   padding: 0;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
   h2 {
     text-align: center;
     color: var(--orange);
@@ -15,9 +18,7 @@ const StoryWrapper = styled(Sections)`
     margin-top: 2rem;
     font-size: 1.5rem;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+
   @media (max-width: 768px) {
     p {
       width: 90%;

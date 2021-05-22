@@ -10,10 +10,14 @@ import Seo from "../utils/seo"
 import { NextLevel } from "../components/contact/NextLevel"
 import { ContactHeader } from "../components/contact/ContactHeader"
 import { Questions } from "../components/contact/Questions"
+import { Newsletter } from "../components/servicesPage/Newsletter"
 
 const ContactSection = styled(Sections)`
   justify-content: space-evenly;
   height: 100vh;
+  .dots {
+    width: 15%;
+  }
   @media (max-width: 1028px) {
     .dots {
       width: 20%;
@@ -40,7 +44,8 @@ const FrequentlyAskedQuestions = () => {
         <Info />
       </ContactSection>
       <NextLevel />
-      <Questions />
+      {/* <Questions /> */}
+      <Newsletter />
       <Seo title="Contact" />
     </Layout>
   )

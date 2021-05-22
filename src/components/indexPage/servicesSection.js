@@ -28,12 +28,14 @@ const Section = styled(Sections)`
     }
   }
   @media (max-width: 512px) {
+    padding: 2rem;
     h3 {
       font-size: 2rem;
     }
     p {
-      width: 80%;
-      text-align: left;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
     }
   }
 `
@@ -45,7 +47,7 @@ const Cards = styled.div`
   align-items: center;
   margin: 1.5rem 0;
 
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
   }
 `
@@ -53,12 +55,14 @@ const Card = styled(NewCard)`
   width: 30%;
   box-shadow: 0 1px 3px #edabf5, 0 1px 2px #edabf5;
   transition: 0.2s all ease-out;
+  padding: 1.5rem;
+
   h2 {
     color: var(--neon);
   }
   p {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   &:hover {
     box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
@@ -69,26 +73,42 @@ const Card = styled(NewCard)`
   &.big {
     height: 50vh;
   }
+  @media (max-width: 768px) {
+    width: 90%;
+    p {
+      width: 100%;
+      text-align: center;
+    }
+    &.small {
+      height: auto;
+    }
+    &.big {
+      height: auto;
+    }
+  }
   @media (max-width: 512px) {
-    width: 80%;
+    width: 100%;
+    p {
+      text-align: justify;
+    }
   }
 `
 
 export const ServicesSection = () => {
   return (
     <Section className="services-section ">
-      <h1>Our services</h1>
+      <h2>Our services</h2>
       <p>
         We provide three paths that suits your business according to your
         budget.
       </p>
       <Cards>
         <Card className="small left">
-          <h2>LEARN</h2>
+          <h3>LEARN</h3>
           <p>Unsure where to start? Get inspired by our courses coming soon!</p>
         </Card>
         <Card className="big center">
-          <h2>SHOP</h2>
+          <h3>SHOP</h3>
           <p>
             You need your branding but don't have the time and budget to hire
             someone? Then buy some of our digital products to make your life
@@ -96,7 +116,7 @@ export const ServicesSection = () => {
           </p>
         </Card>
         <Card className="small right">
-          <h2>HIRE</h2>
+          <h3>HIRE</h3>
           <p>
             If you have a complex project in mind, we are here to help! We
             provide unique services to develop your site!

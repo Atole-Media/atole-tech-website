@@ -7,6 +7,9 @@ const Wrapper = styled.ul`
   display: flex;
   justify-content: space-evenly;
   text-transform: uppercase;
+  a:visited {
+    color: white;
+  }
 
   @media (max-width: 512px) {
     display: none;

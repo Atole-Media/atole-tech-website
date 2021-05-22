@@ -37,6 +37,9 @@ const TextCard = styled(NewCard)`
   .image {
     width: 40%;
   }
+  .button {
+    font-size: 2rem;
+  }
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -44,7 +47,6 @@ const TextCard = styled(NewCard)`
     color: var(--red);
   }
   p {
-    font-size: 1.25rem;
     margin: 1rem 0;
   }
   @media (max-width: 1024px) {
@@ -69,7 +71,9 @@ export const BrandServiceGrid = () => (
           We do this after a comprehensive brand strategy & development
           approach.
         </p>
-        <LinkButton color="var(--pink)">BUY $ 550</LinkButton>
+        <LinkButton color="var(--pink)" className="button">
+          BUY $ 550
+        </LinkButton>
       </TextCard>
       <StaticImage
         src="../../images/services/ball.png"
@@ -91,7 +95,9 @@ export const BrandServiceGrid = () => (
           will scale with them. More secure, faster, better SEO, and more
           importantly highly customizable to meet all your needs.
         </p>
-        <LinkButton color="var(--pink)">BUY $ 2000</LinkButton>
+        <LinkButton color="var(--pink)" className="button">
+          BUY $ 2000
+        </LinkButton>
       </TextCard>
     </WebWrapper>
   </>

@@ -14,6 +14,9 @@ const Card = styled(NewCard)`
   height: 70vh;
   justify-content: space-between;
   padding: 0 2rem;
+  .button {
+    font-size: 2rem;
+  }
   h2 {
     text-transform: uppercase;
   }
@@ -31,7 +34,6 @@ const Section = styled(Sections)`
     color: var(--red);
   }
   background: none;
-  min-height: 70vh;
   align-items: stretch;
   @media (max-width: 768px) {
     flex-wrap: wrap;
@@ -42,6 +44,7 @@ const Wrapper = styled.div`
   background-position: center;
   background-size: cover;
   text-align: center;
+  min-height: 100vh;
 `
 
 export const AddOns = () => (
@@ -52,7 +55,9 @@ export const AddOns = () => (
         <h2>RUSH</h2>
         <p>You need your designs and website as soon as possible.</p>
         <p> We can accelerate the process with a fee. </p>
-        <LinkButton color="var(--pink)">ADD 30% TO TOTAL PRICE</LinkButton>
+        <LinkButton color="var(--pink)" className="button">
+          ADD 30% TO TOTAL PRICE
+        </LinkButton>
       </Card>
       <Card>
         <h2>MORE PAGES</h2>
@@ -61,7 +66,9 @@ export const AddOns = () => (
           website needs. 
         </p>
         <p>However if you would like to add another page. We got you!</p>
-        <LinkButton color="var(--pink)">ADD $300 PER PAGE</LinkButton>
+        <LinkButton color="var(--pink)" className="button">
+          ADD $300 PER PAGE
+        </LinkButton>
       </Card>
       <Card>
         <h2>Convenience</h2>
@@ -74,7 +81,9 @@ export const AddOns = () => (
           Well, we have the option to maintain your digital business throughout
           the year.
         </p>
-        <LinkButton color="var(--pink)">ADD $500 A MONTH</LinkButton>
+        <LinkButton color="var(--pink)" className="button">
+          ADD $500 A MONTH
+        </LinkButton>
       </Card>
     </Section>
   </Wrapper>

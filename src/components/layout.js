@@ -14,19 +14,19 @@ const GlobalStyle = createGlobalStyle`
   }
   li{
     list-style:none;
-    font-family: "freight-big-pro", serif;
-  }
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    
+    }
   a{
     text-decoration:none;
-    color: white;
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
 
   }
-  a:visited{
-    color: white;
-  } 
+  
   body {
     --niceBlue: #2766A9;
     --lightBlue:#BEB8F0;
@@ -56,25 +56,40 @@ const Main = styled.main`
   }
   h1 {
     color: var(--orange);
-    margin: 1.25rem 0;
     font-family: "itc-benguiat", monospace;
     font-weight: 700;
     font-style: normal;
+    font-size: 6rem;
   }
 
   h2 {
     font-family: "itc-benguiat", monospace;
-    font-weight: 500;
-    font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--red);
+    margin: 1.25rem 0;
+    font-style: normal;
   }
   h3,
   h4,
   h5 {
-    color: var(--orange);
+    color: var(--neon);
     margin: 1.25rem 0;
     font-family: "itc-benguiat", monospace;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
+    font-size: 2.5rem;
+  }
+  @media (max-width: 512px) {
+    h1{
+      font-size:3rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1rem;
+    }
   }
 `
 

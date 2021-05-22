@@ -7,4 +7,9 @@ export const TwoColFlex = styled.div`
   align-items: center;
   max-width: 1386px;
   margin: 0 auto;
+  @media (max-width: 512px) {
+    width: 100%;
+  
+    text-align: justify;
+  }
 `

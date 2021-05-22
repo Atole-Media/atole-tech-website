@@ -9,7 +9,7 @@ const HeaderWrapper = styled(Header)`
     left: 10%;
   }
   h2 {
-    right: 10vh;
+    left: 40%;
   }
   @media (max-width: 1024px) {
     text-align: center;
