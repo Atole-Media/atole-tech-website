@@ -15,13 +15,13 @@ const Wrapper = styled.div`
   h2 {
     color: white;
     position: absolute;
-    top: 55vh;
+    top: 60vh;
     display: block;
   }
   .buttons {
     position: absolute;
     min-width: 30%;
-    top: 70vh;
+    top: 80vh;
 
     display: flex;
     justify-content: space-around;

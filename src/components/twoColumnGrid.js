@@ -8,7 +8,7 @@ export const TwoColumnGrid = styled.div`
   gap: 2rem;
   background-color: var(--purple);
   justify-items: center;
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 `

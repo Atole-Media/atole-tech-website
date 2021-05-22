@@ -17,6 +17,9 @@ const Wrapper = styled.div`
       text-align: center;
       margin: 0;
     }
+    .image {
+      width: 80%;
+    }
   }
   @media (max-width: 512px) {
     margin: 0 auto;
@@ -38,10 +41,10 @@ const ImageRight = styled(TwoColFlex)`
     text-align: left;
   }
   @media (max-width: 768px) {
-  }
-  @media (max-width: 512px) {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+  }
+  @media (max-width: 512px) {
   }
 `
 const ImageLeft = styled(TwoColFlex)`
@@ -53,9 +56,9 @@ const ImageLeft = styled(TwoColFlex)`
     margin-left: auto;
   }
   @media (max-width: 768px) {
+    flex-wrap: wrap;
   }
   @media (max-width: 512px) {
-    flex-wrap: wrap;
   }
 `
 const Card = styled(NewCard)`
@@ -72,6 +75,7 @@ const Card = styled(NewCard)`
     font-size: 2rem;
   }
   @media (max-width: 768px) {
+    width: 80%;
   }
   @media (max-width: 512px) {
     width: 100%;

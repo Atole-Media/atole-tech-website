@@ -19,6 +19,11 @@ const HeaderWrapper = styled(Header)`
       right: 0;
     }
   }
+  @media (max-width: 768px) {
+    h2 {
+      top: 75vh;
+    }
+  }
 `
 export const ServicesHeader = () => (
   <HeaderWrapper

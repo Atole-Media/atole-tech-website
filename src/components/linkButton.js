@@ -24,7 +24,7 @@ const Button = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   @media (max-width: 512px) {
     font-size: 0.75rem;

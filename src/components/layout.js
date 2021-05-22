@@ -80,14 +80,29 @@ const Main = styled.main`
     font-style: normal;
     font-size: 2.5rem;
   }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3,
+    h4,
+    h5{
+      
+    } p {
+      font-size: 2rem;
+    }
+  }
   @media (max-width: 512px) {
-    h1{
-      font-size:3rem;
+    h1 {
+      font-size: 3rem;
     }
     h2 {
       font-size: 2rem;
     }
-    p{
+    p {
       font-size: 1rem;
     }
   }

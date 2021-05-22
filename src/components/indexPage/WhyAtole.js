@@ -17,7 +17,9 @@ const Wrapper = styled(Sections)`
   p {
     text-align: center;
     margin: 1rem 0;
-    width: 70%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
   @media (max-width: 512px) {
     p {
@@ -31,11 +33,11 @@ const LittleGrid = styled(TwoColumnGrid)`
     width: 50%;
   }
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
+    padding: 0 2rem;
   }
   @media (max-width: 512px) {
     width: 100%;
-    padding: 0 2rem;
     text-align: justify;
   }
 `
@@ -56,7 +58,6 @@ const Card = styled(NewCard)`
   }
   .bottom {
     color: white;
-    width: 80%;
     margin: 0;
   }
   @media (max-width: 768px) {

@@ -16,7 +16,7 @@ const ProcessWrapper = styled(Sections)`
 const Steps = styled(TwoColFlex)`
   height: 170vh;
 
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
     height: auto;
     width: 100%;
@@ -38,11 +38,9 @@ const Card = styled(NewCard)`
     align-self: flex-end;
   }
   @media (max-width: 1024px) {
-    width: 30%;
-    padding: 0;
+    width: 100%;
   }
   @media (max-width: 512px) {
-    width: 100%;
     p {
       text-align: justify;
     }

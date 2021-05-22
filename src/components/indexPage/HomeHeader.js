@@ -10,6 +10,9 @@ const Wrapper = styled(Header)`
     left: 20vh;
     display: block;
   }
+  span {
+    color: white;
+  }
   h2 {
     left: 25vh;
   }
@@ -63,8 +66,11 @@ export const HomeHeader = () => (
     }
     title={
       <>
-        <h1>Take a sip of creativity </h1>
-        <h2> let's do magic!</h2>
+        <h1>
+          Take a sip of creativity <br />
+          <span>let's do magic!</span>
+        </h1>
+        {/* <h2> </h2> */}
       </>
     }
     buttons={

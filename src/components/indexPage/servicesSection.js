@@ -20,12 +20,10 @@ const Section = styled(Sections)`
   p {
     color: white;
     font-size: 2rem;
+    width: 90%;
   }
 
   @media (max-width: 1024px) {
-    h3 {
-      font-size: 3rem;
-    }
   }
   @media (max-width: 512px) {
     padding: 2rem;
@@ -63,6 +61,7 @@ const Card = styled(NewCard)`
   p {
     text-align: left;
     font-size: 1.2rem;
+    width: 100%;
   }
   &:hover {
     box-shadow: 0 14px 28px #edabf5, 0 10px 10px #edabf5;
@@ -76,7 +75,7 @@ const Card = styled(NewCard)`
   @media (max-width: 768px) {
     width: 90%;
     p {
-      width: 100%;
+      width: 90%;
       text-align: center;
     }
     &.small {
