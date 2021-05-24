@@ -75,7 +75,7 @@ export const HomeHeader = () => (
     }
     buttons={
       <>
-        <LinkButton background="var(--orange)">Learn More</LinkButton>
+        <LinkButton background="var(--orange)" hover="var(--orange)">Learn More</LinkButton>
         <LinkButton background="var(--lightPurple)">Get Started</LinkButton>
       </>
     }

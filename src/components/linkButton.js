@@ -21,6 +21,7 @@ const Button = styled(Link)`
   &:hover {
     ${({ hover }) =>
       hover ? `box-shadow: 0 14px 28px ${hover}, 0 10px 10px ${hover};` : null}
+      cursor: pointer;
   }
 
   @media (max-width: 768px) {

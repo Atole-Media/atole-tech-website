@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   .image {
     width: 30%;
   }
+  padding: 0 2rem;
   @media (max-width: 768px) {
     h2 {
       text-align: center;

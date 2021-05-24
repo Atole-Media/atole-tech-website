@@ -10,6 +10,7 @@ const Section = styled(Sections)`
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 
   h1 {
     font-size: 3.5rem;
@@ -26,7 +27,6 @@ const Section = styled(Sections)`
   @media (max-width: 1024px) {
   }
   @media (max-width: 512px) {
-    padding: 2rem;
     h3 {
       font-size: 2rem;
     }
@@ -39,7 +39,7 @@ const Section = styled(Sections)`
 `
 const Cards = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   flex-grow: 1;
   width: 100%;
   align-items: center;
