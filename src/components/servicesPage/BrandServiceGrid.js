@@ -11,10 +11,12 @@ const BrandWrapper = styled(TwoColFlex)`
   .image {
     width: 50%;
   }
-  @media (max-width: 512px) {
+
+  @media (max-width: 768px) {
     flex-wrap: wrap-reverse;
     .image {
       width: 90%;
+      padding: 2rem 0;
     }
   }
 `
@@ -23,10 +25,11 @@ const WebWrapper = styled(TwoColFlex)`
   .image {
     width: 40%;
   }
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
     .image {
       width: 90%;
+      padding: 2rem 0;
     }
   }
 `
@@ -40,8 +43,7 @@ const TextCard = styled(NewCard)`
   .button {
     font-size: 2rem;
   }
-  h2 {
-    font-size: 2rem;
+  h3 {
     text-align: center;
     margin: 1.5rem 0;
     color: var(--red);
@@ -52,7 +54,7 @@ const TextCard = styled(NewCard)`
   @media (max-width: 1024px) {
     padding: 0;
   }
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     width: 90%;
   }
 `
@@ -61,7 +63,7 @@ export const BrandServiceGrid = () => (
   <>
     <BrandWrapper>
       <TextCard>
-        <h2>CUSTOM LOGO & BRANDING SERVICE</h2>
+        <h3>CUSTOM LOGO & BRANDING SERVICE</h3>
         <p>
           This is for someone who wants to have beautiful designs that will help
           them establish credibility and give them a strong digital presence of
@@ -89,7 +91,7 @@ export const BrandServiceGrid = () => (
         className="image"
       />
       <TextCard>
-        <h2>CUSTOM WEB DESIGN & DEVELOPMENT SERVICE</h2>
+        <h3>CUSTOM WEB DESIGN & DEVELOPMENT SERVICE</h3>
         <p>
           Perfect for businesses who are rapidly growing and need a site that
           will scale with them. More secure, faster, better SEO, and more

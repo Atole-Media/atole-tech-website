@@ -13,6 +13,9 @@ const SectionWrapper = styled(Sections)`
   align-items: stretch;
   background-position: center;
   background-size: cover;
+  justify-content: space-between;
+  padding: 2rem ;
+
   .left {
     background-image: url(${imageLeft});
   }
@@ -25,12 +28,12 @@ const SectionWrapper = styled(Sections)`
 `
 const ImageCard = styled(NewCard)`
   width: 45%;
-  background-size: contain;
+  background-size: cover;
   align-items: flex-start;
   justify-content: space-between;
   ul {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     height: 10rem;
     display: flex;
     justify-content: space-between;
@@ -52,9 +55,7 @@ const ImageCard = styled(NewCard)`
       color: var(--pink);
     }
   }
-  @media (max-width: 1024px) {
-    width: 50%;
-  }
+
   @media (max-width: 1024px) {
     width: 100%;
   }

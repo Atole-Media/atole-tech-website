@@ -9,34 +9,35 @@ import { LinkButton } from "../linkButton"
 
 const Card = styled(NewCard)`
   color: white;
-  width: 33%;
+  width: 30%;
   text-align: left;
   height: 70vh;
   justify-content: space-between;
-  padding: 0 2rem;
   .button {
     font-size: 2rem;
   }
-  h2 {
+  h3 {
     text-transform: uppercase;
   }
-
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 50%;
+    padding: 1rem 0;
   }
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     width: 100%;
     padding: 0;
   }
 `
 const Section = styled(Sections)`
-  h1 {
+  h2 {
     color: var(--red);
   }
   background: none;
   align-items: stretch;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
+  }
+  @media (max-width: 768px) {
   }
 `
 const Wrapper = styled.div`
@@ -49,10 +50,10 @@ const Wrapper = styled.div`
 
 export const AddOns = () => (
   <Wrapper className="section--addons">
-    <h1>PACKAGE ADD-ONS</h1>
+    <h2>PACKAGE ADD-ONS</h2>
     <Section display="flex">
       <Card>
-        <h2>RUSH</h2>
+        <h3>RUSH</h3>
         <p>You need your designs and website as soon as possible.</p>
         <p> We can accelerate the process with a fee. </p>
         <LinkButton color="var(--pink)" className="button">
@@ -60,7 +61,7 @@ export const AddOns = () => (
         </LinkButton>
       </Card>
       <Card>
-        <h2>MORE PAGES</h2>
+        <h3>MORE PAGES</h3>
         <p>
           Our  web development package includes  the 5 essential pages every
           website needs. 
@@ -71,7 +72,7 @@ export const AddOns = () => (
         </LinkButton>
       </Card>
       <Card>
-        <h2>Convenience</h2>
+        <h3>Convenience</h3>
         <p>
           You have more important stuff to do like getting the products,
           providers, distributors and so on, not code and maintain a site!

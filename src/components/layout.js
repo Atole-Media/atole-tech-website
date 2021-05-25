@@ -42,6 +42,18 @@ const GlobalStyle = createGlobalStyle`
     --neon: #29CCCB;
     font-family: sans-serif;
     background-color: #1A042B;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
   }
 `
 
@@ -50,20 +62,21 @@ const Main = styled.main`
     line-height: 1.5em;
     font-size: 24px;
     color: white;
-    font-family: "futura-pt";
+    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   h1 {
     color: var(--orange);
-    font-family: "itc-benguiat";
+    font-family: "itc-benguiat", monospace;
     font-weight: 700;
     font-style: normal;
     font-size: 6rem;
+    font-display: block;
   }
 
   h2 {
-    font-family: "itc-benguiat";
+    font-family: "itc-benguiat", monospace;
     font-weight: 500;
     font-size: 4rem;
     color: var(--red);
@@ -75,7 +88,7 @@ const Main = styled.main`
   h5 {
     color: var(--neon);
     margin: 1.25rem 0;
-    font-family: "itc-benguiat";
+    font-family: "itc-benguiat", monospace;
     font-weight: 500;
     font-style: normal;
     font-size: 2.5rem;
@@ -89,9 +102,9 @@ const Main = styled.main`
     }
     h3,
     h4,
-    h5{
-
-    } p {
+    h5 {
+    }
+    p {
       font-size: 2rem;
     }
   }
