@@ -38,7 +38,8 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
-    "gatsby-plugin-robots-txt",
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
