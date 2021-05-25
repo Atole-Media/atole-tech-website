@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
-  ${'' /* @import url("https://use.typekit.net/asr8zfy.css"); */}
+  ${"" /* @import url("https://use.typekit.net/asr8zfy.css"); */}
 
   * {
     box-sizing: border-box;
@@ -10,14 +10,13 @@ export const GlobalStyle = createGlobalStyle`
   }
   li{
     list-style:none;
-    font-family: futura-pt, sans-serif;
-    font-weight: 400;
+    font-family: futura-pt;
     font-style: normal; 
     
     }
   a{
     text-decoration:none;
-    font-family: futura-pt, sans-serif;
+    font-family: futura-pt;
     font-weight: 400;
     font-style: normal;
 
@@ -36,9 +35,8 @@ export const GlobalStyle = createGlobalStyle`
     --orange: #FFAB03;
     --red: #D06273;
     --neon: #29CCCB;
-    font-family: sans-serif;
     background-color: #1A042B;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease-in 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     @keyframes fadeInAnimation {
@@ -55,20 +53,20 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.5em;
     font-size: 24px;
     color: white;
-    font-family: futura-pt, sans-serif;
+    font-family: futura-pt ;
     font-weight: 400;
     font-style: normal;
   }
   h1 {
     color: var(--orange);
-    font-family: "itc-benguiat", monospace;
+    font-family: "itc-benguiat";
     font-weight: 700;
     font-style: normal;
     font-size: 6rem;
   }
 
   h2 {
-    font-family: "itc-benguiat", monospace;
+    font-family: "itc-benguiat";
     font-weight: 500;
     font-size: 4rem;
     color: var(--red);
@@ -80,7 +78,7 @@ export const GlobalStyle = createGlobalStyle`
   h5 {
     color: var(--neon);
     margin: 1.25rem 0;
-    font-family: "itc-benguiat", monospace;
+    font-family: "itc-benguiat";
     font-weight: 500;
     font-style: normal;
     font-size: 2.5rem;
