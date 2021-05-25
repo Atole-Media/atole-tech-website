@@ -50,7 +50,7 @@ module.exports = {
         mode: "render-blocking",
 
         /* Enable font loading listener to handle FOUT */
-        enableListener: true,
+        // enableListener: true,
 
         /* Preconnect URL-s. This example is for Google Fonts */
         preconnect: ["https://use.typekit.net"],

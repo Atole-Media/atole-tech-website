@@ -10,13 +10,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   li{
     list-style:none;
-    font-family: futura-pt, sans-serif;
     font-style: normal; 
     
     }
   a{
     text-decoration:none;
-    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
 
@@ -53,20 +51,17 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.5em;
     font-size: 24px;
     color: white;
-    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   h1 {
     color: var(--orange);
-    font-family: itc-benguiat, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 6rem;
   }
 
   h2 {
-    font-family: itc-benguiat, serif;
     font-weight: 500;
     font-size: 4rem;
     color: var(--red);
@@ -78,10 +73,15 @@ export const GlobalStyle = createGlobalStyle`
   h5 {
     color: var(--neon);
     margin: 1.25rem 0;
-    font-family: itc-benguiat, serif;
     font-weight: 500;
     font-style: normal;
     font-size: 2.5rem;
+  }
+  h1,h2,h3,h4,h5 {
+    font-family: itc-benguiat, serif;
+  }
+  p,li,a {
+    font-family: futura-pt, sans-serif;
   }
   @media (max-width: 768px) {
     h1 {
