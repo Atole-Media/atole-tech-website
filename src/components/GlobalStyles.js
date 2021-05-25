@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     --red: #D06273;
     --neon: #29CCCB;
     background-color: #1A042B;
-    animation: fadeInAnimation ease-in 3s;
+    animation: fadeInAnimation ease-in 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     @keyframes fadeInAnimation {
