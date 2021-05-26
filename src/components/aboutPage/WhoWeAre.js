@@ -6,25 +6,26 @@ import { NewCard } from "../NewCard"
 
 const SectionWrapper = styled(Sections)`
   @media (max-width: 768px) {
+    flex-wrap: wrap;
     .rings {
-      width: 40%;
+      width: 80%;
     }
   }
   @media (max-width: 512px) {
-    flex-wrap: wrap;
     .rings {
       width: 70%;
     }
   }
 `
 const Card = styled(NewCard)`
-  h1 {
-    font-size: 3rem;
+  width: 60%;
+  padding-left: 1rem;
+  @media (max-width: 1024px) {
+    width: 80%;
   }
-  width: 80%;
-  
-  @media (max-width: 512px) {
+  @media (max-width: 768px) {
     width: 100%;
+    padding: 0;
   }
 `
 
@@ -36,7 +37,7 @@ export const WhoWeAre = () => (
       className="rings"
     />
     <Card>
-      <h1>The story behind atole</h1>
+      <h2>The story behind atole</h2>
       <p>
         In the year 2021, Atole Tech  finally opened  its digital doors in New
         York City.  Atole-tech a digital studio specializing in building

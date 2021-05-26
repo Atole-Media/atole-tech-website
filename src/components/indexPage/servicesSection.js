@@ -7,10 +7,8 @@ const Section = styled(Sections)`
   color: white;
   text-align: center;
   background-color: var(--purple);
-  padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 
   h1 {
     font-size: 3.5rem;
@@ -73,7 +71,7 @@ const Card = styled(NewCard)`
     height: 50vh;
   }
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     p {
       width: 90%;
       text-align: center;

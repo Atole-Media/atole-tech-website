@@ -2,35 +2,33 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import styled from "styled-components"
 import { NewCard } from "../NewCard"
+import { Sections } from "../sections"
 import { TwoColFlex } from "../TwoColFlex"
 
-const Wrapper = styled.div`
+const Wrapper = styled(Sections)`
   h2 {
     text-align: center;
     color: var(--red);
+    padding-bottom: 2rem;
   }
   .image {
-    width: 30%;
+    width: 45%;
   }
-  padding: 0 2rem;
   @media (max-width: 768px) {
     h2 {
       text-align: center;
       margin: 0;
     }
     .image {
-      width: 80%;
+      width: 100%;
     }
   }
   @media (max-width: 512px) {
     margin: 0 auto;
-    padding: 2rem;
-    .image {
-      width: 100%;
-    }
   }
 `
 const ImageRight = styled(TwoColFlex)`
+  justify-content: space-between;
   h3 {
     border-bottom: 7px solid var(--orange);
     padding-bottom: 2rem;
@@ -49,6 +47,8 @@ const ImageRight = styled(TwoColFlex)`
   }
 `
 const ImageLeft = styled(TwoColFlex)`
+  justify-content: space-between;
+
   h3 {
     border-bottom: 7px solid var(--orange);
     padding-bottom: 2rem;
@@ -63,7 +63,7 @@ const ImageLeft = styled(TwoColFlex)`
   }
 `
 const Card = styled(NewCard)`
-  width: 40%;
+  width: 45%;
   text-align: right;
   .top {
     color: white;
@@ -76,16 +76,15 @@ const Card = styled(NewCard)`
     font-size: 2rem;
   }
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
   }
   @media (max-width: 512px) {
-    width: 100%;
     padding: 0;
   }
 `
 
 export const WhatWeHave = () => (
-  <Wrapper size="wide">
+  <Wrapper>
     <h2>WHAT YOU CAN FIND IN ATOLE TECH...</h2>
     <ImageRight>
       <Card>
@@ -102,7 +101,7 @@ export const WhatWeHave = () => (
           We also provide pre-made logos and assets in our store if all you need
           is something simple.
         </p>
-        <div className="price">STARTING $300</div>
+        <a className="price">STARTING $300</a>
       </Card>
       <StaticImage
         src="../../images/home/nikolai-chernichenko-YIaB-KH8oE0-unsplash@3x.png"
@@ -131,7 +130,7 @@ export const WhatWeHave = () => (
           some quicker or already found the perfect layout! Sometimes we read
           minds.
         </p>{" "}
-        <div className="price">STARTING $300</div>
+        <a className="price">STARTING $300</a>
       </Card>
     </ImageLeft>
     <ImageRight>
@@ -150,7 +149,7 @@ export const WhatWeHave = () => (
           backend or ecommerce solution that you are already used to and
           integrate it to your new extremely fast Gatsby site.
         </p>{" "}
-        <div className="price">STARTING $300</div>
+        <a className="price">STARTING $300</a>
       </Card>
       <StaticImage
         src="../../images/home/alexander-popov-3InMDrsuYrk-unsplash@3x.png"
@@ -179,7 +178,7 @@ export const WhatWeHave = () => (
           ball rolling. In those situations, we got you covered too! Visit our
           store for more info!
         </p>{" "}
-        <div className="price">STARTING $300</div>
+        <a className="price">STARTING $300</a>
       </Card>
     </ImageLeft>
   </Wrapper>

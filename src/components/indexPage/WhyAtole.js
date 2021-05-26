@@ -9,6 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const Wrapper = styled(Sections)`
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 0 2rem;
+  max-width: 1356px;
   h2 {
     width: 60%;
     text-align: center;
@@ -28,7 +30,7 @@ const Wrapper = styled(Sections)`
   }
 `
 const LittleGrid = styled(TwoColumnGrid)`
-  width: 70%;
+  width: 100%;
   &.icons {
     width: 50%;
   }
@@ -41,10 +43,7 @@ const LittleGrid = styled(TwoColumnGrid)`
     text-align: justify;
   }
 `
-const MiniFlex = styled.div`
-  width: 100%;
-  text-align: center;
-`
+
 const Card = styled(NewCard)`
   width: 80%;
   margin: 0;

@@ -9,16 +9,19 @@ import Seo from "../utils/seo"
 import { AboutHeader } from "../components/aboutPage/AboutHeader"
 import { WhoWeAre } from "../components/aboutPage/WhoWeAre"
 
-
 const AboutPage = () => {
   return (
     <Layout>
       <AboutHeader />
       <WhoWeAre />
-      <Sections display="flex" size="wide">
+      <Sections size="wide">
         <StaticImage
-          src="../images/about/michael-dziedzic-qDG7XKJLKbs-unsplash.svg"
+          src="../images/about/top-globe.png"
           alt="globe"
+          layout="fullWidth"
+          style={{
+            minHeight: "13rem",
+          }}
         />
         <TitleLink
           title="Don't know where to start?"
@@ -28,9 +31,9 @@ const AboutPage = () => {
         />
       </Sections>
       <Story />
-      <Sections  size="wide">
+      <Sections size="wide">
         <StaticImage
-          src="../images/about/ball2.svg"
+          src="../images/about/bottom-globe.png"
           alt="globe2"
           layout="fullWidth"
         />
@@ -42,12 +45,14 @@ const AboutPage = () => {
         />
       </Sections>
       <Creators />
-      <Sections display="flex" size="wide">
+      <Sections size="wide">
         <StaticImage
-          src="../images/about/ball2.svg"
+          src="../images/about/blobs.png"
           alt="globe2"
-          height={1000}
-          width={3000}
+          layout="fullWidth"
+          style={{
+            minHeight: "13rem",
+          }}
         />
         <TitleLink
           title="TAKE A SIP OF ATOLE LETS DO MAGIC!"

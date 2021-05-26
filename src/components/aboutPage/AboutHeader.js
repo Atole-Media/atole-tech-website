@@ -4,17 +4,12 @@ import styled from "styled-components"
 import { Header } from "../header"
 
 const Wrapper = styled(Header)`
-  h1,
-  h2 {
+  h1 {
     text-align: center;
     left: 0;
     right: 0;
+    top: 50%;
     color: white;
-  }
-  @media (max-width: 512px) {
-    h2 {
-      font-size: 4rem;
-    }
   }
 `
 
@@ -22,8 +17,10 @@ export const AboutHeader = () => (
   <Wrapper
     title={
       <>
-        <h1>atole tech </h1>
-        <h2>about</h2>
+        <h1>
+          atole tech <br />
+          about
+        </h1>
       </>
     }
     image={

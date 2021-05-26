@@ -16,11 +16,11 @@ const Splash = styled(Header)`
   @media (max-width: 1024px) {
     min-height: 0;
     h2 {
-      top: 30vh;
+      top: 20vh;
       right: 10vh;
     }
     .buttons {
-      top: 45vh;
+      top: 35vh;
     }
   }
   @media (max-width: 768px) {
@@ -28,7 +28,7 @@ const Splash = styled(Header)`
       top: 10vh;
     }
     .buttons {
-      top: 30vh;
+      top: 25vh;
     }
   }
   @media (max-width: 512px) {
