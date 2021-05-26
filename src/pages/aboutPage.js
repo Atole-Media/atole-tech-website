@@ -58,6 +58,7 @@ const AboutPage = () => {
           title="TAKE A SIP OF ATOLE LETS DO MAGIC!"
           link="Contact us"
           background="var(--orange)"
+          position="center"
         />
       </Sections>
       <Seo title="About" />

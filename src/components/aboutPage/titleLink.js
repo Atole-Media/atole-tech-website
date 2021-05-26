@@ -4,8 +4,10 @@ import { LinkButton } from "../linkButton"
 
 const Wrapper = styled.div`
   position: absolute;
-  ${({ position }) => (position === "right" ? "right: 5vw" : null)}
-  ${({ position }) => (position === "left" ? "left: 5vw" : null)};
+  ${({ position }) => (position === "right" ? "right: 5vw" : "null")};
+  ${({ position }) => (position === "left" ? "left: 5vw" : "null")};
+  ${({ position }) => (position === "center" ? "left: 0; right: 0;" : "null")};
+
   top: 25%;
   display: flex;
   flex-direction: column;
@@ -24,8 +26,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     /* ${({ position }) => (position === "right" ? "left: 0" : null)};
     ${({ position }) => (position === "left" ? "right: 0" : null)}; */
-    right: 0;
-    left: 0;
+
     top: 10%;
     h3 {
       margin-bottom: 1rem;
