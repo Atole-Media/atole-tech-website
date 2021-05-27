@@ -2,7 +2,7 @@ import styled from "styled-components"
 import React from "react"
 
 const InfoWrapper = styled.div`
-  width: 33%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   color: var(--orange);
@@ -10,10 +10,9 @@ const InfoWrapper = styled.div`
   justify-content: space-evenly;
   height: 80%;
   padding-bottom: 1.5rem;
-  h2 {
+  h3 {
     text-transform: uppercase;
     color: var(--orange);
-    font-size: 2rem;
   }
   a {
     color: white;
@@ -22,10 +21,8 @@ const InfoWrapper = styled.div`
   .text {
     color: white;
   }
-  @media (max-width: 1028px) {
-    width: 40%;
-  }
-  @media (max-width: 768px) {
+  
+  @media (max-width: 1024px) {
     width: 90%;
     .text {
       width: 80%;
@@ -38,13 +35,13 @@ const InfoWrapper = styled.div`
 `
 export const Info = () => (
   <InfoWrapper>
-    <h2>Atole's Location</h2>
+    <h3>Atole's Location</h3>
     <p>Located in the great city of New York</p>
-    <h2>DIRECT CONTACT</h2>
+    <h3>DIRECT CONTACT</h3>
     <a href="mailto:info@atolemedia.com" target="_blank" rel="noreferrer">
       info@atolemedia.com
     </a>
-    <h2>HOURS OF AVAILABILITY</h2>
+    <h3>HOURS OF AVAILABILITY</h3>
     <p>We will respond within 24 hours</p>
     <p className="text">
       Thank you for reaching out to us through the website. We cannot wait to

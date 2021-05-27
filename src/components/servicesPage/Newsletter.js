@@ -21,12 +21,14 @@ const Wrapper = styled.div`
   }
   @media (max-width: 1024px) {
     width: 60vw;
+    padding: 2.5rem;
   }
   @media (max-width: 768px) {
     width: 80vw;
+    padding: 2rem;
   }
   @media (max-width: 512px) {
-    height: 60vh;
+    min-height: 40vh;
   }
 `
 const NewsBox = styled.div`
@@ -58,6 +60,13 @@ const NewsBox = styled.div`
     text-transform: uppercase;
     text-align: center;
   }
+  @media (max-width: 1024px) {
+    width: 85%;
+  }
+  @media (max-width: 768px) {
+    width:90%;
+  }
+
   @media (max-width: 512px) {
     width: 100%;
     flex-wrap: wrap;
@@ -71,11 +80,9 @@ const NewsBox = styled.div`
 const Button = styled(LinkButton)`
   margin: 1rem;
   font-size: 1rem;
-  &.mobile {
-    display: none;
-  }
+  
   @media (max-width: 512px) {
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 `
 export const Newsletter = () => (
@@ -83,13 +90,15 @@ export const Newsletter = () => (
     <h2>Subscribe to our Newsletter!</h2>
     <p>Stay up to date with our latest products!</p>
     <NewsBox>
-      <input type="email" name="email" id="newsletter" placeholder="Your Email Here" />
+      <input
+        type="email"
+        name="email"
+        id="newsletter"
+        placeholder="Your Email Here"
+      />
       <Button background="var(--orange)" className="desktop">
         Subscribe
       </Button>
     </NewsBox>
-    {/* <Button background="var(--orange)" className="mobile">
-      Subscribe
-    </Button> */}
   </Wrapper>
 )

@@ -58,6 +58,7 @@ export const HomeHeader = () => (
         src="../../images/home/hero@3x.png"
         alt="Hero splash!"
         loading="eager"
+        placeholder="blurred"
         layout="fullWidth"
         style={{
           height: "100vh",
@@ -75,7 +76,9 @@ export const HomeHeader = () => (
     }
     buttons={
       <>
-        <LinkButton background="var(--orange)" hover="var(--orange)">Learn More</LinkButton>
+        <LinkButton background="var(--orange)" hover="var(--orange)">
+          Learn More
+        </LinkButton>
         <LinkButton background="var(--lightPurple)">Get Started</LinkButton>
       </>
     }

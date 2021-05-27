@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledForm = styled.form`
   height: 80%;
-  width: 33%;
+  width: 35%;
   display: inline-flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -18,15 +18,14 @@ const StyledForm = styled.form`
     outline: none;
   }
 
-  h2 {
+  h3 {
     color: var(--orange);
-    font-size: 2rem;
     text-align: center;
     margin: 0 auto;
   }
   label {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     text-align: left;
     color: var(--yellow);
     border: none;
@@ -74,13 +73,14 @@ const StyledForm = styled.form`
   }
 
   @media (max-width: 1024px) {
-    width: 40%;
+    width: 70%;
+    height: 75vh;
     label {
       width: 90%;
     }
   }
   @media (max-width: 768px) {
-    width: 90%;
+    width: 85%;
   }
   @media (max-width: 512px) {
     width: 100%;
@@ -94,7 +94,7 @@ export const ContactForm = () => (
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
-    <h2>CONTACT US</h2>
+    <h3>CONTACT US</h3>
     <input type="hidden" name="form-name" value="contact" />
 
     <label>

@@ -28,6 +28,7 @@ export const AboutHeader = () => (
         src="../../images/about/solen-feyissa-aiuCuOcNG4I-unsplash.png"
         alt="About Splash Image"
         layout="fullWidth"
+        placeholder="blurred"
         loading="eager"
         style={{
           height: "100vh",

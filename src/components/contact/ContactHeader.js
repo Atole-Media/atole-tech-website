@@ -29,6 +29,7 @@ export const ContactHeader = () => (
         alt="Contact hero image"
         layout="fullWidth"
         loading="eager"
+        placeholder="blurred"
         className="header-image"
       />
     }

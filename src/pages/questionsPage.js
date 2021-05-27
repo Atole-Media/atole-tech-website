@@ -13,20 +13,21 @@ import { Questions } from "../components/contact/Questions"
 import { Newsletter } from "../components/servicesPage/Newsletter"
 
 const ContactSection = styled(Sections)`
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100vh;
   .dots {
     width: 15%;
   }
-  @media (max-width: 1028px) {
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-evenly;
+    height: auto;
     .dots {
-      width: 20%;
-      margin: 0 1rem;
+      width: 40%;
     }
   }
   @media (max-width: 768px) {
-    flex-wrap: wrap;
-    height: auto;
   }
 `
 

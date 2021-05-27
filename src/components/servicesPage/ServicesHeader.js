@@ -40,6 +40,7 @@ export const ServicesHeader = () => (
         alt="services splash image"
         layout="fullWidth"
         loading="eager"
+        placeholder="blurred"
         style={{
           minHeight: "100vh",
         }}

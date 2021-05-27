@@ -7,7 +7,6 @@ const SectionWrapper = styled(Header)`
   min-height: 0;
   h2 {
     color: var(--orange);
-    font-size: 2.5rem;
     top: 25%;
     left: 0;
     right: 0;
@@ -18,7 +17,7 @@ const SectionWrapper = styled(Header)`
   p {
     color: white;
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     left: 0;
     right: 0;
     text-align: justify;
@@ -29,14 +28,35 @@ const SectionWrapper = styled(Header)`
   .image {
     height: 90vh;
   }
-  @media (max-width: 512px) {
+  @media (max-width: 1024px) {
     h2 {
-      font-size: 1.75rem;
+      width: 95%;
+    }
+    p {
+      bottom: 10%;
+    }
+  }
+  @media (max-width: 768px) {
+    h2 {
+      width: 95%;
       top: 5%;
     }
     p {
-      top: 25%;
-      font-size: 1rem;
+      bottom: 0%;
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 512px) {
+    h2 {
+      top: 15%;
+    }
+    p {
+      top: 45%;
+      height: auto;
+    }
+    .image {
+      height: 60vh;
     }
   }
 `
